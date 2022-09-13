@@ -1,0 +1,13 @@
+2022-06-11 17:30:22.3644                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Managers.WareLocationTrayManager.BindTrayWarelocation(WareLocation wareLocation, TrayState trayState) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\WareLocationTrayManager.cs:行号 60                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-11 17:31:16.3491                
+ [INFO]  : 1A-1-1:绑定货物2202206090000005:ID 5151                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-11 17:41:59.8254                
+ [INFO]  : 1A-1-1:绑定货物2202206090000005:ID 5151                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------

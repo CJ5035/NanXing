@@ -1,0 +1,49 @@
+         
+时间： 2021-12-08 16:51:49.5280         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/8 16:51:47
+异常类型：ConnectionSetupException
+异常消息：Timeout waiting for server connnectionInfo from [TCP-E-I] 127.0.0.1:55141 -> 127.0.0.1:10086. Connection created at 16:50:54.177, its now 16:51:06.7
+异常信息：   在 NetworkCommsDotNet.Connections.Connection.ConnectionHandshake()
+   在 NetworkCommsDotNet.Connections.TCP.TCPConnection.EstablishConnectionSpecific()
+   在 NetworkCommsDotNet.Connections.Connection.EstablishConnection()
+   在 NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, SendReceiveOptions defaultSendReceiveOptions, TcpClient tcpClient, Boolean establishIfRequired, SSLOptions sslOptions)
+   在 NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, Boolean establishIfRequired)
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.OpenTcp(String ip, Int32 port) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\TiShengJiHelper.cs:行号 30
+   在 NanXingPengMaServices.Form1.Form1_Load(Object sender, EventArgs e) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Form1.cs:行号 63
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+         
+堆栈：  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-08 17:44:36.2814         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/8 17:44:36
+Application UnhandledException:String 引用没有设置为 String 的实例。
+参数名: s;
+堆栈信息:   在 System.Text.Encoding.GetBytes(String s)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.SendMsg(String msg) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\TCP\ClientBySocket.cs:行号 361
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.ClientAuthenticationAndReconnection() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\TCP\ClientBySocket.cs:行号 250
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.SocketClientReceive() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\TCP\ClientBySocket.cs:行号 228
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()         
+堆栈：  Encoding.GetBytes => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------

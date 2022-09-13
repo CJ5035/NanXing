@@ -1,0 +1,24 @@
+2022-06-09 16:19:25.4877                
+ [INFO]  : 1A-1-1:解绑货物20210830006:ID 6                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.UnBindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-09 16:36:45.3435                
+ [INFO]  : 2G-1-1:解绑货物2202205230000009:ID 5098                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.UnBindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-09 16:38:39.8965                
+ [INFO]  : 2G-2-6:解绑货物2202205230000004:ID 5093                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.UnBindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-09 16:39:17.5529                
+ [INFO]  : 2G-1-2:解绑货物2202205230000011:ID 5100                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.UnBindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-09 16:40:16.7490                
+ [INFO]  : 2G-1-3:解绑货物2202205230000010:ID 5099                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.UnBindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-09 17:02:26.2908                
+ [INFO]  : 2G-1-4:解绑货物2202205230000012:ID 5101                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.UnBindTrayWarelocation => Logger.Process               
+ ------------------------------------------------

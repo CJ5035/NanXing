@@ -1,0 +1,8 @@
+2022-06-02 17:50:27.0492                
+ [INFO]  : 1A-1-1:绑定货物20210830006:ID 6                
+  LocationEdit.btnSaveClose_Click => WareLocationTrayNoHelper.ChangeTrayWareLocation => Logger.Process               
+ ------------------------------------------------
+2022-06-02 17:50:45.9684                
+ [INFO]  : 1A-1-10:绑定货物20210830007:ID 7                
+  LocationEdit.btnSaveClose_Click => WareLocationTrayNoHelper.ChangeTrayWareLocation => Logger.Process               
+ ------------------------------------------------

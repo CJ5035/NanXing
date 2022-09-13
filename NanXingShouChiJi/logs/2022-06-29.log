@@ -1,0 +1,4 @@
+2022-06-29 16:50:12.1560                
+ [INFO]  : 1D-3-6:绑定货物2202206090000004:ID 5150                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------

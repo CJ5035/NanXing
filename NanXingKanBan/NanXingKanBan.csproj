@@ -1,0 +1,246 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36E8C355-8377-4E03-B362-50CD5EC553EE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NanXingKanBan</RootNamespace>
+    <AssemblyName>NanXingKanBan</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44306</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\C#模板\DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\component\css-table\css-table.css" />
+    <Content Include="res\component\css-table\css-table.js" />
+    <Content Include="res\component\image-text\image-text.js" />
+    <Content Include="res\component\lamp-text\lamp-text.css" />
+    <Content Include="res\component\lamp-text\lamp-text.js" />
+    <Content Include="res\component\title-bar\title-bar.css" />
+    <Content Include="res\component\title-bar\title-bar.js" />
+    <Content Include="res\css\index2.css" />
+    <Content Include="res\css\index.css" />
+    <Content Include="res\component\image-text\image-text.css" />
+    <Content Include="res\images\login\图标300x202.png" />
+    <Content Include="res\images\login\微信图片_20210513153613.png" />
+    <Content Include="res\images\OEE.bmp" />
+    <Content Include="res\images\主要不良 - 副本.bmp" />
+    <Content Include="res\images\主要不良.bmp" />
+    <Content Include="res\images\小图标\feiqi.png" />
+    <Content Include="res\images\小图标\feishui.png" />
+    <Content Include="res\images\小图标\噪音2.png" />
+    <Content Include="res\images\小图标\温度2.png" />
+    <Content Include="res\images\小图标\湿度2.png" />
+    <Content Include="res\images\小图标\电能实时.png" />
+    <Content Include="res\images\小图标\粉尘2.png" />
+    <Content Include="res\images\小灯\blue.bmp" />
+    <Content Include="res\images\小灯\green.bmp" />
+    <Content Include="res\images\小灯\red.bmp" />
+    <Content Include="res\images\小灯\yellow.bmp" />
+    <Content Include="res\images\看板背景.jpg" />
+    <Content Include="res\images\箭头.png" />
+    <Content Include="res\images\边框1.bmp" />
+    <Content Include="res\images\边框1.png" />
+    <Content Include="res\js\echarts.js" />
+    <Content Include="res\js\echarts.min.js" />
+    <Content Include="res\js\echarts.min_1.js" />
+    <Content Include="res\js\ElementUI\element-ui.js" />
+    <Content Include="res\js\jquery-3.3.1.min.js" />
+    <Content Include="res\js\jquery.cookie.js" />
+    <Content Include="res\js\jquery.min.js" />
+    <Content Include="res\js\jsmpeg.min.js" />
+    <Content Include="res\js\mui.js" />
+    <Content Include="res\js\mui.min.js" />
+    <Content Include="res\js\vue-resource.common.js" />
+    <Content Include="res\js\vue-resource.es2015.js" />
+    <Content Include="res\js\vue-resource.js" />
+    <Content Include="res\js\vue-resource.min.js" />
+    <Content Include="res\js\vue.js" />
+    <Content Include="res\js\vuex.js" />
+    <Content Include="res\vuex\store.js" />
+    <Content Include="view\index2.html" />
+    <Content Include="view\index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ashx\BaseAshx.ashx.cs">
+      <DependentUpon>BaseAshx.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\BaseAsyncAash.ashx.cs">
+      <DependentUpon>BaseAsyncAash.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index1\GetHuanJingData.ashx.cs">
+      <DependentUpon>GetHuanJingData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index1\GetJitaiTongJi.ashx.cs">
+      <DependentUpon>GetJitaiTongJi.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index1\GetNengHao.ashx.cs">
+      <DependentUpon>GetNengHao.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index1\GetPressValue.ashx.cs">
+      <DependentUpon>GetPressValue.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index1\GetRanQiValue.ashx.cs">
+      <DependentUpon>GetRanQiValue.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index2\Get10DaysData.ashx.cs">
+      <DependentUpon>Get10DaysData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index2\GetJiTaiCLData.ashx.cs">
+      <DependentUpon>GetJiTaiCLData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index2\GetLiangPinLv.ashx.cs">
+      <DependentUpon>GetLiangPinLv.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\index2\GetPCDData.ashx.cs">
+      <DependentUpon>GetPCDData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ashx\index1\GetPressValue.ashx" />
+    <Content Include="ashx\index1\GetRanQiValue.ashx" />
+    <Content Include="ashx\index1\GetNengHao.ashx" />
+    <Content Include="ashx\index1\GetJitaiTongJi.ashx" />
+    <Content Include="ashx\index1\GetHuanJingData.ashx" />
+    <Content Include="ashx\index2\GetJiTaiCLData.ashx" />
+    <Content Include="ashx\index2\GetPCDData.ashx" />
+    <Content Include="ashx\index2\Get10DaysData.ashx" />
+    <Content Include="ashx\BaseAsyncAash.ashx" />
+    <Content Include="ashx\BaseAshx.ashx" />
+    <Content Include="ashx\index2\GetLiangPinLv.ashx" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NanXingData_WMS\NanXingData_WMS.csproj">
+      <Project>{13a622a7-48de-4150-b22a-bed1472292ef}</Project>
+      <Name>NanXingData_WMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NaXingService_WMS\NanXingService_WMS.csproj">
+      <Project>{cf6e13c3-d59d-4f1e-b201-861e127b533c}</Project>
+      <Name>NanXingService_WMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56996</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44306/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

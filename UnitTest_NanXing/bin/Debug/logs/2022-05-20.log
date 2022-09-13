@@ -1,0 +1,17 @@
+2022-05-20 17:28:53.4536                
+ [INFO]  : ItemThread:获取物料信息。。。                
+  <>c__DisplayClass8_0.<StartTask>b__0 => ItemInfoManager.StartUpdate => Logger.Process               
+ ------------------------------------------------
+2022-05-20 17:38:32.1316                
+ [ERROR]  : ItemThread:
+System.ArgumentException: 列“UpdateTime”不属于表 。
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 NanXingService_WMS.Services.ItemInfoManager.ParseItems() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 85
+   在 NanXingService_WMS.Services.ItemInfoManager.StartUpdate() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 37                
+  <>c__DisplayClass8_0.<StartTask>b__0 => ItemInfoManager.StartUpdate => Logger.Process               
+ ------------------------------------------------
+2022-05-20 17:43:53.7348                
+ [INFO]  : ItemThread:获取物料信息。。。                
+  <>c__DisplayClass8_0.<StartTask>b__0 => ItemInfoManager.StartUpdate => Logger.Process               
+ ------------------------------------------------

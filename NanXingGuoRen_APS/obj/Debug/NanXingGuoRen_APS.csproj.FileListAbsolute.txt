@@ -1,0 +1,2 @@
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingGuoRen_APS\obj\Debug\NanXingGuoRen_APS.csproj.AssemblyReference.cache
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingGuoRen_APS\obj\Debug\NanXingGuoRen_APS.csproj.CoreCompileInputs.cache

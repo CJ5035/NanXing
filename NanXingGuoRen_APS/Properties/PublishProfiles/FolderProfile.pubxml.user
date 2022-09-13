@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>G:\公司网站发布</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="admin/config.aspx">
+      <publishTime>05/12/2019 23:32:56</publishTime>
+    </File>
+    <File Include="admin/default.aspx">
+      <publishTime>11/20/2018 16:18:21</publishTime>
+    </File>
+    <File Include="admin/dept.aspx">
+      <publishTime>11/20/2018 16:18:21</publishTime>
+    </File>
+    <File Include="admin/dept_edit.aspx">
+      <publishTime>11/20/2018 16:24:16</publishTime>
+    </File>
+    <File Include="admin/dept_new.aspx">
+      <publishTime>11/20/2018 16:18:20</publishTime>
+    </File>
+    <File Include="admin/dept_user.aspx">
+      <publishTime>11/20/2018 16:18:19</publishTime>
+    </File>
+    <File Include="admin/dept_user_addnew.aspx">
+      <publishTime>11/21/2018 11:53:32</publishTime>
+    </File>
+    <File Include="admin/help/help.htm">
+      <publishTime>05/10/2012 10:27:02</publishTime>
+    </File>
+    <File Include="admin/help/jisuanqi.htm">
+      <publishTime>01/17/2014 18:22:18</publishTime>
+    </File>
+    <File Include="admin/help/wannianli.htm">
+      <publishTime>05/10/2012 10:27:02</publishTime>
+    </File>
+    <File Include="admin/log.aspx">
+      <publishTime>11/20/2018 16:18:18</publishTime>
+    </File>
+    <File Include="admin/log_view.aspx">
+      <publishTime>11/20/2018 16:18:18</publishTime>
+    </File>
+    <File Include="admin/menu.aspx">
+      <publishTime>11/20/2018 16:18:17</publishTime>
+    </File>
+    <File Include="admin/menu_edit.aspx">
+      <publishTime>11/21/2018 14:02:02</publishTime>
+    </File>
+    <File Include="admin/menu_new.aspx">
+      <publishTime>11/21/2018 14:02:02</publishTime>
+    </File>
+    <File Include="admin/online.aspx">
+      <publishTime>11/20/2018 16:18:15</publishTime>
+    </File>
+    <File Include="admin/power.aspx">
+      <publishTime>11/20/2018 16:18:15</publishTime>
+    </File>
+    <File Include="admin/power_edit.aspx">
+      <publishTime>11/20/2018 16:18:14</publishTime>
+    </File>
+    <File Include="admin/power_new.aspx">
+      <publishTime>11/20/2018 16:18:14</publishTime>
+    </File>
+    <File Include="admin/profile.aspx">
+      <publishTime>11/20/2018 16:18:14</publishTime>
+    </File>
+    <File Include="admin/role.aspx">
+      <publishTime>11/20/2018 16:18:13</publishTime>
+    </File>
+    <File Include="admin/role_edit.aspx">
+      <publishTime>11/20/2018 16:18:13</publishTime>
+    </File>
+    <File Include="admin/role_new.aspx">
+      <publishTime>11/20/2018 16:18:13</publishTime>
+    </File>
+    <File Include="admin/role_power.aspx">
+      <publishTime>11/21/2018 13:54:46</publishTime>
+    </File>
+    <File Include="admin/role_user.aspx">
+      <publishTime>11/20/2018 16:18:12</publishTime>
+    </File>
+    <File Include="admin/role_user_addnew.aspx">
+      <publishTime>11/21/2018 11:53:33</publishTime>
+    </File>
+    <File Include="admin/test.aspx">
+      <publishTime>11/20/2018 16:18:11</publishTime>
+    </File>
+    <File Include="admin/title.aspx">
+      <publishTime>11/20/2018 16:18:10</publishTime>
+    </File>
+    <File Include="admin/title_edit.aspx">
+      <publishTime>11/20/2018 16:18:10</publishTime>
+    </File>
+    <File Include="admin/title_new.aspx">
+      <publishTime>11/20/2018 16:18:09</publishTime>
+    </File>
+    <File Include="admin/title_user.aspx">
+      <publishTime>11/20/2018 16:18:09</publishTime>
+    </File>
+    <File Include="admin/title_user_addnew.aspx">
+      <publishTime>11/21/2018 11:53:33</publishTime>
+    </File>
+    <File Include="admin/user.aspx">
+      <publishTime>11/20/2018 16:18:07</publishTime>
+    </File>
+    <File Include="admin/user_changepassword.aspx">
+      <publishTime>11/20/2018 16:18:07</publishTime>
+    </File>
+    <File Include="admin/user_edit.aspx">
+      <publishTime>11/21/2018 14:05:35</publishTime>
+    </File>
+    <File Include="admin/user_new.aspx">
+      <publishTime>11/21/2018 14:05:36</publishTime>
+    </File>
+    <File Include="admin/user_select_dept.aspx">
+      <publishTime>11/21/2018 14:05:36</publishTime>
+    </File>
+    <File Include="admin/user_select_role.aspx">
+      <publishTime>11/21/2018 14:05:36</publishTime>
+    </File>
+    <File Include="admin/user_select_title.aspx">
+      <publishTime>11/21/2018 14:05:36</publishTime>
+    </File>
+    <File Include="admin/user_view.aspx">
+      <publishTime>11/20/2018 16:18:04</publishTime>
+    </File>
+    <File Include="AppModel/log.html">
+      <publishTime>08/29/2018 18:35:57</publishTime>
+    </File>
+    <File Include="bin/AppBox.dll">
+      <publishTime>11/16/2018 17:55:29</publishTime>
+    </File>
+    <File Include="bin/AppBox.pdb">
+      <publishTime>11/16/2018 17:55:29</publishTime>
+    </File>
+    <File Include="bin/AppBoxPro.dll">
+      <publishTime>07/11/2019 11:53:55</publishTime>
+    </File>
+    <File Include="bin/AppBoxPro.pdb">
+      <publishTime>07/11/2019 11:53:55</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.dll">
+      <publishTime>11/14/2015 13:35:30</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.pdb">
+      <publishTime>11/14/2015 13:35:30</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.dll">
+      <publishTime>11/14/2015 13:35:30</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.pdb">
+      <publishTime>11/14/2015 13:35:30</publishTime>
+    </File>
+    <File Include="bin/DataAccess.dll">
+      <publishTime>04/23/2019 14:28:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:24</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.Extended.dll">
+      <publishTime>07/09/2015 16:52:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.Extended.dll.config">
+      <publishTime>07/09/2015 16:52:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/FineUI.dll">
+      <publishTime>10/21/2016 19:49:52</publishTime>
+    </File>
+    <File Include="bin/FineUIPro.dll">
+      <publishTime>08/20/2018 11:06:24</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>01/03/2011 14:16:38</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>05/04/2016 15:17:53</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xmlworker.dll">
+      <publishTime>05/04/2016 15:17:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.dll">
+      <publishTime>03/08/2016 11:26:04</publishTime>
+    </File>
+    <File Include="bin/MonAgentListener.dll">
+      <publishTime>03/08/2016 11:26:06</publishTime>
+    </File>
+    <File Include="bin/MyXls.SL2.dll">
+      <publishTime>08/19/2009 16:38:48</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 23:06:14</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>03/21/2017 07:53:26</publishTime>
+    </File>
+    <File Include="bin/NPOI.OOXML.dll">
+      <publishTime>03/21/2017 07:53:26</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXml4Net.dll">
+      <publishTime>03/21/2017 07:53:26</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXmlFormats.dll">
+      <publishTime>03/21/2017 07:53:26</publishTime>
+    </File>
+    <File Include="bin/Quartz.dll">
+      <publishTime>05/27/2018 11:18:32</publishTime>
+    </File>
+    <File Include="bin/Quartz.pdb">
+      <publishTime>05/27/2018 11:18:32</publishTime>
+    </File>
+    <File Include="bin/ThoughtWorks.QRCode.dll">
+      <publishTime>10/12/2013 10:34:23</publishTime>
+    </File>
+    <File Include="ClientManager/ClientManager.aspx">
+      <publishTime>05/20/2019 16:40:50</publishTime>
+    </File>
+    <File Include="ClientManager/ClientManager_Edit.aspx">
+      <publishTime>05/17/2019 17:23:13</publishTime>
+    </File>
+    <File Include="ClientManager/ClientManager_New.aspx">
+      <publishTime>05/20/2019 16:50:59</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>05/18/2019 18:22:32</publishTime>
+    </File>
+    <File Include="Finance/getClassChart.ashx">
+      <publishTime>06/03/2019 01:53:02</publishTime>
+    </File>
+    <File Include="Finance/getDeptChart.ashx">
+      <publishTime>06/03/2019 01:53:26</publishTime>
+    </File>
+    <File Include="Finance/getPersonalChart.ashx">
+      <publishTime>06/03/2019 00:49:06</publishTime>
+    </File>
+    <File Include="Finance/grid_excel_selectcolumns_iframe_window.aspx">
+      <publishTime>06/11/2019 15:44:51</publishTime>
+    </File>
+    <File Include="Finance/imageUpload.ashx">
+      <publishTime>05/08/2019 15:10:17</publishTime>
+    </File>
+    <File Include="Finance/Logs/logs.txt">
+      <publishTime>06/13/2019 11:19:01</publishTime>
+    </File>
+    <File Include="Finance/Reimburse.aspx">
+      <publishTime>06/05/2019 11:57:59</publishTime>
+    </File>
+    <File Include="Finance/ReimburseChart1.aspx">
+      <publishTime>06/24/2019 19:10:27</publishTime>
+    </File>
+    <File Include="Finance/ReimburseChart2.aspx">
+      <publishTime>06/24/2019 19:09:06</publishTime>
+    </File>
+    <File Include="Finance/ReimburseChart3.aspx">
+      <publishTime>06/24/2019 18:27:21</publishTime>
+    </File>
+    <File Include="Finance/ReimburseClassNew.aspx">
+      <publishTime>05/28/2019 17:07:37</publishTime>
+    </File>
+    <File Include="Finance/ReimburseClassView.aspx">
+      <publishTime>05/29/2019 09:51:28</publishTime>
+    </File>
+    <File Include="Finance/ReimburseEdit.aspx">
+      <publishTime>05/29/2019 15:09:22</publishTime>
+    </File>
+    <File Include="Finance/ReimburseImage.aspx">
+      <publishTime>05/11/2019 16:01:24</publishTime>
+    </File>
+    <File Include="Finance/ReimburseList.aspx">
+      <publishTime>05/07/2019 17:20:57</publishTime>
+    </File>
+    <File Include="Finance/ReimburseNew.aspx">
+      <publishTime>06/21/2019 09:34:02</publishTime>
+    </File>
+    <File Include="Finance/ReimburseOption.aspx">
+      <publishTime>05/24/2019 09:24:26</publishTime>
+    </File>
+    <File Include="Finance/Reimburses.aspx">
+      <publishTime>07/03/2019 16:55:32</publishTime>
+    </File>
+    <File Include="Finance/ReimbursesEdit.aspx">
+      <publishTime>06/27/2019 17:38:44</publishTime>
+    </File>
+    <File Include="Finance/ReimbursesNew.aspx">
+      <publishTime>06/27/2019 16:28:27</publishTime>
+    </File>
+    <File Include="Finance/ReimbursesPaid.aspx">
+      <publishTime>06/28/2019 16:38:22</publishTime>
+    </File>
+    <File Include="Finance/ReimbursesPaidList.aspx">
+      <publishTime>06/24/2019 11:29:32</publishTime>
+    </File>
+    <File Include="Finance/ReimbursesPrint.aspx">
+      <publishTime>07/11/2019 11:52:40</publishTime>
+    </File>
+    <File Include="Finance/ReimburseSummaryChart.aspx">
+      <publishTime>06/24/2019 19:07:27</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/20/2018 16:18:03</publishTime>
+    </File>
+    <File Include="js/echarts.js">
+      <publishTime>11/16/2018 16:40:21</publishTime>
+    </File>
+    <File Include="js/jquery-1.8.3.min.js">
+      <publishTime>07/09/2016 15:10:51</publishTime>
+    </File>
+    <File Include="js/LodopFuncs.js">
+      <publishTime>01/23/2019 15:03:21</publishTime>
+    </File>
+    <File Include="js/macarons.js">
+      <publishTime>06/24/2019 17:42:42</publishTime>
+    </File>
+    <File Include="js/walden.js">
+      <publishTime>06/24/2019 17:51:01</publishTime>
+    </File>
+    <File Include="js/webuploader/README.md">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/Uploader.swf">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.css">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.custom.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.custom.min.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.fis.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.flashonly.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.flashonly.min.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.html5only.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.html5only.min.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.min.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.noimage.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.noimage.min.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.nolog.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.nolog.min.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.withoutimage.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="js/webuploader/webuploader.withoutimage.min.js">
+      <publishTime>05/08/2019 14:50:17</publishTime>
+    </File>
+    <File Include="main.aspx">
+      <publishTime>06/05/2019 16:15:55</publishTime>
+    </File>
+    <File Include="MiniProgram/GetOpenId.ashx">
+      <publishTime>04/22/2019 10:26:57</publishTime>
+    </File>
+    <File Include="MiniProgram/UserNameGet.ashx">
+      <publishTime>04/22/2019 14:32:44</publishTime>
+    </File>
+    <File Include="MiniProgram/UserNew.ashx">
+      <publishTime>04/22/2019 14:14:28</publishTime>
+    </File>
+    <File Include="Model/lodopmodel.png">
+      <publishTime>01/24/2019 11:36:00</publishTime>
+    </File>
+    <File Include="Model/mylabel.html">
+      <publishTime>11/21/2018 15:10:15</publishTime>
+    </File>
+    <File Include="Model/OutStock.html">
+      <publishTime>08/25/2018 12:18:39</publishTime>
+    </File>
+    <File Include="Model/pdf.html">
+      <publishTime>08/24/2018 23:20:28</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/15/2018 09:47:49</publishTime>
+    </File>
+    <File Include="register.aspx">
+      <publishTime>05/20/2019 15:06:23</publishTime>
+    </File>
+    <File Include="res/css/main.css">
+      <publishTime>11/21/2018 22:47:09</publishTime>
+    </File>
+    <File Include="res/images/login/log.jpg">
+      <publishTime>05/18/2019 15:38:44</publishTime>
+    </File>
+    <File Include="res/images/login/login_1.png">
+      <publishTime>05/26/2012 21:25:52</publishTime>
+    </File>
+    <File Include="res/images/login/login_2.png">
+      <publishTime>05/26/2012 21:26:32</publishTime>
+    </File>
+    <File Include="res/images/login/login_3.png">
+      <publishTime>05/26/2012 21:28:12</publishTime>
+    </File>
+    <File Include="res/images/login/login_4.png">
+      <publishTime>05/26/2012 21:31:16</publishTime>
+    </File>
+    <File Include="res/images/login/login_6.png">
+      <publishTime>05/26/2012 21:32:36</publishTime>
+    </File>
+    <File Include="res/js/jquery.js">
+      <publishTime>07/02/2014 17:26:02</publishTime>
+    </File>
+    <File Include="res/js/jquery.min.js">
+      <publishTime>07/02/2014 17:26:02</publishTime>
+    </File>
+    <File Include="res/js/main.js">
+      <publishTime>07/19/2014 21:16:54</publishTime>
+    </File>
+    <File Include="res/loading/_1/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:16</publishTime>
+    </File>
+    <File Include="res/loading/_102/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:16</publishTime>
+    </File>
+    <File Include="res/loading/_104/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:16</publishTime>
+    </File>
+    <File Include="res/loading/_109/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:16</publishTime>
+    </File>
+    <File Include="res/loading/_13/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:16</publishTime>
+    </File>
+    <File Include="res/loading/_2/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:14</publishTime>
+    </File>
+    <File Include="res/loading/_21/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:14</publishTime>
+    </File>
+    <File Include="res/loading/_25/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_3/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_31/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_36/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_40/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_43/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_52/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_53/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_54/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_6/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:12</publishTime>
+    </File>
+    <File Include="res/loading/_61/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_62/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_66/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_67/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_68/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_72/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_74/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_75/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_76/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_8/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_92/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_93/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:10</publishTime>
+    </File>
+    <File Include="res/loading/_99/ffffff_444444.gif">
+      <publishTime>10/17/2016 15:22:08</publishTime>
+    </File>
+    <File Include="res/shengshi.json">
+      <publishTime>05/08/2019 09:16:46</publishTime>
+    </File>
+    <File Include="TerManager/ImagePreview.aspx">
+      <publishTime>12/18/2018 15:37:21</publishTime>
+    </File>
+    <File Include="TerManager/InOutStock.aspx">
+      <publishTime>12/14/2018 17:06:43</publishTime>
+    </File>
+    <File Include="TerManager/TerEdit.aspx">
+      <publishTime>12/18/2018 14:30:05</publishTime>
+    </File>
+    <File Include="TerManager/TerList.aspx">
+      <publishTime>01/23/2019 14:57:06</publishTime>
+    </File>
+    <File Include="TerManager/TerNew.aspx">
+      <publishTime>12/17/2018 08:47:30</publishTime>
+    </File>
+    <File Include="watchPanel/List.aspx">
+      <publishTime>09/22/2018 12:50:08</publishTime>
+    </File>
+    <File Include="watchPanel/magNotice.aspx">
+      <publishTime>10/09/2018 22:51:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/21/2019 17:53:50</publishTime>
+    </File>
+    <File Include="WeiXinServer.ashx">
+      <publishTime>12/08/2018 00:57:24</publishTime>
+    </File>
+    <File Include="WeiXinServer.aspx">
+      <publishTime>12/07/2018 21:17:34</publishTime>
+    </File>
+    <File Include="ydcc/GetInfor.aspx">
+      <publishTime>11/20/2018 16:18:01</publishTime>
+    </File>
+    <File Include="ydcc/gettime.ashx">
+      <publishTime>12/19/2018 16:40:51</publishTime>
+    </File>
+    <File Include="ydcc/HtmlPage1.html">
+      <publishTime>08/30/2018 21:15:04</publishTime>
+    </File>
+    <File Include="ydcc/HtmlPage2.html">
+      <publishTime>08/30/2018 21:15:04</publishTime>
+    </File>
+    <File Include="ydcc/IframeChart.aspx">
+      <publishTime>12/19/2018 16:41:06</publishTime>
+    </File>
+    <File Include="ydcc/ImportTable.aspx">
+      <publishTime>09/26/2018 09:56:15</publishTime>
+    </File>
+    <File Include="ydcc/ImportTable_View.aspx">
+      <publishTime>09/26/2018 09:56:15</publishTime>
+    </File>
+    <File Include="ydcc/InOutStock.aspx">
+      <publishTime>12/12/2018 10:56:49</publishTime>
+    </File>
+    <File Include="ydcc/item_new.aspx">
+      <publishTime>08/12/2018 23:56:29</publishTime>
+    </File>
+    <File Include="ydcc/KCDZ.aspx">
+      <publishTime>11/20/2018 16:17:58</publishTime>
+    </File>
+    <File Include="ydcc/LabelPrint.aspx">
+      <publishTime>05/18/2019 16:52:16</publishTime>
+    </File>
+    <File Include="ydcc/LablelPrint.aspx">
+      <publishTime>09/06/2018 22:44:29</publishTime>
+    </File>
+    <File Include="ydcc/magstockitem.aspx">
+      <publishTime>08/27/2018 22:47:49</publishTime>
+    </File>
+    <File Include="ydcc/OutStock.aspx">
+      <publishTime>12/12/2018 10:03:11</publishTime>
+    </File>
+    <File Include="ydcc/pandiansearch.aspx">
+      <publishTime>01/24/2019 15:19:54</publishTime>
+    </File>
+    <File Include="ydcc/Practise.html">
+      <publishTime>12/20/2018 09:01:37</publishTime>
+    </File>
+    <File Include="ydcc/ProductInfor.aspx">
+      <publishTime>09/07/2018 17:22:59</publishTime>
+    </File>
+    <File Include="ydcc/ProjectInfo.aspx">
+      <publishTime>09/10/2018 10:37:51</publishTime>
+    </File>
+    <File Include="ydcc/showpdf.aspx">
+      <publishTime>11/20/2018 16:17:54</publishTime>
+    </File>
+    <File Include="ydcc/stocksearch.aspx">
+      <publishTime>12/18/2018 16:18:47</publishTime>
+    </File>
+    <File Include="ydcc/stocksearch2.aspx">
+      <publishTime>10/22/2018 15:58:59</publishTime>
+    </File>
+    <File Include="ydcc/tongji.aspx">
+      <publishTime>12/18/2018 17:57:57</publishTime>
+    </File>
+    <File Include="ydcc/WarningSet.aspx">
+      <publishTime>12/18/2018 09:59:01</publishTime>
+    </File>
+    <File Include="ydcc/WebForm1.aspx">
+      <publishTime>11/20/2018 16:17:53</publishTime>
+    </File>
+    <File Include="使用说明.txt">
+      <publishTime>11/21/2018 11:53:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

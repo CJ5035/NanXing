@@ -1,0 +1,87 @@
+2022-06-30 15:48:43.5695                
+ [INFO]  : ***接收时间:2022-06-30 15:48:43，消息内容：{"crmID":"62941fab42b30b0001eea37c","pcState":"生产中"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:48:43.5695                
+ [INFO]  : ***接收时间:2022-06-30 15:48:43，消息内容：{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146645376","endTime":"1656146645378","count":3000.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:49:00.7279                
+ [ERROR]  : 生产报工转换失败：_id:crm_ID
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Entity.CRMEntity.CRMAppleNoEntity.Object_DataBase.GetObjectTest[T](T obj) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Entity\CRMEntity\CRMAppleNoEntity\CRMApplyChangeRequest.cs:行号 76                
+  RuntimeMethodHandle.InvokeMethod => Object_DataBase.GetObjectTest => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:49:06.8400                
+ [INFO]  : 修改任务状态成功：6295d5df42b30b0001f263ca--生产中-                
+  CRMReturnWriteThread.<Control>b__8_1 => CRMReturnWriteThread.WriteCRMChangeState => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:49:06.8460                
+ [INFO]  : CRMChangeState队列消息处理成功:
+数据内容:{"crmID":"62941fab42b30b0001eea37c","pcState":"生产中"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:49:07.5093                
+ [WARN]  : 修改任务数量失败：6295d5df42b30b0001f263ca-任务1-03小包装-小袋:                
+  CRMReturnWriteThread.<Control>b__8_2 => CRMReturnWriteThread.WriteCRMProTask => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:49:07.5303                
+ [ERROR]  : CRMProTask队列消息处理失败:
+数据内容:{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146645376","endTime":"1656146645378","count":3000.0,"unit":"件","updateUserID":"001","updateUserName":"001"}
+错误信息:System.Exception: 引发类型为“System.Exception”的异常。
+   在 NanXingService_WMS.Threads.CRMThreads.CRMReturnWriteThread.WriteCRMProTask(CRMProTask proTask) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Threads\CRMThreads\CRMReturnWriteThread.cs:行号 164
+   在 NanXingService_WMS.Threads.CRMThreads.CRMReturnWriteThread.<Control>b__8_2(CRMProTask item) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Threads\CRMThreads\CRMReturnWriteThread.cs:行号 60
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.<>c__DisplayClass12_1`1.<Recevice>b__3(Object model, BasicDeliverEventArgs ea) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 184                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:54:06.3536                
+ [INFO]  : ***接收时间:2022-06-30 15:54:06，消息内容：{"crmID":"62941fab42b30b0001eea37c","pcState":"生产中"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:54:06.3536                
+ [INFO]  : ***接收时间:2022-06-30 15:54:06，消息内容：{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146645376","endTime":"1656146645378","count":3000.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:54:08.5205                
+ [INFO]  : 修改任务状态成功：6295d5df42b30b0001f263ca--生产中-                
+  CRMReturnWriteThread.<Control>b__8_1 => CRMReturnWriteThread.WriteCRMChangeState => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:54:08.5295                
+ [INFO]  : CRMChangeState队列消息处理成功:
+数据内容:{"crmID":"62941fab42b30b0001eea37c","pcState":"生产中"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:59:37.6326                
+ [INFO]  : ***接收时间:2022-06-30 15:59:37，消息内容：{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146645376","endTime":"1656146645378","count":3000.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 16:10:32.4645                
+ [INFO]  : ***接收时间:2022-06-30 16:10:32，消息内容：{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146645376","endTime":"1656146645378","count":3000.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 16:11:23.2125                
+ [INFO]  : 修改任务数量成功：6295d5df42b30b0001f263ca-任务1-03小包装-小袋-3000.0                
+  CRMReturnWriteThread.<Control>b__8_2 => CRMReturnWriteThread.WriteCRMProTask => Logger.Process               
+ ------------------------------------------------
+2022-06-30 16:11:23.2165                
+ [INFO]  : CRMProTask队列消息处理成功:
+数据内容:{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146645376","endTime":"1656146645378","count":3000.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 16:11:23.2215                
+ [INFO]  : ***接收时间:2022-06-30 16:11:23，消息内容：{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146937797","endTime":"1656146937797","count":3100.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 16:11:52.1237                
+ [INFO]  : 修改任务数量成功：6295d5df42b30b0001f263ca-任务1-03小包装-小袋-3100.0                
+  CRMReturnWriteThread.<Control>b__8_2 => CRMReturnWriteThread.WriteCRMProTask => Logger.Process               
+ ------------------------------------------------
+2022-06-30 16:11:52.1247                
+ [INFO]  : CRMProTask队列消息处理成功:
+数据内容:{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656146937797","endTime":"1656146937797","count":3100.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 16:11:52.1408                
+ [INFO]  : ***接收时间:2022-06-30 16:11:52，消息内容：{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656147047302","endTime":"1656147047302","count":3200.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------

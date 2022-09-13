@@ -1,0 +1,16 @@
+         
+时间： 2021-12-20 17:44:35.7549         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-20 17:50:04.3553         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------

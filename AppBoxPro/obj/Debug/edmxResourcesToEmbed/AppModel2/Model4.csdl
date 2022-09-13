@@ -1,0 +1,1224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NanXingGuoRen_SCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AGVAlarmLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="deviceNum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="alarmDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="alarmType" Type="Int32" />
+    <Property Name="areaId" Type="Int32" />
+    <Property Name="alarmReadFlag" Type="Int32" />
+    <Property Name="channelDeviceId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="alarmSource" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="channelName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="alarmDate" Type="DateTime" Precision="3" />
+    <Property Name="recTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="deviceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="alarmGrade" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AGVMissionInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AreaClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SortIndex" Type="Int32" />
+    <Property Name="OrderTime" Type="DateTime" Precision="3" />
+    <Property Name="StockNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EndLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RunState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StateMsg" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SendState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SendMsg" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MissionNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TrayNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StockPlan_ID" Type="Int32" />
+    <Property Name="OrderGroupId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AGVCarId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="userId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MissionFloor_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="BatchNoPro">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prosn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prodate" Type="DateTime" Precision="3" />
+    <Property Name="proname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="itemno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="batchNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="boxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ingredients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remark1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="protype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="probiaozhun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="yuanliaobatchNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="position" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="proweight" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="userID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Configs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ConfigKey" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ConfigValue" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CRMPlanHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CRMApplyNo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ClientNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ClientName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicantId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicantName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicantPhone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicantDept" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicantJob" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ApplyTime" Type="DateTime" Precision="7" />
+    <Property Name="OrderDate" Type="DateTime" Precision="7" />
+    <Property Name="SaleGroup" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="OrderSource" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="4000" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CRMPlanList" Relationship="Self.FK_CRMPlanList_CRMPlanHead_CRMPlanHead_Id" FromRole="CRMPlanHead" ToRole="CRMPlanList" />
+  </EntityType>
+  <EntityType Name="CRMPlanList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CRMApplyNo_Xuhao" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ItemNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ItemName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Spec" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="OrderCount" Type="Int32" Nullable="false" />
+    <Property Name="InventoryCount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="OrderCountONkg" Type="Int32" Nullable="false" />
+    <Property Name="BoxNo" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="BoxName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Biaozhun" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ProductRecipe" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Unit" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ApplyNoState" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyDegree" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Reserve7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CRMPlanHead_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CRMPlanHead" Relationship="Self.FK_CRMPlanList_CRMPlanHead_CRMPlanHead_Id" FromRole="CRMPlanList" ToRole="CRMPlanHead" />
+  </EntityType>
+  <EntityType Name="DEPARTMENT">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="syscode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="principal" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="abstract" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="STAFF" Relationship="Self.FK_STAFF_REFERENCE_DEPARTME" FromRole="DEPARTMENT" ToRole="STAFF" />
+  </EntityType>
+  <EntityType Name="Depts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SortIndex" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ParentID" Type="Int32" />
+    <NavigationProperty Name="Depts1" Relationship="Self.FK_dbo_Depts_dbo_Depts_ParentID" FromRole="Depts" ToRole="Depts1" />
+    <NavigationProperty Name="Depts2" Relationship="Self.FK_dbo_Depts_dbo_Depts_ParentID" FromRole="Depts1" ToRole="Depts" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_dbo_Users_dbo_Depts_DeptID" FromRole="Depts" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="DeviceStatesInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="deviceCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="payLoad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="devicePostionRec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="devicePosition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="battery" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deviceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deviceStatusInt" Type="Int32" />
+    <Property Name="deviceStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="recTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="devicePostionX" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="devicePostionY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FaHuoPlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="danjutype" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="danjuno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="itemno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="itemname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="saleunit" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="salequt" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="outqut" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="boxnum" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="fhdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ItemClassExt">
+    <Key>
+      <PropertyRef Name="Sn" />
+    </Key>
+    <Property Name="Sn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ParentCode" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Category" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve1" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve2" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve3" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve6" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve7" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve8" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve9" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve10" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Logdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MarkLogLevel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LogMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LogAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LogAmount" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NavigateUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SortIndex" Type="Int32" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="ViewPowerID" Type="Int32" />
+    <NavigationProperty Name="Menus1" Relationship="Self.FK_dbo_Menus_dbo_Menus_ParentID" FromRole="Menus" ToRole="Menus1" />
+    <NavigationProperty Name="Menus2" Relationship="Self.FK_dbo_Menus_dbo_Menus_ParentID" FromRole="Menus1" ToRole="Menus" />
+    <NavigationProperty Name="Powers" Relationship="Self.FK_dbo_Menus_dbo_Powers_ViewPowerID" FromRole="Menus" ToRole="Powers" />
+  </EntityType>
+  <EntityType Name="Onlines">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IPAdddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoginTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_dbo_Onlines_dbo_Users_UserID" FromRole="Onlines" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Powers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Menus" Relationship="Self.FK_dbo_Menus_dbo_Powers_ViewPowerID" FromRole="Powers" ToRole="Menus" />
+    <NavigationProperty Name="Roles" Relationship="Self.RolePowers" FromRole="Powers" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="PrdMissionSL">
+    <Key>
+      <PropertyRef Name="SN" />
+    </Key>
+    <Property Name="SN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PrdMissionNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRODate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="WORKGRP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ItemNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ItemName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Spec" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="QCStandard" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Client" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ORDERNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CHECKMAN" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PackMan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="COLOR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LOTNO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="GRADE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WEIGHT" Type="Double" />
+    <Property Name="Quantity" Type="Double" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="Length" Type="Double" />
+    <Property Name="Width" Type="Double" />
+    <Property Name="Thickness" Type="Double" />
+    <Property Name="CASENO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LabelName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BoxLblName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WlStatus" Type="Int16" />
+    <Property Name="IsReturn" Type="Int16" />
+    <Property Name="IsPrint" Type="Int16" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsCancel" Type="Int16" />
+    <Property Name="OPERATOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="InputDate" Type="DateTime" Precision="3" />
+    <Property Name="KaiDan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="KaiDanDate" Type="DateTime" Precision="3" />
+    <Property Name="Auditer" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AuditDate" Type="DateTime" Precision="3" />
+    <Property Name="PiZhun" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PiZhunDate" Type="DateTime" Precision="3" />
+    <Property Name="REMARK" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE1" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE2" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE3" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE4" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE5" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE6" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE7" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE8" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE9" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE10" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE11" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE12" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE13" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE14" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE15" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE16" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE17" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE18" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE19" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE20" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE21" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE22" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE23" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE24" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE25" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE26" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE27" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE28" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE29" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE30" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Production">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prosn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prodate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="proname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="itemno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductOrderlistsID" Type="Int32" Nullable="false" />
+    <Property Name="class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="batchNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="boxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ingredients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remark1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="protype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="probiaozhun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="yuanliaobatchNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="position" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="danjuhao" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="zhuanhuandan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="fahuodan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="danjianwt" Type="Double" />
+    <NavigationProperty Name="ProductOrderlists" Relationship="Self.FK_ProductOrderlistsProduction" FromRole="Production" ToRole="ProductOrderlists" />
+  </EntityType>
+  <EntityType Name="Productiondt">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProSn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRODate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="WORKGRP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PrdMissionNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ItemNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ItemName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Spec" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="QCStandard" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Client" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ORDERNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CHECKMAN" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PackMan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="COLOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LOTNO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="GRADE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WEIGHT" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="CASENO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="WlStatus" Type="Int16" />
+    <Property Name="IsReturn" Type="Int16" />
+    <Property Name="IsPrint" Type="Int16" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsCancel" Type="Int16" />
+    <Property Name="OPERATOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE1" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE2" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE3" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE4" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE5" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE6" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE7" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE8" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE9" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESERVE10" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="InputDate" Type="DateTime" Precision="3" />
+    <Property Name="PrdDtlSn" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ProductOrderheaders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductOrderNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Optdate" Type="DateTime" Precision="3" />
+    <Property Name="PositionClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="orderNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="mergeCells" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="mergeCellsValue" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProductOrderlists" Relationship="Self.FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID" FromRole="ProductOrderheaders" ToRole="ProductOrderlists" />
+  </EntityType>
+  <EntityType Name="ProductOrderlists">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductOrder_XuHao" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ItemNo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="InName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaterialItem" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Color" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Class" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Unit" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PcCount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Optdate" Type="DateTime" Precision="3" />
+    <Property Name="PlanDate" Type="DateTime" Precision="3" />
+    <Property Name="Jingbanren" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Clientname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductOrderheader_ID" Type="Int32" />
+    <Property Name="BatchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BoxNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="BoxName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Chejianclass" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ERPOrderNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ProductOrder_State" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Production" Relationship="Self.FK_ProductOrderlistsProduction" FromRole="ProductOrderlists" ToRole="Production" />
+    <NavigationProperty Name="ProductOrderheaders" Relationship="Self.FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID" FromRole="ProductOrderlists" ToRole="ProductOrderheaders" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Powers" Relationship="Self.RolePowers" FromRole="Roles" ToRole="Powers" />
+    <NavigationProperty Name="Users" Relationship="Self.RoleUsers" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="SensorStorey2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RefleshTime" Type="DateTime" Precision="3" />
+    <Property Name="Ammeter1" Type="Double" />
+    <Property Name="Ammeter2" Type="Double" />
+    <Property Name="Ammeter3" Type="Double" />
+    <Property Name="Humidity" Type="Double" />
+    <Property Name="Temperature" Type="Double" />
+    <Property Name="Noise" Type="Double" />
+    <Property Name="ToxicGas" Type="Double" />
+    <Property Name="Thermostat1" Type="Double" />
+    <Property Name="Thermostat2" Type="Double" />
+    <Property Name="Thermostat3" Type="Double" />
+    <Property Name="Thermostat4" Type="Double" />
+    <Property Name="Thermostat5" Type="Double" />
+    <Property Name="Thermostat6" Type="Double" />
+  </EntityType>
+  <EntityType Name="SensorStorey3">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RefleshTime" Type="DateTime" Precision="3" />
+    <Property Name="Ammeter1" Type="Double" />
+    <Property Name="Ammeter2" Type="Double" />
+    <Property Name="Ammeter3" Type="Double" />
+    <Property Name="Humidity" Type="Double" />
+    <Property Name="Temperature" Type="Double" />
+    <Property Name="Noise" Type="Double" />
+    <Property Name="ToxicGas" Type="Double" />
+    <Property Name="Thermostat1" Type="Double" />
+    <Property Name="Thermostat2" Type="Double" />
+    <Property Name="Thermostat3" Type="Double" />
+    <Property Name="Thermostat4" Type="Double" />
+    <Property Name="Thermostat5" Type="Double" />
+    <Property Name="Thermostat6" Type="Double" />
+    <Property Name="DieselOilFlow" Type="Double" />
+  </EntityType>
+  <EntityType Name="SERIALNO">
+    <Key>
+      <PropertyRef Name="SERIALNAME" />
+    </Key>
+    <Property Name="SERIALNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SERIALNO1" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STAFF">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sex" Type="Int32" Nullable="false" />
+    <Property Name="idcard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="edured" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="telephone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="indate" Type="DateTime" Precision="3" />
+    <Property Name="demdate" Type="DateTime" Precision="3" />
+    <Property Name="posstate" Type="Int32" />
+    <Property Name="department" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="authorgrp" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="workcls" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="bank" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="account" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="timepay" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="basepay" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="abstract" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DEPARTMENT1" Relationship="Self.FK_STAFF_REFERENCE_DEPARTME" FromRole="STAFF" ToRole="DEPARTMENT" />
+  </EntityType>
+  <EntityType Name="StockPlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlanNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="batchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="probiaozhun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="count" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="plantime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="planUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="states" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mark" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="position" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYSPARM">
+    <Key>
+      <PropertyRef Name="paraitem" />
+    </Key>
+    <Property Name="paraitem" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="paravalue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ItemCls" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Reserve4" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TelenClients">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="levelCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="serverTime" Type="DateTime" Precision="3" />
+    <Property Name="condiction" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="bank" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Eamil" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="clientManager" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="implementer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="gendan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="nickname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="openid" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Titles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.TitleUsers" FromRole="Titles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="TouLiaoRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecTime" Type="DateTime" Precision="3" />
+    <Property Name="prosn" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="userID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrayPro">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="optdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TrayStateID" Type="Int32" Nullable="false" />
+    <Property Name="prosn" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TrayState" Relationship="Self.FK_TrayStateTrayPro" FromRole="TrayPro" ToRole="TrayState" />
+  </EntityType>
+  <EntityType Name="TrayState">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrayNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="optdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="OnlineCount" Type="Int32" Nullable="false" />
+    <Property Name="WareLocation_ID" Type="Int32" />
+    <Property Name="trayHeight" Type="Decimal" Precision="8" Scale="2" />
+    <NavigationProperty Name="TrayPro" Relationship="Self.FK_TrayStateTrayPro" FromRole="TrayState" ToRole="TrayPro" />
+    <NavigationProperty Name="WareLocation" Relationship="Self.FK_TRAYSTAT_REFERENCE_WARELOCA" FromRole="TrayState" ToRole="WareLocation" />
+  </EntityType>
+  <EntityType Name="TrayWeightRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="position" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="RecTime" Type="DateTime" Precision="3" />
+    <Property Name="trayWeight" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="trayCount" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="prosn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="userID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="result" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="itemno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="batchNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="proname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="biaozhun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Enabled" Type="Boolean" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ChineseName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EnglishName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="QQ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OfficePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OfficePhoneExt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HomePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CellPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IdentityCard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Birthday" Type="DateTime" Precision="3" />
+    <Property Name="TakeOfficeTime" Type="DateTime" Precision="3" />
+    <Property Name="LastLoginTime" Type="DateTime" Precision="3" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+    <Property Name="DeptID" Type="Int32" />
+    <NavigationProperty Name="Depts" Relationship="Self.FK_dbo_Users_dbo_Depts_DeptID" FromRole="Users" ToRole="Depts" />
+    <NavigationProperty Name="Onlines" Relationship="Self.FK_dbo_Onlines_dbo_Users_UserID" FromRole="Users" ToRole="Onlines" />
+    <NavigationProperty Name="WareLocation" Relationship="Self.FK_WARELOCA_REFERENCE_USERS" FromRole="Users" ToRole="WareLocation" />
+    <NavigationProperty Name="Roles" Relationship="Self.RoleUsers" FromRole="Users" ToRole="Roles" />
+    <NavigationProperty Name="Titles" Relationship="Self.TitleUsers" FromRole="Users" ToRole="Titles" />
+  </EntityType>
+  <EntityType Name="WareArea">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WareNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="War_ID" Type="Int32" />
+    <Property Name="WareHouse_ID" Type="Int32" />
+    <Property Name="WareAreaState" Type="Boolean" />
+    <Property Name="InstockRule" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="protype" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="InstockWay" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WareAreaClass" Relationship="Self.FK_WAREAREA_REFERENCE_WAREAREA" FromRole="WareArea" ToRole="WareAreaClass" />
+    <NavigationProperty Name="WareHouse" Relationship="Self.FK_WAREAREA_REFERENCE_WAREHOUS" FromRole="WareArea" ToRole="WareHouse" />
+    <NavigationProperty Name="WareLocation" Relationship="Self.FK_WARELOCA_REFERENCE_WAREAREA" FromRole="WareArea" ToRole="WareLocation" />
+  </EntityType>
+  <EntityType Name="WareAreaClass">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AreaClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SortIndex" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WareArea" Relationship="Self.FK_WAREAREA_REFERENCE_WAREAREA" FromRole="WareAreaClass" ToRole="WareArea" />
+  </EntityType>
+  <EntityType Name="WareHouse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WHName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WHPosition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WHState" Type="Boolean" />
+    <Property Name="Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WareArea" Relationship="Self.FK_WAREAREA_REFERENCE_WAREHOUS" FromRole="WareHouse" ToRole="WareArea" />
+  </EntityType>
+  <EntityType Name="WareLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WareLocaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WareArea_ID" Type="Int32" />
+    <Property Name="header_ID" Type="Int32" />
+    <Property Name="WareLocaState" Type="Boolean" />
+    <Property Name="AGVPosition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WareLocaNo_Long" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TrayState" Relationship="Self.FK_TRAYSTAT_REFERENCE_WARELOCA" FromRole="WareLocation" ToRole="TrayState" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_WARELOCA_REFERENCE_USERS" FromRole="WareLocation" ToRole="Users" />
+    <NavigationProperty Name="WareArea" Relationship="Self.FK_WARELOCA_REFERENCE_WAREAREA" FromRole="WareLocation" ToRole="WareArea" />
+  </EntityType>
+  <EntityType Name="WeiXinSetting">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="key" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="value" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="expiraiton_time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="energycon">
+    <Key>
+      <PropertyRef Name="Sn" />
+    </Key>
+    <Property Name="Sn" Type="Int32" Nullable="false" />
+    <Property Name="EquName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ReadDate" Type="DateTime" Precision="3" />
+    <Property Name="CurKwh" Type="Decimal" Precision="14" Scale="4" />
+    <Property Name="PhaseKwh" Type="Decimal" Precision="14" Scale="4" />
+    <Property Name="Remark" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pbcatedt">
+    <Key>
+      <PropertyRef Name="pbe_name" />
+      <PropertyRef Name="pbe_type" />
+      <PropertyRef Name="pbe_seqn" />
+    </Key>
+    <Property Name="pbe_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pbe_edit" Type="String" MaxLength="254" FixedLength="false" Unicode="false" />
+    <Property Name="pbe_type" Type="Int16" Nullable="false" />
+    <Property Name="pbe_cntr" Type="Int32" />
+    <Property Name="pbe_seqn" Type="Int16" Nullable="false" />
+    <Property Name="pbe_flag" Type="Int32" />
+    <Property Name="pbe_work" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pbcatfmt">
+    <Key>
+      <PropertyRef Name="pbf_name" />
+      <PropertyRef Name="pbf_frmt" />
+      <PropertyRef Name="pbf_type" />
+    </Key>
+    <Property Name="pbf_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pbf_frmt" Type="String" MaxLength="254" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pbf_type" Type="Int16" Nullable="false" />
+    <Property Name="pbf_cntr" Type="Int32" />
+  </EntityType>
+  <EntityType Name="pbcatvld">
+    <Key>
+      <PropertyRef Name="pbv_name" />
+      <PropertyRef Name="pbv_vald" />
+      <PropertyRef Name="pbv_type" />
+    </Key>
+    <Property Name="pbv_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pbv_vald" Type="String" MaxLength="254" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pbv_type" Type="Int16" Nullable="false" />
+    <Property Name="pbv_cntr" Type="Int32" />
+    <Property Name="pbv_msg" Type="String" MaxLength="254" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pchao">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lotno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="oper" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="flag" Type="Int32" />
+  </EntityType>
+  <EntityType Name="probarlist1">
+    <Key>
+      <PropertyRef Name="Sn" />
+    </Key>
+    <Property Name="Sn" Type="Int32" Nullable="false" />
+    <Property Name="zhuanhuandan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="bumen" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="riqi" Type="DateTime" Precision="3" />
+    <Property Name="workshop" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="itemno" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="itemname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="lotno" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="makedate" Type="DateTime" Precision="3" />
+    <Property Name="paichandan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fahuodanhao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="probar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="danjianwt" Type="Double" />
+  </EntityType>
+  <EntityType Name="ProductionBAk1215">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="prosn" />
+      <PropertyRef Name="prodate" />
+      <PropertyRef Name="proname" />
+      <PropertyRef Name="itemno" />
+      <PropertyRef Name="ProductOrderlistsID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prosn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prodate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="proname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="itemno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductOrderlistsID" Type="Int32" Nullable="false" />
+    <Property Name="class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="batchNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="boxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ingredients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remark1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="protype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="probiaozhun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="yuanliaobatchNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="position" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="danjuhao" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductOrderlistsbak1215">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="itemno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="inName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="priceOut" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="count" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="mark" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="optdate" Type="DateTime" Precision="3" />
+    <Property Name="jingbanren" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="remark1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="providername" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="clientname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductOrderheader_ID" Type="Int32" />
+    <Property Name="length" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="width" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="high" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="batchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ingredients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chejianclass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ERPOrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PlanDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="zhuanhuandan">
+    <Key>
+      <PropertyRef Name="Sn" />
+    </Key>
+    <Property Name="Sn" Type="Int32" Nullable="false" />
+    <Property Name="danjuhao" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="bumen" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="riqi" Type="DateTime" Precision="3" />
+    <Property Name="workshop" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="itemno" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="itemname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="rkquantity" Type="Double" />
+    <Property Name="lotno" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="makedate" Type="DateTime" Precision="3" />
+    <Property Name="boxnun" Type="Double" />
+    <Property Name="paichandan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fahuodanhao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fahuoqut" Type="Int32" />
+    <Property Name="danjianwt" Type="Double" />
+  </EntityType>
+  <Association Name="FK_CRMPlanList_CRMPlanHead_CRMPlanHead_Id">
+    <End Role="CRMPlanHead" Type="Self.CRMPlanHead" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CRMPlanList" Type="Self.CRMPlanList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CRMPlanHead">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CRMPlanList">
+        <PropertyRef Name="CRMPlanHead_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_STAFF_REFERENCE_DEPARTME">
+    <End Role="DEPARTMENT" Type="Self.DEPARTMENT" Multiplicity="1" />
+    <End Role="STAFF" Type="Self.STAFF" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTMENT">
+        <PropertyRef Name="code" />
+      </Principal>
+      <Dependent Role="STAFF">
+        <PropertyRef Name="department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Depts_dbo_Depts_ParentID">
+    <End Role="Depts" Type="Self.Depts" Multiplicity="0..1" />
+    <End Role="Depts1" Type="Self.Depts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Depts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Depts1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Users_dbo_Depts_DeptID">
+    <End Role="Depts" Type="Self.Depts" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Depts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Menus_dbo_Menus_ParentID">
+    <End Role="Menus" Type="Self.Menus" Multiplicity="0..1" />
+    <End Role="Menus1" Type="Self.Menus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Menus1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Menus_dbo_Powers_ViewPowerID">
+    <End Role="Powers" Type="Self.Powers" Multiplicity="0..1" />
+    <End Role="Menus" Type="Self.Menus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Powers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Menus">
+        <PropertyRef Name="ViewPowerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Onlines_dbo_Users_UserID">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Onlines" Type="Self.Onlines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Onlines">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrderlistsProduction">
+    <End Role="ProductOrderlists" Type="Self.ProductOrderlists" Multiplicity="1" />
+    <End Role="Production" Type="Self.Production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductOrderlists">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Production">
+        <PropertyRef Name="ProductOrderlistsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID">
+    <End Role="ProductOrderheaders" Type="Self.ProductOrderheaders" Multiplicity="0..1" />
+    <End Role="ProductOrderlists" Type="Self.ProductOrderlists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductOrderheaders">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductOrderlists">
+        <PropertyRef Name="ProductOrderheader_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrayStateTrayPro">
+    <End Role="TrayState" Type="Self.TrayState" Multiplicity="1" />
+    <End Role="TrayPro" Type="Self.TrayPro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrayState">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TrayPro">
+        <PropertyRef Name="TrayStateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRAYSTAT_REFERENCE_WARELOCA">
+    <End Role="WareLocation" Type="Self.WareLocation" Multiplicity="0..1" />
+    <End Role="TrayState" Type="Self.TrayState" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WareLocation">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TrayState">
+        <PropertyRef Name="WareLocation_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WARELOCA_REFERENCE_USERS">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="WareLocation" Type="Self.WareLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WareLocation">
+        <PropertyRef Name="header_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WAREAREA_REFERENCE_WAREAREA">
+    <End Role="WareAreaClass" Type="Self.WareAreaClass" Multiplicity="0..1" />
+    <End Role="WareArea" Type="Self.WareArea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WareAreaClass">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WareArea">
+        <PropertyRef Name="War_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WAREAREA_REFERENCE_WAREHOUS">
+    <End Role="WareHouse" Type="Self.WareHouse" Multiplicity="0..1" />
+    <End Role="WareArea" Type="Self.WareArea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WareHouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WareArea">
+        <PropertyRef Name="WareHouse_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WARELOCA_REFERENCE_WAREAREA">
+    <End Role="WareArea" Type="Self.WareArea" Multiplicity="0..1" />
+    <End Role="WareLocation" Type="Self.WareLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WareArea">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WareLocation">
+        <PropertyRef Name="WareArea_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RolePowers">
+    <End Role="Powers" Type="Self.Powers" Multiplicity="*" />
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+  </Association>
+  <Association Name="RoleUsers">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+  </Association>
+  <Association Name="TitleUsers">
+    <End Role="Titles" Type="Self.Titles" Multiplicity="*" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="NanXingGuoRen_SCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AGVAlarmLog" EntityType="Self.AGVAlarmLog" />
+    <EntitySet Name="AGVMissionInfo" EntityType="Self.AGVMissionInfo" />
+    <EntitySet Name="BatchNoPro" EntityType="Self.BatchNoPro" />
+    <EntitySet Name="Configs" EntityType="Self.Configs" />
+    <EntitySet Name="CRMPlanHead" EntityType="Self.CRMPlanHead" />
+    <EntitySet Name="CRMPlanList" EntityType="Self.CRMPlanList" />
+    <EntitySet Name="DEPARTMENT" EntityType="Self.DEPARTMENT" />
+    <EntitySet Name="Depts" EntityType="Self.Depts" />
+    <EntitySet Name="DeviceStatesInfo" EntityType="Self.DeviceStatesInfo" />
+    <EntitySet Name="FaHuoPlan" EntityType="Self.FaHuoPlan" />
+    <EntitySet Name="ItemClassExt" EntityType="Self.ItemClassExt" />
+    <EntitySet Name="Log" EntityType="Self.Log" />
+    <EntitySet Name="Menus" EntityType="Self.Menus" />
+    <EntitySet Name="Onlines" EntityType="Self.Onlines" />
+    <EntitySet Name="Powers" EntityType="Self.Powers" />
+    <EntitySet Name="PrdMissionSL" EntityType="Self.PrdMissionSL" />
+    <EntitySet Name="Production" EntityType="Self.Production" />
+    <EntitySet Name="Productiondt" EntityType="Self.Productiondt" />
+    <EntitySet Name="ProductOrderheaders" EntityType="Self.ProductOrderheaders" />
+    <EntitySet Name="ProductOrderlists" EntityType="Self.ProductOrderlists" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="SensorStorey2" EntityType="Self.SensorStorey2" />
+    <EntitySet Name="SensorStorey3" EntityType="Self.SensorStorey3" />
+    <EntitySet Name="SERIALNO" EntityType="Self.SERIALNO" />
+    <EntitySet Name="STAFF" EntityType="Self.STAFF" />
+    <EntitySet Name="StockPlan" EntityType="Self.StockPlan" />
+    <EntitySet Name="SYSPARM" EntityType="Self.SYSPARM" />
+    <EntitySet Name="TelenClients" EntityType="Self.TelenClients" />
+    <EntitySet Name="Titles" EntityType="Self.Titles" />
+    <EntitySet Name="TouLiaoRecord" EntityType="Self.TouLiaoRecord" />
+    <EntitySet Name="TrayPro" EntityType="Self.TrayPro" />
+    <EntitySet Name="TrayState" EntityType="Self.TrayState" />
+    <EntitySet Name="TrayWeightRecord" EntityType="Self.TrayWeightRecord" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="WareArea" EntityType="Self.WareArea" />
+    <EntitySet Name="WareAreaClass" EntityType="Self.WareAreaClass" />
+    <EntitySet Name="WareHouse" EntityType="Self.WareHouse" />
+    <EntitySet Name="WareLocation" EntityType="Self.WareLocation" />
+    <EntitySet Name="WeiXinSetting" EntityType="Self.WeiXinSetting" />
+    <EntitySet Name="energycon" EntityType="Self.energycon" />
+    <EntitySet Name="pbcatedt" EntityType="Self.pbcatedt" />
+    <EntitySet Name="pbcatfmt" EntityType="Self.pbcatfmt" />
+    <EntitySet Name="pbcatvld" EntityType="Self.pbcatvld" />
+    <EntitySet Name="pchao" EntityType="Self.pchao" />
+    <EntitySet Name="probarlist1" EntityType="Self.probarlist1" />
+    <EntitySet Name="ProductionBAk1215" EntityType="Self.ProductionBAk1215" />
+    <EntitySet Name="ProductOrderlistsbak1215" EntityType="Self.ProductOrderlistsbak1215" />
+    <EntitySet Name="zhuanhuandan" EntityType="Self.zhuanhuandan" />
+    <AssociationSet Name="FK_CRMPlanList_CRMPlanHead_CRMPlanHead_Id" Association="Self.FK_CRMPlanList_CRMPlanHead_CRMPlanHead_Id">
+      <End Role="CRMPlanHead" EntitySet="CRMPlanHead" />
+      <End Role="CRMPlanList" EntitySet="CRMPlanList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_STAFF_REFERENCE_DEPARTME" Association="Self.FK_STAFF_REFERENCE_DEPARTME">
+      <End Role="DEPARTMENT" EntitySet="DEPARTMENT" />
+      <End Role="STAFF" EntitySet="STAFF" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Depts_dbo_Depts_ParentID" Association="Self.FK_dbo_Depts_dbo_Depts_ParentID">
+      <End Role="Depts" EntitySet="Depts" />
+      <End Role="Depts1" EntitySet="Depts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Users_dbo_Depts_DeptID" Association="Self.FK_dbo_Users_dbo_Depts_DeptID">
+      <End Role="Depts" EntitySet="Depts" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Menus_dbo_Menus_ParentID" Association="Self.FK_dbo_Menus_dbo_Menus_ParentID">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="Menus1" EntitySet="Menus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Menus_dbo_Powers_ViewPowerID" Association="Self.FK_dbo_Menus_dbo_Powers_ViewPowerID">
+      <End Role="Powers" EntitySet="Powers" />
+      <End Role="Menus" EntitySet="Menus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Onlines_dbo_Users_UserID" Association="Self.FK_dbo_Onlines_dbo_Users_UserID">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Onlines" EntitySet="Onlines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrderlistsProduction" Association="Self.FK_ProductOrderlistsProduction">
+      <End Role="ProductOrderlists" EntitySet="ProductOrderlists" />
+      <End Role="Production" EntitySet="Production" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID" Association="Self.FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID">
+      <End Role="ProductOrderheaders" EntitySet="ProductOrderheaders" />
+      <End Role="ProductOrderlists" EntitySet="ProductOrderlists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrayStateTrayPro" Association="Self.FK_TrayStateTrayPro">
+      <End Role="TrayState" EntitySet="TrayState" />
+      <End Role="TrayPro" EntitySet="TrayPro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRAYSTAT_REFERENCE_WARELOCA" Association="Self.FK_TRAYSTAT_REFERENCE_WARELOCA">
+      <End Role="WareLocation" EntitySet="WareLocation" />
+      <End Role="TrayState" EntitySet="TrayState" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WARELOCA_REFERENCE_USERS" Association="Self.FK_WARELOCA_REFERENCE_USERS">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="WareLocation" EntitySet="WareLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WAREAREA_REFERENCE_WAREAREA" Association="Self.FK_WAREAREA_REFERENCE_WAREAREA">
+      <End Role="WareAreaClass" EntitySet="WareAreaClass" />
+      <End Role="WareArea" EntitySet="WareArea" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WAREAREA_REFERENCE_WAREHOUS" Association="Self.FK_WAREAREA_REFERENCE_WAREHOUS">
+      <End Role="WareHouse" EntitySet="WareHouse" />
+      <End Role="WareArea" EntitySet="WareArea" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WARELOCA_REFERENCE_WAREAREA" Association="Self.FK_WARELOCA_REFERENCE_WAREAREA">
+      <End Role="WareArea" EntitySet="WareArea" />
+      <End Role="WareLocation" EntitySet="WareLocation" />
+    </AssociationSet>
+    <AssociationSet Name="RolePowers" Association="Self.RolePowers">
+      <End Role="Powers" EntitySet="Powers" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="RoleUsers" Association="Self.RoleUsers">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="TitleUsers" Association="Self.TitleUsers">
+      <End Role="Titles" EntitySet="Titles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

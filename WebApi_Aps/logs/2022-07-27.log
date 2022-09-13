@@ -1,0 +1,100 @@
+2022-07-27 13:53:46.9774                
+ [INFO]  : 转换用时：0.1587964                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:53:47.1943                
+ [INFO]  : 线程ID:10                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:53:47.2395                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingData_WMS.DaoUtils.DbBase`1.InsertOrUpdate(T entity) 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 1171
+   在 NanXingService_WMS.Managers.CRMPlanManager.<AddOrUpdateCRMApply>d__12.MoveNext() 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 270                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:05.1672                
+ [INFO]  : 转换用时：6.7293531                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:05.3125                
+ [INFO]  : 线程ID:10                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:05.3276                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingData_WMS.DaoUtils.DbBase`1.InsertOrUpdate(T entity) 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 1171
+   在 NanXingService_WMS.Managers.CRMPlanManager.<AddOrUpdateCRMApply>d__12.MoveNext() 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 270                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:35.3542                
+ [INFO]  : 转换用时：3.4818882                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:35.5462                
+ [INFO]  : 线程ID:9                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:35.7093                
+ [INFO]  : header_ID:463;CRMApplyNo:C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:35.8948                
+ [INFO]  : 接收CRM订单数据：C220726053;事务用时：0.3484433                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 13:54:35.8954                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:20:19.8456                
+ [INFO]  : 转换用时：0.1636644                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:20:20.0000                
+ [INFO]  : 线程ID:6                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:20:20.1257                
+ [INFO]  : header_ID:463;CRMApplyNo:C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:20:20.2216                
+ [INFO]  : 接收CRM订单数据：C220726053;事务用时：0.221535                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:20:20.2216                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:30:22.8767                
+ [INFO]  : 线程ID:6                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:30:36.4224                
+ [INFO]  : header_ID:463;CRMApplyNo:C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:31:40.0146                
+ [INFO]  : 接收CRM订单数据：C220726053;事务用时：76.8484876                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:31:40.0146                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:32:16.7181                
+ [INFO]  : 线程ID:9                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:32:16.7412                
+ [INFO]  : header_ID:463;CRMApplyNo:C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:32:16.8056                
+ [INFO]  : 接收CRM订单数据：C220726053;事务用时：0.0875572                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-27 16:32:16.8056                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------

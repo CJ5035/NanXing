@@ -1,0 +1,37 @@
+2022-05-20 16:24:44.4149                
+ [DEBUG]  : ID：
+7                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:27:56.4571                
+ [DEBUG]  : ID：8:S20220520007                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:29:15.9997                
+ [DEBUG]  : ID：9:S20220520008                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:30:56.8484                
+ [DEBUG]  : ID：10:S20220520009                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:33:53.6566                
+ [DEBUG]  : ID：11:S20220520010                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:34:18.7611                
+ [DEBUG]  : ID：12:S20220520011                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:44:10.8050                
+ [DEBUG]  : ID：13:S20220520012                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:47:27.6776                
+ [DEBUG]  : ID：14:S20220520013                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-20 16:47:53.3401                
+ [DEBUG]  : ID：15:S20220520014                
+  PlanToPro.btnAddPrintOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------

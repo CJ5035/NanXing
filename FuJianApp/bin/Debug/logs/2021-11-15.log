@@ -1,0 +1,20 @@
+2021-11-15 14:03:37.0663                
+ [WARN]  : 没有空列入库                
+  SC_WMSThread..ctor => InStockHelper.In => Logger.Process               
+ ------------------------------------------------
+2021-11-15 14:04:43.7575                
+ [WARN]  : 没有空列入库                
+  SC_WMSThread..ctor => InStockHelper.In => Logger.Process               
+ ------------------------------------------------
+2021-11-15 14:21:26.4589                
+ [WARN]  : 没有空列入库                
+  SC_WMSThread..ctor => InStockHelper.In => Logger.Process               
+ ------------------------------------------------
+2021-11-15 15:18:49.9530                
+ [WARN]  : 没有空列入库                
+  SC_WMSThread..ctor => InStockHelper.In => Logger.Process               
+ ------------------------------------------------
+2021-11-15 15:26:15.1480                
+ [WARN]  : 没有空列入库                
+  SC_WMSThread..ctor => InStockHelper.In => Logger.Process               
+ ------------------------------------------------

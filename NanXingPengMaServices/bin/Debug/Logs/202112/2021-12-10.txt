@@ -1,0 +1,216 @@
+         
+时间： 2021-12-10 15:37:46.8695         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/10 15:37:46
+Application UnhandledException:更新条目时出错。有关详细信息，请参阅内部异常。;
+堆栈信息:   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ParseMsg(String msg)
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ReceiveTcpMsg(String strMsg)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.ReceiveCallback(IAsyncResult ar)
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)         
+堆栈：  InternalContext.SaveChanges => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 15:44:56.4605         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息： System.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.SendMsg(String msg)         
+堆栈：  TiShengJiHelper.WriteToTcp => SocketClientManager.SendMsg => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 16:12:10.8104         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息： System.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.SendMsg(String msg) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\TCP\ClientBySocket.cs:行号 364         
+堆栈：  TiShengJiHelper.WriteToTcp => SocketClientManager.SendMsg => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 17:54:07.1692         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/10 17:54:06
+Application UnhandledException:基础提供程序在 Open 上失败。;
+堆栈信息:   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 NanXingPengMaServices.Utils.AGVMissionThread..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\AGVMissionThread.cs:行号 20
+   在 NanXingPengMaServices.Form1..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Form1.cs:行号 35
+   在 NanXingPengMaServices.Program.Main() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Program.cs:行号 27         
+堆栈：  DefaultSqlExecutionStrategy.Execute => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 17:56:33.7596         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/10 17:56:33
+Application UnhandledException:基础提供程序在 Open 上失败。;
+堆栈信息:   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 NanXingPengMaServices.Utils.AGVMissionThread..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\AGVMissionThread.cs:行号 20
+   在 NanXingPengMaServices.Form1..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Form1.cs:行号 35
+   在 NanXingPengMaServices.Program.Main() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Program.cs:行号 27         
+堆栈：  DefaultSqlExecutionStrategy.Execute => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 19:47:19.3594         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/10 19:47:19
+Application UnhandledException:基础提供程序在 Open 上失败。;
+堆栈信息:   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ParseMsg(String msg)
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ReceiveTcpMsg(String strMsg)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.ReceiveCallback(IAsyncResult ar)
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)         
+堆栈：  DefaultSqlExecutionStrategy.Execute => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 20:20:33.3890         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/10 20:20:33
+Application UnhandledException:在提供程序连接上启动事务时出错。有关详细信息，请参阅内部异常。;
+堆栈信息:   在 System.Data.Entity.Core.EntityClient.EntityConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.BeginTransaction()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ParseMsg(String msg)
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ReceiveTcpMsg(String strMsg)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.ReceiveCallback(IAsyncResult ar)
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)         
+堆栈：  DefaultSqlExecutionStrategy.Execute => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 20:21:11.5439         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/10 20:21:11
+Application UnhandledException:基础提供程序在 Open 上失败。;
+堆栈信息:   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ParseMsg(String msg)
+   在 NanXingPengMaServices.Utils.TiShengJiHelper.ReceiveTcpMsg(String strMsg)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.ReceiveCallback(IAsyncResult ar)
+   在 System.Net.LazyAsyncResult.Complete(IntPtr userToken)
+   在 System.Net.ContextAwareResult.CompleteCallback(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.ContextAwareResult.Complete(IntPtr userToken)
+   在 System.Net.LazyAsyncResult.ProtectedInvokeCallback(Object result, IntPtr userToken)
+   在 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)         
+堆栈：  DefaultSqlExecutionStrategy.Execute => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 22:40:31.6885         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息： System.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.SendMsg(String msg) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\TCP\ClientBySocket.cs:行号 364         
+堆栈：  TiShengJiHelper.WriteToTcp => SocketClientManager.SendMsg => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-10 22:46:24.9745         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息： System.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer)
+   在 NanXingPengMaServices.Utils.TCP.SocketClientManager.SendMsg(String msg) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\TCP\ClientBySocket.cs:行号 364         
+堆栈：  TiShengJiHelper.WriteToTcp => SocketClientManager.SendMsg => Logger.Process         
+
+-----------------------------------------------------------

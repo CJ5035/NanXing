@@ -1,0 +1,70 @@
+USE [NanXingGuoRen_WMS]
+GO
+/****** Object:  StoredProcedure [dbo].[GetSeq]    Script Date: 09/14/2021 18:40:14 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+create  PROC [dbo].[GetSeq_2]
+@MaintainCate VARCHAR(4)
+
+AS
+--***********************ÀÛ¼Ó±àºÅ*************************************************
+DECLARE @MaintainNo VARCHAR(16) 
+IF NOT EXISTS(SELECT 
+            *
+        FROM
+            NumSeq
+        WHERE
+            Cate=@MaintainCate AND DATEDIFF(DAY,CrTime,GETDATE())=0)
+    BEGIN
+        INSERT INTO 
+            NumSeq(Cate,DateNo,Seq)
+        values(@MaintainCate,RIGHT(CONVERT(VARCHAR(4),YEAR(GETDATE())),4)+
+                REPLICATE('0',2-LEN(MONTH(GETDATE())))+CONVERT(VARCHAR(2),MONTH(GETDATE()))+
+                REPLICATE('0',2-LEN(day(GETDATE())))+CONVERT(VARCHAR(2),day(GETDATE())),1)
+
+    END
+ELSE
+    BEGIN
+        UPDATE
+            NumSeq
+        SET 
+            Seq=Seq+1
+        WHERE
+            Cate=@MaintainCate AND DateNo=RIGHT(CONVERT(VARCHAR(4),YEAR(GETDATE())),4)+
+                       REPLICATE('0',2-LEN(MONTH(GETDATE())))+CONVERT(VARCHAR(2),MONTH(GETDATE()))+
+                       REPLICATE('0',2-LEN(day(GETDATE())))+CONVERT(VARCHAR(2),day(GETDATE()))
+    END
+
+--************************×éºÏ±àºÅ***************************************************************
+SELECT 
+    @MaintainNo=DateNo+REPLICATE('0',7-LEN(Seq))+CONVERT(VARCHAR(7),Seq)
+FROM
+    NumSeq
+WHERE
+    Cate=@MaintainCate AND DateNo=RIGHT(CONVERT(VARCHAR(4),YEAR(GETDATE())),4)+
+                      REPLICATE('0',2-LEN(MONTH(GETDATE())))+CONVERT(VARCHAR(2),MONTH(GETDATE()))+
+                      REPLICATE('0',2-LEN(day(GETDATE())))+CONVERT(VARCHAR(2),day(GETDATE()))
+
+SELECT @MaintainNo from NumSeq
+
+
+
+alter table [NanXingGuoRen_WMS].[dbo].[Production] 
+  add protype nvarchar(50)
+  
+    alter table [NanXingGuoRen_WMS].[dbo].[Production] 
+  add color nvarchar(50)
+  
+   alter table [NanXingGuoRen_WMS].[dbo].[Production] 
+  add probiaozhun nvarchar(50)
+  
+   alter table [NanXingGuoRen_WMS].[dbo].[Production] 
+  add yuanliaobatchNo nvarchar(100)
+  
+     alter table [NanXingGuoRen_WMS].[dbo].[Production] 
+  alter column batchNo nvarchar(100)
+

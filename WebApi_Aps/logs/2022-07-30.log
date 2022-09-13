@@ -1,0 +1,40 @@
+2022-07-30 13:50:29.7112                
+ [INFO]  : 线程ID:12                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:50:29.8629                
+ [INFO]  : header_ID:463;CRMApplyNo:C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:50:29.9669                
+ [INFO]  : 接收CRM订单数据：C220726053;事务用时：0.2456343                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:50:29.9669                
+ [INFO]  : 成功：C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:52:48.4927                
+ [INFO]  : 线程ID:27                
+  AsyncTaskMethodBuilder`1.Start => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:53:18.4756                
+ [INFO]  : header_ID:463;CRMApplyNo:C220726053                
+  AsyncTaskMethodBuilder`1.Start => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:55:07.4411                
+ [INFO]  : 线程ID:10                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:55:07.5973                
+ [INFO]  : header_ID:463;CRMApplyNo:C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:55:07.6853                
+ [INFO]  : 接收CRM订单数据：C220726053;事务用时：0.2321745                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-30 13:55:07.6853                
+ [INFO]  : 成功：C220726053                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------

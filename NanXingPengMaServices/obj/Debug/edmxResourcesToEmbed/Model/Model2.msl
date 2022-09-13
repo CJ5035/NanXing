@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NanXingGuoRen_WMSModelStoreContainer" CdmEntityContainer="NanXingGuoRen_WMSEntities">
+    <EntitySetMapping Name="AGVMissionInfo">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.AGVMissionInfo">
+        <MappingFragment StoreEntitySet="AGVMissionInfo">
+          <ScalarProperty Name="MissionFloor_ID" ColumnName="MissionFloor_ID" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="AGVCarId" ColumnName="AGVCarId" />
+          <ScalarProperty Name="OrderGroupId" ColumnName="OrderGroupId" />
+          <ScalarProperty Name="StockPlan_ID" ColumnName="StockPlan_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AreaClass" ColumnName="AreaClass" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="OrderTime" ColumnName="OrderTime" />
+          <ScalarProperty Name="StockNo" ColumnName="StockNo" />
+          <ScalarProperty Name="StartLocation" ColumnName="StartLocation" />
+          <ScalarProperty Name="EndLocation" ColumnName="EndLocation" />
+          <ScalarProperty Name="RunState" ColumnName="RunState" />
+          <ScalarProperty Name="StateMsg" ColumnName="StateMsg" />
+          <ScalarProperty Name="SendState" ColumnName="SendState" />
+          <ScalarProperty Name="SendMsg" ColumnName="SendMsg" />
+          <ScalarProperty Name="MissionNo" ColumnName="MissionNo" />
+          <ScalarProperty Name="TrayNo" ColumnName="TrayNo" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configs">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Configs">
+        <MappingFragment StoreEntitySet="Configs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ConfigKey" ColumnName="ConfigKey" />
+          <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Depts">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Depts">
+        <MappingFragment StoreEntitySet="Depts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Log">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Logdate" ColumnName="Logdate" />
+          <ScalarProperty Name="MarkLogLevel" ColumnName="MarkLogLevel" />
+          <ScalarProperty Name="LogMessage" ColumnName="LogMessage" />
+          <ScalarProperty Name="LogAction" ColumnName="LogAction" />
+          <ScalarProperty Name="LogAmount" ColumnName="LogAmount" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Menus">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ViewPowerID" ColumnName="ViewPowerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Onlines">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Onlines">
+        <MappingFragment StoreEntitySet="Onlines">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IPAdddress" ColumnName="IPAdddress" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Powers">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Powers">
+        <MappingFragment StoreEntitySet="Powers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Production">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Production">
+        <MappingFragment StoreEntitySet="Production">
+          <ScalarProperty Name="danjuhao" ColumnName="danjuhao" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="prosn" ColumnName="prosn" />
+          <ScalarProperty Name="prodate" ColumnName="prodate" />
+          <ScalarProperty Name="proname" ColumnName="proname" />
+          <ScalarProperty Name="itemno" ColumnName="itemno" />
+          <ScalarProperty Name="ProductOrderlistsID" ColumnName="ProductOrderlistsID" />
+          <ScalarProperty Name="class" ColumnName="class" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="spec" ColumnName="spec" />
+          <ScalarProperty Name="batchNo" ColumnName="batchNo" />
+          <ScalarProperty Name="boxNo" ColumnName="boxNo" />
+          <ScalarProperty Name="boxName" ColumnName="boxName" />
+          <ScalarProperty Name="ingredients" ColumnName="ingredients" />
+          <ScalarProperty Name="remark1" ColumnName="remark1" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="probiaozhun" ColumnName="probiaozhun" />
+          <ScalarProperty Name="yuanliaobatchNo" ColumnName="yuanliaobatchNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOrderheaders">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.ProductOrderheaders">
+        <MappingFragment StoreEntitySet="ProductOrderheaders">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="prosn" ColumnName="prosn" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="positionClass" ColumnName="positionClass" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+          <ScalarProperty Name="mergeCells" ColumnName="mergeCells" />
+          <ScalarProperty Name="mergeCellsValue" ColumnName="mergeCellsValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOrderlists">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.ProductOrderlists">
+        <MappingFragment StoreEntitySet="ProductOrderlists">
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="ERPOrderNo" ColumnName="ERPOrderNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="itemno" ColumnName="itemno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="spec" ColumnName="spec" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="inName" ColumnName="inName" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="priceOut" ColumnName="priceOut" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="jingbanren" ColumnName="jingbanren" />
+          <ScalarProperty Name="remark1" ColumnName="remark1" />
+          <ScalarProperty Name="providername" ColumnName="providername" />
+          <ScalarProperty Name="clientname" ColumnName="clientname" />
+          <ScalarProperty Name="ProductOrderheader_ID" ColumnName="ProductOrderheader_ID" />
+          <ScalarProperty Name="length" ColumnName="length" />
+          <ScalarProperty Name="width" ColumnName="width" />
+          <ScalarProperty Name="high" ColumnName="high" />
+          <ScalarProperty Name="batchNo" ColumnName="batchNo" />
+          <ScalarProperty Name="boxNo" ColumnName="boxNo" />
+          <ScalarProperty Name="boxName" ColumnName="boxName" />
+          <ScalarProperty Name="ingredients" ColumnName="ingredients" />
+          <ScalarProperty Name="chejianclass" ColumnName="chejianclass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockPlan">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.StockPlan">
+        <MappingFragment StoreEntitySet="StockPlan">
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PlanNo" ColumnName="PlanNo" />
+          <ScalarProperty Name="proname" ColumnName="proname" />
+          <ScalarProperty Name="batchNo" ColumnName="batchNo" />
+          <ScalarProperty Name="probiaozhun" ColumnName="probiaozhun" />
+          <ScalarProperty Name="spec" ColumnName="spec" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="plantime" ColumnName="plantime" />
+          <ScalarProperty Name="planUser" ColumnName="planUser" />
+          <ScalarProperty Name="states" ColumnName="states" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TelenClients">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.TelenClients">
+        <MappingFragment StoreEntitySet="TelenClients">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="levelCode" ColumnName="levelCode" />
+          <ScalarProperty Name="serverTime" ColumnName="serverTime" />
+          <ScalarProperty Name="condiction" ColumnName="condiction" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="bank" ColumnName="bank" />
+          <ScalarProperty Name="Eamil" ColumnName="Eamil" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="clientManager" ColumnName="clientManager" />
+          <ScalarProperty Name="implementer" ColumnName="implementer" />
+          <ScalarProperty Name="gendan" ColumnName="gendan" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="openid" ColumnName="openid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Titles">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Titles">
+        <MappingFragment StoreEntitySet="Titles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrayPro">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.TrayPro">
+        <MappingFragment StoreEntitySet="TrayPro">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="TrayStateID" ColumnName="TrayStateID" />
+          <ScalarProperty Name="prosn" ColumnName="prosn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrayState">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.TrayState">
+        <MappingFragment StoreEntitySet="TrayState">
+          <ScalarProperty Name="trayHeight" ColumnName="trayHeight" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TrayNO" ColumnName="TrayNO" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="OnlineCount" ColumnName="OnlineCount" />
+          <ScalarProperty Name="WareLocation_ID" ColumnName="WareLocation_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="ChineseName" ColumnName="ChineseName" />
+          <ScalarProperty Name="EnglishName" ColumnName="EnglishName" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
+          <ScalarProperty Name="OfficePhone" ColumnName="OfficePhone" />
+          <ScalarProperty Name="OfficePhoneExt" ColumnName="OfficePhoneExt" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="IdentityCard" ColumnName="IdentityCard" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="TakeOfficeTime" ColumnName="TakeOfficeTime" />
+          <ScalarProperty Name="LastLoginTime" ColumnName="LastLoginTime" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WareArea">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.WareArea">
+        <MappingFragment StoreEntitySet="WareArea">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WareNo" ColumnName="WareNo" />
+          <ScalarProperty Name="War_ID" ColumnName="War_ID" />
+          <ScalarProperty Name="WareHouse_ID" ColumnName="WareHouse_ID" />
+          <ScalarProperty Name="WareAreaState" ColumnName="WareAreaState" />
+          <ScalarProperty Name="protype" ColumnName="protype" />
+          <ScalarProperty Name="InstockWay" ColumnName="InstockWay" />
+          <ScalarProperty Name="InstockRule" ColumnName="InstockRule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WareAreaClass">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.WareAreaClass">
+        <MappingFragment StoreEntitySet="WareAreaClass">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AreaClass" ColumnName="AreaClass" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WareHouse">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.WareHouse">
+        <MappingFragment StoreEntitySet="WareHouse">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WHName" ColumnName="WHName" />
+          <ScalarProperty Name="WHPosition" ColumnName="WHPosition" />
+          <ScalarProperty Name="WHState" ColumnName="WHState" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WareLocation">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.WareLocation">
+        <MappingFragment StoreEntitySet="WareLocation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WareLocaNo" ColumnName="WareLocaNo" />
+          <ScalarProperty Name="WareArea_ID" ColumnName="WareArea_ID" />
+          <ScalarProperty Name="header_ID" ColumnName="header_ID" />
+          <ScalarProperty Name="WareLocaState" ColumnName="WareLocaState" />
+          <ScalarProperty Name="AGVPosition" ColumnName="AGVPosition" />
+          <ScalarProperty Name="WareLocaNo_Long" ColumnName="WareLocaNo_Long" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="RolePowers" TypeName="NanXingGuoRen_WMSModel.RolePowers" StoreEntitySet="RolePowers">
+      <EndProperty Name="Powers">
+        <ScalarProperty Name="ID" ColumnName="PowerID" />
+      </EndProperty>
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="ID" ColumnName="RoleID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RoleUsers" TypeName="NanXingGuoRen_WMSModel.RoleUsers" StoreEntitySet="RoleUsers">
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="ID" ColumnName="RoleID" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="ID" ColumnName="UserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TitleUsers" TypeName="NanXingGuoRen_WMSModel.TitleUsers" StoreEntitySet="TitleUsers">
+      <EndProperty Name="Titles">
+        <ScalarProperty Name="ID" ColumnName="TitleID" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="ID" ColumnName="UserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="TiShengJiState">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.TiShengJiState">
+        <MappingFragment StoreEntitySet="TiShengJiState">
+          <ScalarProperty Name="OrderReceive" ColumnName="OrderReceive" />
+          <ScalarProperty Name="F3DuiJieWei" ColumnName="F3DuiJieWei" />
+          <ScalarProperty Name="F2DuiJieWei" ColumnName="F2DuiJieWei" />
+          <ScalarProperty Name="F1DuiJieWei" ColumnName="F1DuiJieWei" />
+          <ScalarProperty Name="F3State" ColumnName="F3State" />
+          <ScalarProperty Name="F2State" ColumnName="F2State" />
+          <ScalarProperty Name="F1State" ColumnName="F1State" />
+          <ScalarProperty Name="CarState2" ColumnName="CarState2" />
+          <ScalarProperty Name="F3Count" ColumnName="F3Count" />
+          <ScalarProperty Name="F2Count" ColumnName="F2Count" />
+          <ScalarProperty Name="F1Count" ColumnName="F1Count" />
+          <ScalarProperty Name="CarCount" ColumnName="CarCount" />
+          <ScalarProperty Name="carTarget" ColumnName="carTarget" />
+          <ScalarProperty Name="carState" ColumnName="carState" />
+          <ScalarProperty Name="deviceState" ColumnName="deviceState" />
+          <ScalarProperty Name="InputTime" ColumnName="InputTime" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AGVMissionInfo_Floor">
+      <EntityTypeMapping TypeName="NanXingGuoRen_WMSModel.AGVMissionInfo_Floor">
+        <MappingFragment StoreEntitySet="AGVMissionInfo-Floor">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="AGVCarId" ColumnName="AGVCarId" />
+          <ScalarProperty Name="OrderGroupId" ColumnName="OrderGroupId" />
+          <ScalarProperty Name="StockPlan_ID" ColumnName="StockPlan_ID" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="TrayNo" ColumnName="TrayNo" />
+          <ScalarProperty Name="MissionNo" ColumnName="MissionNo" />
+          <ScalarProperty Name="SendMsg" ColumnName="SendMsg" />
+          <ScalarProperty Name="SendState" ColumnName="SendState" />
+          <ScalarProperty Name="StateMsg" ColumnName="StateMsg" />
+          <ScalarProperty Name="RunState" ColumnName="RunState" />
+          <ScalarProperty Name="EndLocation" ColumnName="EndLocation" />
+          <ScalarProperty Name="StartLocation" ColumnName="StartLocation" />
+          <ScalarProperty Name="StockNo" ColumnName="StockNo" />
+          <ScalarProperty Name="OrderTime" ColumnName="OrderTime" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="AreaClass" ColumnName="AreaClass" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

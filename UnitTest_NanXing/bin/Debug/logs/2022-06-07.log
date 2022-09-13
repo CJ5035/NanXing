@@ -1,0 +1,20 @@
+2022-06-07 11:53:32.0100                
+ [INFO]  : ***接收时间:2022-06-07 11:53:32，消息内容：{"crmID":"622eb4524dddb40001fe0111","pcState":"已排产","pcCount":"500","pcUnit":"kg","fzCount":"500","fzUnit":"件","pcTime":1653383596433,"batchNo":null}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-07 11:53:32.3192                
+ [ERROR]  : 处理CRM回写失败:
+数据内容:{"crmID":"622eb4524dddb40001fe0111","pcState":"已排产","pcCount":"500","pcUnit":"kg","fzCount":"500","fzUnit":"件","pcTime":1653383596433,"batchNo":null}
+错误信息:Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[NanXingData_WMS.Dao.CRMPlanList]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'crmID', line 1, position 9.
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.<>c__DisplayClass12_1`1.<Recevice>b__3(Object model, BasicDeliverEventArgs ea) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 182                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------

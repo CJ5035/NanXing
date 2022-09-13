@@ -1,0 +1,29 @@
+2022-08-13 11:20:30.3010                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/corpAccessToken/get/V2
+body:{"appId":"FSAID_131a6f5","appSecret":"cd3775a3122c4c70b4507afea46de5bf","permanentCode":"2787203B641C1BC8B83738007DD1DAA7"}                
+  CRMApiHelper.GetToken => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-13 11:20:30.9938                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/query
+body:{"corpAccessToken":"F5245BF5EC1045345EAD2B1DA9EDA796","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","data":{"dataObjectApiName":"object_S1KIF__c","search_query_info":{"offset":0,"limit":200,"filters":[{"field_name":"_id","field_values":"62f4e17e1f52230001f6acfc","operator":"EQ"}]}}}                
+  CRMApiHelper.GetCRMDetailFromApi => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-13 14:16:19.3702                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/corpAccessToken/get/V2
+body:{"appId":"FSAID_131a6f5","appSecret":"cd3775a3122c4c70b4507afea46de5bf","permanentCode":"2787203B641C1BC8B83738007DD1DAA7"}                
+  CRMApiHelper.GetToken => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-13 14:16:20.8849                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/update
+body:{"currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","corpAccessToken":"C0F663F1F7471B670ECB65E68494424A","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","triggerWorkFlow":false,"data":{"object_data":{"field_t1iXR__c":"","field_4yUJU__c":"","field_I54DT__c":"","field_0h244__c":"","field_pl8w1__c":"","field_r5Tqq__c":"","field_p5sN5__c":"","field_Vm3lG__c":"","field_RnAI2__c":"","field_MLRho__c":"","field_B1wK3__c":"","field_orBwH__c":"","field_evz13__c":"","field_cmFG8__c":"","field_w2lSP__c":"","field_goHWR__c":"","field_PUHit__c":"","field_2xK4R__c":"","field_8hUjG__c":"","field_31flP__c":"","field_7gsp0__c":"","field_rb734__c":"","field_4iY04__c":"","field_yAnwj__c":"","field_mzspU__c":"","field_l8aa2__c":"","field_7nsNU__c":"","field_dTK9q__c":"","field_s9KMk__c":"","field_8ktK8__c":"","field_bv6S7__c":"","field_614ed__c":"","field_40rQb__c":"","field_r67M2__c":"","field_A2i6w__c":"","field_d2AW2__c":"","field_ewHJQ__c":"","field_5iPu6__c":"","field_m1OPt__c":"","field_1rL3W__c":"","field_f117d__c":"","field_75GaJ__c":"","field_1ouek__c":"","field_rEdHq__c":"","field_6A7cc__c":"","field_abRIo__c":"","field_2F5zV__c":"","field_S24fz__c":"","field_rHKfQ__c":"","field_69b3E__c":"","field_loso1__c":"","field_qKHGz__c":"","field_s0ryw__c":"","field_spgPb__c":"","field_1tqvO__c":"","field_0Uw1j__c":"","field_1wc9U__c":"","dataObjectApiName":"object_S1KIF__c","_id":"62f4e17e1f52230001f6acfc"}}}                
+  CRMApiHelper.WriteCRMApply => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-13 14:20:44.9277                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/update
+body:{"currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","corpAccessToken":"C0F663F1F7471B670ECB65E68494424A","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","triggerWorkFlow":false,"data":{"object_data":{"field_t1iXR__c":"","field_4yUJU__c":"","field_I54DT__c":"","field_0h244__c":"","field_pl8w1__c":"","field_r5Tqq__c":"","field_p5sN5__c":"","field_Vm3lG__c":"","field_RnAI2__c":"","field_MLRho__c":"","field_B1wK3__c":"","field_orBwH__c":"","field_evz13__c":"","field_cmFG8__c":"","field_w2lSP__c":"","field_goHWR__c":"","field_PUHit__c":"","field_2xK4R__c":"","field_8hUjG__c":"","field_31flP__c":"","field_7gsp0__c":"","field_rb734__c":"","field_4iY04__c":"","field_yAnwj__c":"","field_mzspU__c":"","field_l8aa2__c":"","field_7nsNU__c":"","field_dTK9q__c":"","field_s9KMk__c":"","field_8ktK8__c":"","field_bv6S7__c":"","field_614ed__c":"","field_40rQb__c":"","field_r67M2__c":"","field_A2i6w__c":"","field_d2AW2__c":"","field_ewHJQ__c":"","field_5iPu6__c":"","field_m1OPt__c":"","field_1rL3W__c":"","field_f117d__c":"","field_75GaJ__c":"","field_1ouek__c":"","field_rEdHq__c":"","field_6A7cc__c":"","field_abRIo__c":"","field_2F5zV__c":"","field_S24fz__c":"","field_rHKfQ__c":"","field_69b3E__c":"","field_loso1__c":"","field_qKHGz__c":"","field_s0ryw__c":"","field_spgPb__c":"","field_1tqvO__c":"","field_0Uw1j__c":"","field_1wc9U__c":"","dataObjectApiName":"object_S1KIF__c","_id":"62f4e17e1f52230001f6acfc"}}}                
+  CRMApiHelper.WriteCRMApply => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-13 14:20:45.8925                
+ [INFO]  : 删除排产计划成功：62f4e17e1f52230001f6acfc-请求成功                
+  UnitTest1.TestMethod1 => CRMReturnWriteThread.DeleteCRMPlan => Logger.Process               
+ ------------------------------------------------

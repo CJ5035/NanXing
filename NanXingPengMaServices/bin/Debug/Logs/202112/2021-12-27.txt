@@ -1,0 +1,1536 @@
+         
+时间： 2021-12-27 17:59:18.1320         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 17:59:18         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 17:59:18.2467         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 17:59:18         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 17:59:28.2774         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 17:59:28         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:04.2757         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:00:04         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:04.2847         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:00:04         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:14.2992         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:00:14         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:24.3306         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:00:24         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:34.3653         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:00:34         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:40.9627         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:00:40         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:43.0077         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:00:43         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:00:43.0216         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:00:43         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:01:06.0318         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:01:06         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:01:06.1495         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:01:06         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:01:16.1750         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:01:16         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:06.4277         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:06         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:08.6641         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:08         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:10.9057         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:10         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:13.1567         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:13         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:15.3867         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:15         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:17.6235         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:17         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:19.8563         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:19         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:22.0944         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:22         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:24.3347         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:24         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:26.5754         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:26         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:28.8112         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:28         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:31.0432         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:31         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:33.2778         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:33         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:35.5222         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:02:35         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:36.4753         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:36         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:38.6831         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:38         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:40.9274         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:40         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:43.1791         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:43         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:45.4069         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:45         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:46.5022         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:46         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:47.6392         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:47         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:48.7043         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:48         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:02:49.8732         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:02:49         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:04:15.7758         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:04:15         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:04:15.8768         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:04:15         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:04:25.9150         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:04:25         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:04:52.2061         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:04:52         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:04:54.2610         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:04:54         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:04:54.2789         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:04:54         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:04.3010         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:05:04         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:14.3266         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:05:14         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:22.2484         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:05:22         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:24.3425         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:05:24         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:32.2822         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:05:32         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:34.8351         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:05:34         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:34.8440         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:05:34         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:36.8524         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:05:36         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:05:36.8624         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:05:36         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:07:02.2810         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:07:02         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:07:02.3947         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:07:02         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:07:12.4328         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:07:12         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:09:27.6000         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:09:27         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:09:27.6269         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:09:27         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:09:37.6535         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:09:37         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:09:47.6722         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:09:47         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:09:57.7060         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:09:57         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:10:14.1571         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:10:14         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:10:14.1671         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:10:14         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:10:24.1997         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:10:24         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:10:34.2236         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:10:34         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:10:44.2476         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:10:44         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:14:08.7251         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:14:08         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:14:08.8617         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:14:08         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:14:18.8939         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:14:18         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:14:54.2838         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:14:54         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:15:24.3568         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:15:24         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:15:34.3775         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:15:34         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:16:00.9794         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:16:00         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:16:01.0004         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:16:01         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:16:11.0267         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:16:11         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:16:21.0425         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:16:21         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:16:31.0702         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:16:31         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:19:10.0347         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:19:10         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:19:10.1584         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:19:10         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:19:20.1871         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:19:20         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:20:38.5429         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:20:38         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:21:08.6005         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:21:08         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:21:18.6264         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:21:18         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:21:59.3659         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:21:59         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:21:59.3858         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:21:59         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:22:09.4074         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:22:09         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:22:19.4298         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:22:19         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:22:44.0255         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:22:44         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:22:44.2124         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:22:44         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:22:54.2395         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:22:54         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:23:10.1602         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:23:10         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:23:12.2026         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:23:12         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:23:12.2116         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:23:12         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:23:22.2262         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:23:22         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:23:32.2392         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:23:32         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:23:40.2143         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:23:40         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:23:42.2549         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:23:42         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:24:43.2813         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:24:43         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:24:43.3771         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:24:43         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:24:53.4128         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:24:53         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:25:03.5396         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:25:03         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:25:33.5898         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:25:33         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:25:43.6253         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:25:43         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:28:11.3165         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:28:11         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:28:51.9032         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:28:51         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:28:51.9211         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:28:51         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:28:51.9231         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:28:51         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:33:06.4665         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:33:06         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:33:06.5692         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:33:06         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:33:16.5879         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:33:16         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:33:43.6120         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:33:43         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:34:13.6566         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:34:13         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:34:23.6720         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:34:23         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:35:55.7183         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:35:55         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:35:55.7332         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:35:55         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:39:29.9454         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:39:29         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:39:30.0411         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:39:30         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:39:40.0609         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:39:40         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:40:30.4979         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:40:30         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:41:00.5441         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:41:00         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:41:10.5687         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:41:10         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:46:50.2598         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:46:50         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:46:50.2837         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:46:50         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:49:00.6866         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:49:00         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:49:00.7893         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:49:00         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:49:10.8130         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:49:10         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:50:35.0277         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:50:35         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:51:05.0898         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:51:05         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:51:15.1305         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:51:15         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:51:47.5120         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 18:51:47         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:51:47.5240         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:51:47         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 18:51:57.5422         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 18:51:57         
+堆栈：  <>c__DisplayClass9_0.<Init>b__20 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:00:46.3404         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:00:46         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:00:46.4372         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:00:46         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:00:56.4627         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:00:56         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:01:06.4634         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:01:06         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:01:10.5039         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:01:10         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:01:10.5229         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:01:10         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:01:20.5412         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:01:20         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:01:36.5013         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:01:36         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:01:46.5229         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:01:46         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:03:50.8320         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:03:50         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:03:50.8499         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:03:50         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:00.8632         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:04:00         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:24.9157         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:24         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:29.1609         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:29         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:33.3959         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:33         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:37.6385         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:37         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:41.8772         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:41         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:46.1308         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:46         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:50.3634         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:50         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:54.5976         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:04:54         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:54.9392         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:04:54         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:04:59.1731         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:04:59         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:03.4114         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:03         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:04.9504         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:04         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:07.6565         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:07         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:09.1858         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:09         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:11.8971         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:11         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:13.4220         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:13         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:16.1433         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:16         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:05:17.6708         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:05:17         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:06:42.6619         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:06:42         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:06:42.7466         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:06:42         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:06:52.7678         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:06:52         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:09:10.0177         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:09:10         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:13:18.7902         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:13:18         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:13:18.8889         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:13:18         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:13:28.9088         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:13:28         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:13:38.9256         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:13:38         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:13:49.9687         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:13:49         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:13:54.2056         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:13:54         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:13:58.4454         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:13:58         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:02.6856         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:14:02         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:14.8640         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:14:14         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:15.0396         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:14:15         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:19.9871         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:14:19         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:24.2219         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:14:24         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:24.8772         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:14:24         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:28.4630         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:14:28         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:14:30.0028         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:14:30         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:15:56.6535         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:15:56         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:15:56.7313         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:15:56         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:16:06.7499         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:16:06         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:16:16.7626         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:16:16         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:16:46.8245         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:16:46         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:16:56.8584         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:16:56         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:17:25.1399         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:17:25         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:17:25.1580         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:17:25         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:17:35.1818         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:17:35         
+堆栈：  <>c__DisplayClass9_0.<Init>b__22 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:17:56.2905         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 开始延时任务：2021/12/27 19:17:56         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:18:26.3115         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:18:26         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-27 19:18:39.9453         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 发送完成：2021/12/27 19:18:39         
+堆栈：  <>c__DisplayClass9_2.<Init>b__8 => FloorMissionHelper.SendAGVWait => Logger.Process         
+
+-----------------------------------------------------------

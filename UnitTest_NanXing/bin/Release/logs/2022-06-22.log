@@ -1,0 +1,35 @@
+2022-06-22 15:01:30.8368                
+ [INFO]  : ***接收时间:2022-06-22 15:01:30，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"0","pcUnit":"kg","fzCount":"0","fzUnit":"箱1","pcTime":1655880944457,"batchNo":"123"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:01:30.8308                
+ [INFO]  :  --成功发送到broker服务器CheckWareLieState--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:01:31.0462                
+ [ERROR]  : CheckWareLieState队列消息处理失败:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"0","pcUnit":"kg","fzCount":"0","fzUnit":"箱1","pcTime":1655880944457,"batchNo":"123"}
+错误信息:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: {. Path '', line 1, position 1.
+   在 Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   在 Newtonsoft.Json.JsonTextReader.ReadAsString()
+   在 Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.<>c__DisplayClass12_1`1.<Recevice>b__3(Object model, BasicDeliverEventArgs ea) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 183                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:01:37.0472                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:01:37.7612                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:01:38.6050                
+ [INFO]  : 2022061000038:返回2G-15-6                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------

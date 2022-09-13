@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NanXingGuoRen_SCModelStoreContainer" CdmEntityContainer="NanXingGuoRen_SCEntities">
+    <EntitySetMapping Name="Production">
+      <EntityTypeMapping TypeName="NanXingGuoRen_SCModel.Production">
+        <MappingFragment StoreEntitySet="Production">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="prosn" ColumnName="prosn" />
+          <ScalarProperty Name="prodate" ColumnName="prodate" />
+          <ScalarProperty Name="proname" ColumnName="proname" />
+          <ScalarProperty Name="itemno" ColumnName="itemno" />
+          <ScalarProperty Name="ProductOrderlistsID" ColumnName="ProductOrderlistsID" />
+          <ScalarProperty Name="class" ColumnName="class" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="spec" ColumnName="spec" />
+          <ScalarProperty Name="batchNo" ColumnName="batchNo" />
+          <ScalarProperty Name="boxNo" ColumnName="boxNo" />
+          <ScalarProperty Name="boxName" ColumnName="boxName" />
+          <ScalarProperty Name="ingredients" ColumnName="ingredients" />
+          <ScalarProperty Name="remark1" ColumnName="remark1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOrderheaders">
+      <EntityTypeMapping TypeName="NanXingGuoRen_SCModel.ProductOrderheaders">
+        <MappingFragment StoreEntitySet="ProductOrderheaders">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="prosn" ColumnName="prosn" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="positionClass" ColumnName="positionClass" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+          <ScalarProperty Name="mergeCells" ColumnName="mergeCells" />
+          <ScalarProperty Name="mergeCellsValue" ColumnName="mergeCellsValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOrderlists">
+      <EntityTypeMapping TypeName="NanXingGuoRen_SCModel.ProductOrderlists">
+        <MappingFragment StoreEntitySet="ProductOrderlists">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="itemno" ColumnName="itemno" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="spec" ColumnName="spec" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="inName" ColumnName="inName" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="priceOut" ColumnName="priceOut" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="jingbanren" ColumnName="jingbanren" />
+          <ScalarProperty Name="remark1" ColumnName="remark1" />
+          <ScalarProperty Name="providername" ColumnName="providername" />
+          <ScalarProperty Name="clientname" ColumnName="clientname" />
+          <ScalarProperty Name="ProductOrderheader_ID" ColumnName="ProductOrderheader_ID" />
+          <ScalarProperty Name="length" ColumnName="length" />
+          <ScalarProperty Name="width" ColumnName="width" />
+          <ScalarProperty Name="high" ColumnName="high" />
+          <ScalarProperty Name="batchNo" ColumnName="batchNo" />
+          <ScalarProperty Name="boxNo" ColumnName="boxNo" />
+          <ScalarProperty Name="boxName" ColumnName="boxName" />
+          <ScalarProperty Name="ingredients" ColumnName="ingredients" />
+          <ScalarProperty Name="chejianclass" ColumnName="chejianclass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrayPro">
+      <EntityTypeMapping TypeName="NanXingGuoRen_SCModel.TrayPro">
+        <MappingFragment StoreEntitySet="TrayPro">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="TrayStateID" ColumnName="TrayStateID" />
+          <ScalarProperty Name="prosn" ColumnName="prosn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrayState">
+      <EntityTypeMapping TypeName="NanXingGuoRen_SCModel.TrayState">
+        <MappingFragment StoreEntitySet="TrayState">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TrayNO" ColumnName="TrayNO" />
+          <ScalarProperty Name="optdate" ColumnName="optdate" />
+          <ScalarProperty Name="OnlineCount" ColumnName="OnlineCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

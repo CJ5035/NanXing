@@ -1,0 +1,8 @@
+2022-08-26 18:45:50.0414                
+ [INFO]  : PLC连接 True:成功                
+  S7SmartThread.Control => S7SmartThread.ConnectPLC => Logger.Process               
+ ------------------------------------------------
+2022-08-26 18:45:54.2304                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------

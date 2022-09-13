@@ -1,0 +1,91 @@
+﻿body {
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 100%
+}
+
+tr {
+    height: 10%
+}
+
+td, th {
+    padding: 0;
+    color: #fff;
+}
+
+
+.pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #00B0F4;
+    width: 100%;
+}
+
+    .pure-table caption {
+        color: #fff;
+        font: italic 85%/1 arial,sans-serif;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+
+
+    .pure-table td, .pure-table th {
+        border-left: 1px solid #00B0F4;
+        border-width: 0 0 0 1px;
+        font-size: 0.2rem;
+        margin: 0;
+        /*overflow: visible;*/
+        overflow:auto;
+        padding: 0em 0.5em;
+        height: 10%;
+        text-align: center;
+    }
+
+    .pure-table thead {
+        background-color: #091E57;
+        color: #fff;
+        text-align: left;
+        vertical-align: bottom;
+        height: 10%;
+        border-bottom: 1px solid #00B0F4;
+    }
+
+    .pure-table td {
+        background-color: #091E57;
+        border-bottom: 1px solid #00B0F4;
+        height: 10%;
+    }
+
+.pure-table-odd td {
+    background-color: #1E2E6C;
+    border-bottom: 1px solid #00B0F4;
+    height: 10%;
+}
+
+.productState {
+    color: #44F1FF;
+}
+
+.noWorkState {
+    color: #FFFFFF;
+}
+
+.stopProduct {
+    color: #FFF200;
+}
+
+.errorState {
+    color: #E60000;
+}
+
+.finishedState {
+    color: #7CFFB2;
+}
+
+.errorFinishedState {
+    color: #7CFFB2;
+}

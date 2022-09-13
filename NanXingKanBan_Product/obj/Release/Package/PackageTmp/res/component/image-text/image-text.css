@@ -1,0 +1,43 @@
+﻿body {
+}
+.div-box {
+    display: inline-block;
+    position: relative;
+    width: 32%;
+    height: 45%;
+    top: 10%;
+}
+.imageList {
+    width: 40%;
+    height: 60%;
+    position: relative;
+    left: 5%;
+    top:10%
+}
+.value {
+    display: inline-block;
+    position: relative;
+    top: -25%;
+    width: 20%;
+    height: 30%;
+    color: #0CE4CF
+}
+.unit {
+    display: inline-block;
+    position: relative;
+    top: -25%;
+    width: 20%;
+    height: 30%;
+    color: #B8E4F1;
+    font-size:15%
+}
+.name {
+    display: inline-block;
+    position: relative;
+    top: -32%;
+    left: 45%;
+    font-size:12px;
+    width: 36%;
+    height: 30%;
+    color: #B8E4F1
+}

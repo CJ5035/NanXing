@@ -1,0 +1,88 @@
+2022-06-22 15:07:55.9046                
+ [INFO]  :  --成功发送到broker服务器CheckWareLieState--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:07:55.9096                
+ [INFO]  : ***接收时间:2022-06-22 15:07:55，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"0","pcUnit":"kg","fzCount":"0","fzUnit":"箱1","pcTime":1655880944457,"batchNo":"123"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:07:56.2168                
+ [ERROR]  : CheckWareLieState队列消息处理失败:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"0","pcUnit":"kg","fzCount":"0","fzUnit":"箱1","pcTime":1655880944457,"batchNo":"123"}
+错误信息:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: {. Path '', line 1, position 1.
+   在 Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   在 Newtonsoft.Json.JsonTextReader.ReadAsString()
+   在 Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.<>c__DisplayClass12_1`1.<Recevice>b__3(Object model, BasicDeliverEventArgs ea) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 183                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:15:30.2840                
+ [INFO]  : ***接收时间:2022-06-22 15:15:30，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"0","pcUnit":"kg","fzCount":"0","fzUnit":"箱1","pcTime":1655882090477,"batchNo":"123"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:15:30.2790                
+ [INFO]  :  --成功发送到broker服务器CRMPushPlan--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:15:33.2052                
+ [INFO]  : CRMPushPlan队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"0","pcUnit":"kg","fzCount":"0","fzUnit":"箱1","pcTime":1655882090477,"batchNo":"123"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:19:55.8966                
+ [INFO]  : ***接收时间:2022-06-22 15:19:55，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1655882315675,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:19:55.8916                
+ [INFO]  :  --成功发送到broker服务器CRMPushPlan--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:19:57.7576                
+ [INFO]  : CRMPushPlan队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1655882315675,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:40:15.1420                
+ [INFO]  : ***接收时间:2022-06-22 15:40:15，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1655883613355,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:40:15.1380                
+ [INFO]  :  --成功发送到broker服务器CRMPushPlan--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 15:40:17.5864                
+ [INFO]  : CRMPushPlan队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1655883613355,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 16:12:08.3059                
+ [INFO]  : ***接收时间:2022-06-22 16:12:08，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1655885525462,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 16:12:08.3009                
+ [INFO]  :  --成功发送到broker服务器CRMPushPlan--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 16:12:08.3688                
+ [INFO]  : ***接收时间:2022-06-22 16:12:08，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"待排产"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 16:12:08.3728                
+ [INFO]  :  --成功发送到broker服务器CRMChangeState--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 16:12:10.8082                
+ [INFO]  : CRMChangeState队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"待排产"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-22 16:12:10.8212                
+ [INFO]  : CRMPushPlan队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1655885525462,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------

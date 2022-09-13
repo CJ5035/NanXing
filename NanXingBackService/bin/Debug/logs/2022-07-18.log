@@ -1,0 +1,26 @@
+2022-07-18 09:07:58.4719                
+ [ERROR]  : System.TypeInitializationException: “NanXingService_WMS.Utils.RedisUtils.RedisHelper”的类型初始值设定项引发异常。 ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   在 StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter log)
+   在 StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log)
+   在 StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log)
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper..cctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RedisUtils\RedisHelper.cs:行号 112
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper..ctor(Int32 db)
+   在 NanXingService_WMS.Services.ItemInfoManager..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 23
+   在 NanXingBackService.MainService..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingBackService\MainService.cs:行号 24
+   在 NanXingBackService.Program.Main() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingBackService\Program.cs:行号 22                
+  Program.Main => Logger.Process               
+ ------------------------------------------------
+2022-07-18 19:54:06.9382                
+ [ERROR]  : System.TypeInitializationException: “NanXingService_WMS.Utils.RedisUtils.RedisHelper”的类型初始值设定项引发异常。 ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   在 StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter log)
+   在 StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log)
+   在 StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log)
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper..cctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RedisUtils\RedisHelper.cs:行号 112
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper..ctor(Int32 db)
+   在 NanXingService_WMS.Services.ItemInfoManager..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 23
+   在 NanXingBackService.MainService..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingBackService\MainService.cs:行号 24
+   在 NanXingBackService.Program.Main() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingBackService\Program.cs:行号 22                
+  Program.Main => Logger.Process               
+ ------------------------------------------------

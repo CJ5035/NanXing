@@ -1,0 +1,717 @@
+         
+时间： 2021-12-16 19:18:54.1066         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/16 19:18:53
+Application UnhandledException:基础提供程序在 Open 上失败。;
+堆栈信息:   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   在 NanXingPengMaServices.Utils.AGVMissionThread..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\AGVMissionThread.cs:行号 20
+   在 NanXingPengMaServices.Form1..ctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Form1.cs:行号 35
+   在 NanXingPengMaServices.Program.Main() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Program.cs:行号 27         
+堆栈：  DefaultSqlExecutionStrategy.Execute => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:28:29.9757         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:29:07.4158         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:30:19.4864         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:30:19.5821         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:30:54.8591         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:30:54.9458         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:30:54.9638         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:30:59.9732         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:30:59.9762         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:04.9860         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:04.9900         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:09.9976         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:10.0035         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:15.0115         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:15.0175         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:20.0273         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:20.0313         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:25.0403         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:31:25.0432         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:07.3453         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:07.4007         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:07.4136         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:12.4252         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:12.4291         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:17.4396         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:17.4436         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:22.4534         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:22.4594         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:27.4664         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:27.4694         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:32.4762         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:32.4792         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:37.4910         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:37.4950         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:42.5019         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:42.5059         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:47.5203         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:47.5253         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:52.5371         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:52.5411         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:57.5547         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:33:57.5597         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:34:02.5713         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:34:02.5753         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:34:07.5891         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:34:07.5931         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:34:55.4754         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:34:55.5462         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:34:55.5602         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:00.5740         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:00.5790         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:05.5972         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:05.6032         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:10.6143         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:10.6193         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:15.6262         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 19:35:15.6312         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:12.3808         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:12.4447         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:12.4726         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:17.4879         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:17.5039         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:22.5172         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:22.5262         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:27.5372         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 20:39:27.5462         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:31.5875         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:31.6633         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:31.7262         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:36.7381         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:36.7461         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:41.7639         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:41.7798         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:46.7917         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:46.8026         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:51.8140         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:23:51.8219         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:24:25.8230         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:24:25.9121         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:26:53.4833         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 2、对已发送的跨楼层任务进行跟踪         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:26:53.5511         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Warn         
+信息：  出现应用程序未处理的异常：2021/12/16 22:26:53
+Application UnhandledException:无法连接到远程服务器;
+堆栈信息:   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 NanXingPengMaServices.Utils.HttpUtils.HttpApi(String url, String jsonstr, String type) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\HttpUtils.cs:行号 42
+   在 NanXingPengMaServices.Utils.AGVInfUtils.GetMissionState(String orderId) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\AGVInfUtils.cs:行号 76
+   在 NanXingPengMaServices.Utils.AGVMissionThread.Init() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\AGVMissionThread.cs:行号 37
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()         
+堆栈：  HttpWebRequest.GetRequestStream => Program.CurrentDomain_UnhandledException => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:27:15.1782         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:27:15.2690         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:32:21.9196         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 56         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-12-16 22:32:22.0173         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Info         
+信息： 1、         
+堆栈：  Form1.<Form1_Shown>b__49_0 => FloorMissionHelper.Init => Logger.Process         
+
+-----------------------------------------------------------

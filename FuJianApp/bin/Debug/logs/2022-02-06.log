@@ -1,0 +1,20 @@
+2022-02-06 03:58:33.8976                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2022/2/6 3:58:33
+异常类型：InvalidOperationException
+异常消息：如果分配给命令的连接位于本地挂起事务中，ExecuteNonQuery 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+异常信息：   在 NanXingData_WMS.DaoUtils.DbBase.BatchUpdateData(DataTable table, String tableName, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 405
+   在 NanXingService_WMS.Services.ItemService.ParseItems() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Services\ItemService.cs:行号 78
+   在 NanXingCangKu.Controller.MainController.Init() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 81
+   在 NanXingCangKu.Form1.Form1_Load(Object sender, EventArgs e) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Form1.cs:行号 42
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 WinformControlLibraryExtension.FormExt.WndProc(Message& m) 位置 E:\Winform\花木兰控件库\花木兰控件库hml-master\hml-master\WinformControlLibraryExtension\控件\Form\FormExt.cs:行号 873
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------

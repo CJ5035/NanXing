@@ -1,0 +1,8 @@
+2022-08-31 10:40:27.6284                
+ [WARN]  : TCP server 192.168.10.215:8001 has disconnected.                
+  AsyncTcpClient.RaiseServerDisconnected => SensorDataService.MsgDisconnected => Logger.Process               
+ ------------------------------------------------
+2022-08-31 10:40:27.6284                
+ [WARN]  : TCP server 192.168.10.210:8001 has disconnected.                
+  AsyncTcpClient.RaiseServerDisconnected => SensorDataService.MsgDisconnected => Logger.Process               
+ ------------------------------------------------

@@ -1,0 +1,1163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/res/css/index2.css">
+    <script src="/res/js/echarts.js"></script>
+
+    <!--<script src="/res/js/echarts.min.js"></script>-->
+</head>
+<body id="back">
+    <div id="app">
+        <div id="head">
+            <div id="headleft">
+                <p id="Date"></p>
+            </div>
+            <div id="headmiddle">
+                <h2>南兴天虹数字车间生产驾驶舱</h2>
+            </div>
+            <div id="headright">
+                <p style="margin-left: -5%; line-height: 22px; height: 22px; font-size: 20px">
+                    {{currentTime}}
+                </p>
+                <!--<p>今日天气：晴 14°C-22°C</p>-->
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="first">
+                <div id="first-one">
+                    <title-bar value="订单综合指数"></title-bar>
+                    <div class="echarts">
+                        <div id="dingdanChart"></div>
+                        <div id="dingdanChart2">
+                            <div style="margin-top: 5%; font-size: 20%; color: #0962C0">计划OA</div>
+                            <div style="margin-top: 0%; font-size: 130%; color: white">
+                                100%
+                            </div>
+
+                            <div style="margin-top: 40%; font-size: 20%; color: #0962C0">实际OA</div>
+                            <div style="margin-top: 0%; font-size: 130%; color: white">
+                                {{first.RunPre}}%
+                            </div>
+
+                            <div style="margin-top: 40%; font-size: 20%; color: #0962C0">计划差距</div>
+                            <div style="margin-top: 0%; font-size: 130%; color: white">
+                                {{first.GapPre}}%
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="first-two">
+                    <title-bar value="机台产量"></title-bar>
+                    <div id="jiTaiCLChart" class="echarts"></div>
+                </div>
+                <div id="first-three">
+                    <title-bar value="岗位人员"></title-bar>
+
+                    <div class="echarts" style="margin-top:2%">
+                        <div class="head">
+                            <span class="col">序号</span>
+                            <span class="col">姓名</span>
+                            <span class="col">班组</span>
+                            <span class="col">状态</span>
+                        </div>
+                        <div v-for="item in first.items"
+                             :class="{ 'row-danShu':item.xuhao%2==1,'row-shuangShu': item.xuhao%2==0}">
+                            <span class="col">{{item.xuhao}}</span>
+                            <span class="col">{{item.name}}</span>
+                            <!--<span class="col">{{RecentProject.InputDate.substr(5,5)}}</span>-->
+                            <span class="col">{{item.banzu}}</span>
+                            <span class="col">{{item.state}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="second">
+                <div id="second-one" style="border: 0px; overflow: hidden;">
+                    <div class="echarts">
+                        <div id="dingdanXX">
+
+                            <div class="dingdanDiv">
+                                <div class="dingdanTitle" style="text-align:center">当前订单</div>
+                                <div class="dingdanText"
+                                     style="text-align: center">
+                                    {{second.renwuCount}}个
+                                </div>
+
+                            </div>
+                            <div class="dingdanDiv">
+                                <div class="dingdanTitle" style="text-align: center">总数量</div>
+
+                                <div class="dingdanText" style="text-align: center">{{second.renwuTotal}}箱</div>
+
+                            </div>
+                            <div class="dingdanDiv" style="width:30%">
+                                <div class="dingdanTitle">已生产</div>
+                                <div class="dingdanText" style="text-align: center; width: 100%; height:50%">
+
+                                    <div class="dingdanText1" style="width: 55%; text-align: right; position: relative;">{{second.hasPro}}箱</div>
+                                    <div class="dingdanText1" style="margin-left: 0%;color:white">/</div>
+                                    <div class="dingdanPre">{{second.fahuoPre}}%</div>
+                                </div>
+                            </div>
+                            <div class="dingdanDiv" style="width:30%">
+                                <div class="dingdanTitle">未生产</div>
+                                <div class="dingdanText" style="text-align: center; width: 100%; height:50%">
+                                    <div class="dingdanText1" style="width: 55%; text-align: right; position: relative;">{{second.weiFahuo}}箱</div>
+                                    <div class="dingdanText1" style="margin-left: 0%;color:white">/</div>
+                                    <div class="dingdanPre">{{second.weiFahuoPre}}%</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dingdanTable">
+                            <css-table></css-table>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="second-two">
+                    <title-bar value="10天日产量"></title-bar>
+                    <div id="riChanLiangChart" class="echarts"></div>
+                </div>
+            </div>
+            <div id="third">
+                <div id="third-one">
+                    <title-bar value="主要不良TOP5"></title-bar>
+                    <div id="buliangChart" class="echarts">
+
+                    </div>
+                </div>
+                <div id="third-two">
+                    <title-bar value="机台良品率"></title-bar>
+                    <div id="HeGeLvChart" class="echarts" style="margin-top:5%">
+
+                    </div>
+                </div>
+                <div id="third-three">
+                    <title-bar value="设备综合利用率"></title-bar>
+                    <div id="OEEChart" class="echarts"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/res/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/res/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/res/js/jsmpeg.min.js"></script>
+    <!--<script src="/res/js/jquery-3.3.1.min.js"></script>-->
+    <script src="/res/js/vue.js"></script>
+    <script src="/res/js/vuex.js"></script>
+    <script src="/res/js/vue-resource.min.js"></script>
+    <script src="/res/js/ElementUI/element-ui.js"></script>
+    <link rel="stylesheet" href="/res/component/title-bar/title-bar.css">
+    <script src="/res/component/title-bar/title-bar.js"></script>
+    <link rel="stylesheet" href="/res/component/image-text/image-text.css">
+    <script src="/res/component/image-text/image-text.js"></script>
+    <link rel="stylesheet" href="/res/component/lamp-text/lamp-text.css">
+    <script src="/res/component/lamp-text/lamp-text.js"></script>
+    <link rel="stylesheet" href="/res/component/css-table/css-table.css">
+    <script src="/res/component/css-table/css-table.js"></script>
+
+    <script type="text/javascript">
+        //全局变量
+        const store = new Vuex.Store({
+            // 定义状态
+            state: {
+                currentPageData: [], //当前页显示内容
+                selectIndex: 1
+            },
+            mutations: {
+                newSelectIndex(state, msg) {
+                    state.selectIndex = msg
+                },
+                newTabledata(state, data) {
+                    state.currentPageData = data
+                },
+            }
+        });
+
+
+        var datas = new Vue({
+            el: "#app",
+            store: store,
+            data: {
+                initbool: true,
+                currentTime: '',
+                first: {
+                    //xLine-Test
+                    OAall: 0,
+                    OARun: 0,
+                    OAYuGu: 0,
+                    RunPre: '0',
+                    GapPre: '0',
+
+                    items: [
+                        { xuhao: 1, name: '岑鉴鸿', banzu: '04-2', state: '在线' },
+                        { xuhao: 2, name: '杨庚未', banzu: '04-2', state: '在线' },
+                        { xuhao: 3, name: '蒙建军', banzu: '04-3', state: '在线' },
+                        { xuhao: 4, name: '严延朋', banzu: '04-3', state: '在线' },
+                        { xuhao: 5, name: '陈勇斌', banzu: '04-3', state: '在线' },
+
+                        //{ time: '2021-10-01 14:00:00', result: '燃油不足', remark: '待处理' },
+                    ]
+                },
+                second: {
+                    tabledata: [{ renwudan: 'P20210917001', name: '21/25甜味美国自然开心果(华民3:7沟果4号)', spec: '40*50', count: '1000', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917002', name: '21/25盐焗美国自然开心果(3:7沟果2号)', spec: '40*50', count: '1000', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917003', name: '25/27盐焗美国(NP)巴旦木仁(天鸿味烘烤)', spec: '40*50', count: '1000', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917004', name: 'Jumbo美国Ennis壳榛子', spec: '40*50', count: '800', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917005', name: '23/25原焗美国(NP)巴旦木仁', spec: '40*50', count: '500', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917001', name: '21/25甜味美国自然开心果(华民3:7沟果4号)', spec: '40*50', count: '1000', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917002', name: '21/25盐焗美国自然开心果(3:7沟果2号)', spec: '40*50', count: '1000', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917003', name: '25/27盐焗美国(NP)巴旦木仁(天鸿味烘烤)', spec: '40*50', count: '1000', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917004', name: 'Jumbo美国Ennis壳榛子', spec: '40*50', count: '800', jiaoqi: '2021-11-10' },
+                    { renwudan: 'P20210917005', name: '23/25原焗美国(NP)巴旦木仁', spec: '40*50', count: '500', jiaoqi: '2021-11-10' },],
+                    totalPage: 1, // 统共页数，默认为1
+                    currentPage: 1, //当前页数 ，默认为1
+                    pageSize: 10, // 每页显示数量
+
+                    //统计数据
+                    renwuCount: 0,
+                    renwuTotal: 0,
+                    hasPro: 0,
+                    fahuoPre: 0,
+                    weiFahuo: 0,
+                    weiFahuoPre: 0,
+                    //中下
+                },
+                third: {
+                    scHeGeLv_1: 88,
+                    scHeGeLv_2: 92,
+                }
+            },
+            mounted() {
+                //setInterval(this.GetLuQianData, 1000);
+                this.GetJiTaiCLData();
+                //this.WriteHeGeLvPie();
+                this.GetPCDData();
+                this.Get10DaysData();
+                this.GetLiangPinLv();
+                //this.WriteDingDanPie();
+                //this.WriteDingDanPie();
+                if (this.initbool) {
+                    setTimeout(setInterval(this.nextPage, 10000), 5000);
+                    setInterval(this.GetJiTaiCLData, 30000);
+                    //setInterval(this.nextPage, 10000);
+                    setInterval(this.Get10DaysData, 30000);
+
+                    setInterval(this.GetLiangPinLv, 60000);
+                    setInterval(this.GetCurrentTime, 1000);
+                    this.initbool = false;
+                }
+            },
+            methods: {
+
+                //机台产量数据
+                GetJiTaiCLData: async function () {
+                    console.log('231:开始取机台产量');
+                    await this.$http.post('/ashx/index2/GetJiTaiCLData.ashx')
+                        .then((res) => {
+                            var xLine = [];
+                            var yLine1 = [];
+                            var yLine2 = [];
+                            var max1 = 500;
+                            //用局部变量遍历，最后赋值给echart变量
+                            console.log(res.data);
+                            console.log(res.data.desc[0].XData);
+                            xLine = res.data.desc[0].XData;
+                            yLine1 = res.data.desc[0].YData1;
+
+                            yLine2 = res.data.desc[0].YData2;
+                            var maxI1 = (Math.floor(Math.max.apply(null, yLine2) / 500) + 1) * 500;
+                            var maxI2 = (Math.floor(Math.max.apply(null, yLine1) / 500) + 1) * 500;
+
+                            if (max1 < maxI1) {
+                                max1 = maxI1;
+                            }
+                            if (max1 < maxI2) {
+                                max1 = maxI2;
+                            }
+                            
+                            console.log(max1)
+                            this.WriteJiTai(xLine, yLine1, yLine2, max1);
+                        }, (res) => {
+                            // 响应错误回调
+                            //alert('请求新建处理失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                },
+                //获取排产单明细数据
+                GetPCDData: async function () {
+                    await this.$http.post('/ashx/index2/GetPCDData.ashx', {
+                        beforeDays: '-7',
+                        afterDays: '-0'
+                    })
+                        .then((res) => {
+
+                            //用局部变量遍历，最后赋值给echart变量
+                            console.log(res.data);
+                            this.second.tabledata = res.data;
+                            this.InitTable();
+                            var totalCount = 0;
+                            var fahuoCount = 0;
+
+                            for (var i = 0; i < res.data.length; i++) {
+                                totalCount += Number(res.data[i]["OrderCount"]);
+
+                            }
+                            this.second.renwuCount = res.data.length;
+                            this.second.renwuTotal = totalCount;
+
+                            this.SetTongJiData();
+                            //this.$store.commit('newTabledata', res.data);
+                            //this.WriteJiTai(xLine, yLine1, yLine2);
+                        }, (res) => {
+                            // 响应错误回调
+                            //alert('请求新建处理失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                },
+                SetTongJiData: async function () {
+                    
+                    this.second.fahuoPre = this.GetPercent(this.second.hasPro, this.second.renwuTotal);
+                    this.second.weiFahuo = this.second.renwuTotal - this.second.hasPro;
+                    this.second.weiFahuoPre = this.GetPercent(this.second.renwuTotal - this.second.hasPro, this.second.renwuTotal);
+                    this.first.OAall = this.second.renwuTotal;
+                    this.first.OAYuGu = Math.round(totalCount * 0.9);
+
+                    this.first.RunPre = this.GetPercent(this.second.hasPro, this.second.renwuTotal);
+                    this.first.GapPre = this.GetPercent(this.second.renwuTotal - this.second.hasPro, this.second.renwuTotal);
+                    this.WriteDingDanPie();
+                },
+
+                Get10DaysData: async function () {
+                    await this.$http.post('/ashx/index2/Get10DaysData.ashx')
+                        .then((res) => {
+                            var xLine = [];
+                            var yLine1 = [];
+                            var yLine2 = [];
+                            var totalProCount = 0;
+                            //用局部变量遍历，最后赋值给echart变量
+                            console.log(res.data);
+                            var max1 = 1000;
+                            var max2 = 250;
+                            xLine = res.data.desc[0].XData;
+                            yLine1 = res.data.desc[0].YData1;
+
+                            yLine2 = res.data.desc[0].YData2;
+                            for (var i = 0; i < res.data.desc[0].YData1.length;i++) {
+                                totalProCount += Number(res.data.desc[0].YData1[i]);
+                            }
+                            this.second.hasPro =
+                                totalProCount > this.second.renwuTotal ?
+                                    this.second.renwuTotal : totalProCount;
+                            this.first.OARun = this.second.hasPro;
+
+                            this.first.RunPre = this.GetPercent(this.second.hasPro, this.second.renwuTotal);
+                            this.SetTongJiData();
+
+
+                            var maxI1 = (Math.floor(Math.max.apply(null, yLine2) / 500) + 1) * 500;
+                            var maxI2 = (Math.floor(Math.max.apply(null, yLine1) / 500) + 1) * 500;
+
+                            if (max1 < maxI1) {
+                                max1 = maxI1;
+                            }
+                            if (max1 < maxI2) {
+                                max1 = maxI2;
+                            }
+                            this.WriteRiChanLiang(xLine, yLine1, yLine2, max1, max2);
+                            this.WriteDingDanPie();
+                            //this.WriteJiTai(xLine, yLine1, yLine2);
+                        }, (res) => {
+                            // 响应错误回调
+                            //alert('请求新建处理失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                },
+
+                GetLiangPinLv: async function () {
+                    await this.$http.post('/ashx/index2/GetLiangPinLv.ashx')
+                        .then((res) => {
+                            
+                            //用局部变量遍历，最后赋值给echart变量
+                            console.log(res.data);
+                            this.third.scHeGeLv_1 = res.data[0];
+                            this.third.scHeGeLv_2 = res.data[1];
+                            this.WriteHeGeLvPie();
+                            //this.WriteJiTai(xLine, yLine1, yLine2);
+                        }, (res) => {
+                            // 响应错误回调
+                            //alert('请求新建处理失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                },
+
+                InitTable: function () {
+                    // 计算一共有几页
+                    this.second.totalPage = Math.ceil(this.second.tabledata.length / this.second.pageSize);
+                    // 计算得0时设置为1
+                    this.second.totalPage = this.second.totalPage == 0 ? 1 : this.second.totalPage;
+                    this.second.currentPage = 1;
+                    this.setCurrentPageData();
+
+                },
+                nextPage: function () {
+                    //最后一页时刷新数据
+                    if (this.second.currentPage == this.second.totalPage) {
+                        //获取数据
+                        console.log("获取数据");
+
+                        this.GetPCDData();
+                    }
+                    else {
+                        //非最后一页时刷新页面
+                        console.log("非最后一页");
+                        console.log(this.second.currentPage);
+                        console.log(this.second.totalPage);
+                        this.second.currentPage++;
+                        this.setCurrentPageData();
+                    }
+                },
+                setCurrentPageData: function () {
+                    let begin = (this.second.currentPage - 1) * this.second.pageSize;
+                    let end = this.second.currentPage * this.second.pageSize;
+                    var cPageData = this.second.tabledata.slice(
+                        begin,
+                        end
+                    );
+
+                    this.$store.commit('newTabledata', cPageData);
+                },
+
+                // 绘制echart图
+                //订单综合指数
+                WriteDingDanPie: function () {
+                    var that = this;
+                    var myChart = echarts.init(document.getElementById('dingdanChart'));;
+                    var total = this.first.OAall; //最大温度数据单独出来定义，方便环形总数的修改
+                   
+                    placeHolderStyle = {
+                        normal: {
+                            label: {
+                                show: false
+                            },
+                            labelLine: {
+                                show: false
+                            }
+                        }
+                    };
+                    option = {
+                        title: {
+                            text: this.first.RunPre+'%', //主标题
+                            subtext: '完成百分比', //副标题
+                            textStyle: {
+                                //主标题样式
+                                color: '#fff',
+                                fontWeight: 'bold',
+                                fontSize: 30,
+                            },
+                            subtextStyle: {
+                                //副标题样式
+                                color: '#fff',
+                                fontSize: 16,
+                                fontWeight: 'bold',
+                                //color: '#0f0',
+                                left: '20%',
+                            },
+                            left: '30%',
+                            top: '42%'
+                        },
+                        tooltip: {
+                            show: true,
+                            trigger: 'item', //提示框触发类型，item数据项图形触发，主要应用于无类目轴的图表（散点图、饼形图等）
+                            formatter: function (params, ticket, callback) {
+                                //第一个参数数据集、第二个参数是异步回调标志、第三个参数是异步回调
+                                return params.seriesName + ': ' + params.value ; //系列名称：数据值
+                            }
+                        },
+                        color: ['#09BCF6', '#B9FEA5', '#FFEE1A'], //调色盘颜色列表，默认情况下图例和饼形环图颜色使用
+                        legend: {
+                            top: '18%',
+                            left: '40%',
+                            itemHeight: 12, //图例的高度
+                            icon: 'circle',
+                            itemGap: 10, //图例之间的间距
+                            data: ['计划:' + this.first.OAall, '实际:' + that.first.OARun, '预估:' + that.first.OAYuGu], //图例的数据数组
+                            textStyle: {
+                                color: '#fff'
+                            },
+                            selectedMode: true, //图例选择模式
+                            orient: 'vertical' //图例布局方式
+                        },
+                        series: [
+                            {
+                                name: '计划:' + this.first.OAall,
+                                type: 'pie',
+                                clockWise: false, //顺时加载
+                                startAngle: 90,
+                                endAngle: 0,
+                                max: this.first.OAall,
+                                hoverAnimation: false, //鼠标移入变大
+                                center: ['40%', '55%'],
+                                radius: [92, 100],
+                                itemStyle: placeHolderStyle,
+                                label: {
+                                    normal: {
+                                        show: false
+                                    }
+                                },
+                                data: [
+                                    {
+                                        value: this.first.OAall * 0.74,
+                                        itemStyle: {
+                                            normal: {
+                                                color: '#09BCF6'
+                                            }
+                                        }
+                                    },
+                                    {
+                                        value: (total == 0 ? 1 : total) - this.first.OAall * 0.74,
+                                        itemStyle: {
+                                            normal: {
+                                                color: 'transparent'
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                name: '实际:' + this.first.OARun,
+                                type: 'pie',
+                                clockWise: false, //顺时加载
+                                startAngle: 90,
+                                endAngle: -0,
+                                max: this.first.OAall,
+                                hoverAnimation: false, //鼠标移入变大
+                                radius: [72, 80],
+                                center: ['40%', '55%'],
+                                itemStyle: placeHolderStyle,
+                                data: [
+                                    {
+                                        value: this.first.OARun * 0.74,
+                                        itemStyle: {
+                                            normal: {
+                                                color: '#B9FEA5'
+                                            }
+                                        }
+                                    },
+                                    {
+                                        value: (total== 0?1 : total) - this.first.OARun * 0.74,
+                                        itemStyle: {
+                                            normal: {
+                                                color: 'transparent'
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                name: '预估:' + this.first.OAYuGu,
+                                type: 'pie',
+                                clockWise: false, //顺时加载
+                                startAngle: 90,
+                                endAngle: -0,
+                                max: this.first.OAall,
+                                hoverAnimation: false, //鼠标移入变大
+                                radius: [52, 60],
+                                center: ['40%', '55%'],
+                                itemStyle: placeHolderStyle,
+                                progress: {
+                                    show: true,
+                                    width: 30
+                                },
+                                pointer: {
+                                    show: false
+                                },
+                                axisLine: {
+                                    show: false
+                                },
+                                axisTick: {
+                                    show: false
+                                },
+                                splitLine: {
+                                    show: false
+                                },
+                                axisLabel: {
+                                    show: false
+                                },
+                                detail: {
+                                    show: false
+                                },
+
+                                data: [
+                                    {
+                                        value: this.first.OAYuGu*0.74,
+                                        itemStyle: {
+                                            normal: {
+                                                color: '#FFEE1A'
+                                            }
+                                        }
+                                    },
+                                    {
+                                        value: (total == 0 ? 1 : total) - this.first.OAYuGu * 0.74,
+                                        itemStyle: {
+                                            normal: {
+                                                color: 'transparent'
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    };
+                    myChart.clear();
+                    myChart.setOption(option, true);
+                },
+
+                //左中，折线图
+                WriteJiTai: function (xLine, yLine1, yLine2, max) {
+                    console.log('506:开始描绘折线图');
+                    const that = this;
+                    var myChart = echarts.init(document.getElementById('jiTaiCLChart'));;
+
+                    var charts = {
+                        unit: '压力',
+                        names: ['生产2线', '生产3线'],
+                        lineX: xLine,
+                        value: [yLine1, yLine2],
+
+                    };
+
+                    var color = ['#F5FF51', '#8AD3FF'];
+                    var shadowcolor = ['#09205C', '#2583A7'];
+
+                    var lineY = [];
+
+                    for (var i = 0; i < charts.names.length; i++) {
+                        var x = i;
+                        if (x > color.length - 1) {
+                            x = color.length - 1
+                        }
+                        var data = {
+                            name: charts.names[i],
+                            type: 'line',
+                            color: color[x],
+                            smooth: true,
+                            areaStyle: {
+                                normal: {
+                                    color:
+                                        new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                            offset: 0,
+                                            color: shadowcolor[x]  // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 0.7,
+                                            //color: shadowcolor[x],
+                                            color: '#09205C' // 100% 处的颜色
+                                        }], false),
+                                    //shadowColor: '#4682B4',
+                                    shadowBlur: 10
+                                }
+                            },
+                            symbol: 'circle',
+                            symbolSize: 5,
+                            connectNulls: false,
+                            label: {
+                                formatter: function (params) {
+                                    if (params.value > 0) {
+                                        return params.value;
+                                    } else {
+                                        return null;
+                                    }
+                                }
+                            },
+                            data: charts.value[i]
+                        };
+                        lineY.push(data)
+                    }
+
+                    var option = {
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            icon: 'rectangle',
+                            //orient: 'vertical',
+                            show: true,
+                            data: charts.names,
+                            textStyle: {
+                                fontSize: 12,
+                                color: '#C1FFC1'
+                            },
+                            right: '4%',
+                            top: '0%'
+                        },
+                        grid: {
+                            top: '10%',
+                            left: '2%',
+                            right: '5%',
+                            bottom: '2%',
+                            containLabel: true
+                        },
+                        xAxis: {
+                            type: 'category',
+                            boundaryGap: true,
+                            data: charts.lineX,
+                            axisLabel: {
+                                interval: 1,
+                                textStyle: {
+                                    color: '#98F5FF'
+                                    //color: 'rgb(0,253,255,0.6)'
+                                },
+                                formatter: function (params) {
+                                    return params
+                                }
+                            }
+                        },
+                        yAxis: {
+                            //name: charts.unit,
+                            type: 'value',
+                            max: max,
+                            min: 0,
+                            splitNumber: 5,
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#98F5FF'
+                                }
+                            },
+                            splitLine: {
+
+                                lineStyle: {
+                                    color: '#122659'
+                                    //color: '#4682B4'
+                                }
+                            },
+                            axisLine: {
+
+                                lineStyle: {
+                                    color: '#4682B4'
+                                }
+                            }
+                        },
+                        series: lineY
+                    };
+                    myChart.clear();
+                    myChart.setOption(option, true);
+                },
+                //中下，折线图柱状图
+                //日产量柱状图
+                WriteRiChanLiang: function (xLine, yLine1, yLine2, max1, max2) {
+                    var myChart = echarts.init(document.getElementById('riChanLiangChart'));;
+
+                    option = {
+                        tooltip: {
+                            trigger: 'axis',
+                            axisPointer: {
+                                type: 'cross',
+                                crossStyle: {
+                                    color: '#999'
+                                }
+                            }
+                        },
+                        grid: {
+                            top: '15%',
+                            left: '2%',
+                            right: '5%',
+                            bottom: '2%',
+                            containLabel: true
+                        },
+                        legend: {
+                            data: ['实际产量']
+                            ,
+                            textStyle: {
+                                fontSize: 12,
+                                color: '#C1FFC1'
+                            },
+                            right: '20%',
+                            top: '0%'
+                        },
+                        xAxis: [
+                            {
+                                type: 'category',
+                                data: xLine,
+                                axisLabel: {
+                                    interval: 0,
+                                    textStyle: {
+                                        color: '#98F5FF'
+                                        //color: 'rgb(0,253,255,0.6)'
+                                    },
+                                    formatter: function (params) {
+                                        return params
+                                    }
+                                }
+                            }
+                        ],
+                        yAxis: [
+                            {
+                                type: 'value',
+                                name: '实际产量',
+                                min: 0,
+                                max: max1,
+                                interval: max1 / 5,
+                                axisLabel: {
+                                    textStyle: {
+                                        color: '#98F5FF'
+                                    }
+                                },
+                                splitLine: {
+
+                                    lineStyle: {
+                                        color: '#122659'
+                                        //color: '#4682B4'
+                                    }
+                                },
+                                axisLine: {
+
+                                    lineStyle: {
+                                        color: '#4682B4'
+                                    }
+                                }
+                            },
+                            //{
+                            //    type: 'value',
+                            //    name: '计划产量',
+                            //    min: 0,
+                            //    max: max2,
+                            //    interval: max2 / 5,
+                            //    axisLabel: {
+                            //        formatter: '{value} %',
+                            //        textStyle: {
+                            //            color: '#98F5FF'
+                            //        }
+                            //    },
+                            //    splitLine: {
+
+                            //        lineStyle: {
+                            //            color: '#122659'
+                            //            //color: '#4682B4'
+                            //        }
+                            //    },
+                            //    axisLine: {
+
+                            //        lineStyle: {
+                            //            color: '#4682B4'
+                            //        }
+                            //    }
+                            //}
+                        ],
+                        series: [
+                            {
+                                name: '实际产量',
+                                type: 'bar',
+                                barWidth: 5,
+                                itemStyle: {
+                                    normal: {
+                                        color: new echarts.graphic.LinearGradient(
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            [
+                                                {
+                                                    offset: 0,
+                                                    color: '#36ACEC' // 0% 处的颜色
+                                                },
+                                                {
+                                                    offset: 0.4,
+                                                    color: '#688FDE' // 60% 处的颜色
+                                                },
+                                                {
+                                                    offset: 1,
+                                                    color: '#9171D4' // 100% 处的颜色
+                                                }
+                                            ],
+                                            false
+                                        )
+                                    }
+                                },
+                                data: yLine1
+                            },
+                            //{
+                            //    name: '计划产量',
+                            //    type: 'line',
+                            //    yAxisIndex: 1,
+                            //    symbol: 'circle',
+                            //    symbolSize: 8,
+                            //    itemStyle: {
+                            //        normal: {
+                            //            color: '#FFF',
+                            //            lineStyle: {
+                            //                color: '#C229A7'
+                            //            }
+                            //        }
+                            //    },
+                            //    data: yLine2
+                            //}
+                        ]
+                    };
+                    myChart.clear();
+                    myChart.setOption(option, true);
+                },
+                //右中，分环图
+                WriteHeGeLvPie: function () {
+                    console.log('793:开始描绘分环图');
+                    var myChart = echarts.init(document.getElementById('HeGeLvChart'));;
+                    //数据值
+                    const gaugeData1 = [
+                        {
+                            value: this.third.scHeGeLv_1,
+                            name: '生产二线',
+                            itemStyle: {
+                                color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 1,
+                                    y2: 1,
+                                    colorStops: [
+                                        {
+                                            offset: 0, color: '#05C7FA' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 0.1, color: '#05C7FA' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 0.5, color: '#05C7FA' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 0.8, color: '#2A6ED1' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 1, color: '#2A6ED1' // 100% 处的颜色
+                                        }],
+                                    globalCoord: true // 缺省为 false
+                                }
+                            },
+                            title: {
+                                offsetCenter: ['0%', '140%'],
+                                color: '#FFF',
+                            },
+                            detail: {
+                                valueAnimation: true,
+                                offsetCenter: ['0%', '0%']
+                            }
+                        },
+                    ];
+                    const gaugeData2 = [
+                        {
+                            value: this.third.scHeGeLv_2,
+
+                            name: '生产三线',
+                            itemStyle: {
+                                color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 1,
+                                    y2: 1,
+                                    colorStops: [
+                                        {
+                                            offset: 0, color: '#2A6ED1' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 0.2, color: '#05C7FA' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 0.5, color: '#05C7FA' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 0.8, color: '#2A6ED1' // 0% 处的颜色
+                                        },
+                                        {
+                                            offset: 1, color: '#2A6ED1' // 100% 处的颜色
+                                        }],
+                                    globalCoord: true // 缺省为 false
+                                }
+                            },
+                            title: {
+                                offsetCenter: ['0%', '140%'],
+                                color: '#FFF',
+                            },
+                            detail: {
+                                valueAnimation: true,
+                                offsetCenter: ['0%', '0%']
+                            }
+                        },
+                    ];
+                    option = {
+                        series: [
+                            {
+                                type: 'gauge',
+                                startAngle: 90,
+                                endAngle: -270,
+                                center: ['25%', '40%'],
+                                radius: "65%",
+                                //radius: ['40%'],
+                                pointer: {
+                                    show: false
+                                },
+                                legend: {
+                                    orient: 'vertical',
+                                    x: 'left',
+                                    y: 'center',
+                                    itemGap: 20,
+                                    itemWidth: 30,
+                                    itemHeight: 20,
+                                    textStyle: {
+                                        color: '#000',
+                                        fontSize: 25
+                                    },
+                                    data: ['初创型<=5年', '成长型5-10年', '发展型10-20年', '老字号>20年']
+                                },
+                                progress: {
+                                    show: true,
+                                    overlap: false,
+                                    roundCap: false,
+                                    clip: false,
+                                    itemStyle: {
+                                        borderWidth: 1,
+                                        borderColor: '#464646'
+                                    }
+                                },
+                                axisLine: {
+                                    lineStyle: {
+                                        width: 15,
+                                    }
+                                },
+                                splitLine: {
+                                    show: false,
+                                    distance: 0,
+                                    length: 10
+                                },
+                                axisTick: {
+                                    show: false
+                                },
+                                axisLabel: {
+                                    show: false,
+                                    distance: 50
+                                },
+                                data: gaugeData1,
+                                title: {
+                                    fontSize: 14
+                                },
+                                detail: {
+                                    width: 50,
+                                    height: 14,
+                                    fontSize: 25,
+                                    color: '#FFF',
+                                    borderColor: 'auto',
+                                    borderRadius: 0,
+                                    borderWidth: 0,
+                                    formatter: '{value}%'
+                                }
+                            },
+                            {
+                                type: 'gauge',
+                                startAngle: 90,
+                                endAngle: -270,
+                                center: ['75%', '40%'],
+                                radius: "65%",
+                                //radius: ['40%'],
+                                pointer: {
+                                    show: false
+                                },
+                                progress: {
+                                    show: true,
+                                    overlap: false,
+                                    roundCap: false,
+                                    clip: false,
+                                    itemStyle: {
+                                        borderWidth: 1,
+                                        borderColor: '#464646'
+                                    }
+                                },
+                                axisLine: {
+                                    lineStyle: {
+                                        width: 15,
+                                    }
+                                },
+                                splitLine: {
+                                    show: false,
+                                    distance: 0,
+                                    length: 10
+                                },
+                                axisTick: {
+                                    show: false
+                                },
+                                axisLabel: {
+                                    show: false,
+                                    distance: 50
+                                },
+                                data: gaugeData2,
+                                title: {
+                                    fontSize: 14
+                                },
+                                detail: {
+                                    width: 50,
+                                    height: 14,
+                                    fontSize: 25,
+                                    color: '#FFF',
+                                    borderColor: 'auto',
+                                    borderRadius: 0,
+                                    borderWidth: 0,
+                                    formatter: '{value}%'
+                                }
+                            }
+                        ]
+                    };
+
+                    myChart.clear();
+                    myChart.setOption(option, true);
+
+                },
+                GetPercent: function (num, total) {
+                    /// <summary>
+                    /// 求百分比
+                    /// </summary>
+                    /// <param name="num">当前数</param>
+                    /// <param name="total">总数</param>
+                    num = parseFloat(num);
+                    total = parseFloat(total);
+                    if (isNaN(num) || isNaN(total)) {
+                        return "-";
+                    }
+                    return total <= 0 ? 0: (Math.round(num / total * 10000) / 100.00);
+                },
+                GetCurrentTime: function () {
+                    var date = new Date();
+                    var year = date.getFullYear();    //  返回的是年份
+                    var month = date.getMonth() + 1;  //  返回的月份上个月的月份，记得+1才是当月
+                    var dates = date.getDate();       //  返回的是几号
+                    var day = date.getDay();          //  周一返回的是1，周六是6，但是周日是0
+                    var hour = date.getHours();
+                    var minute = date.getMinutes();
+                    var second = date.getSeconds();
+
+                    var arr = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六",];
+                    this.currentTime = (year + "年" + month + "月" + dates + "日  "
+                        + this.addZero(hour) + ":" + this.addZero(minute) + ":" + this.addZero(second)
+                        + " " + arr[day]);
+
+                },
+            },
+            computed: {
+                //设置计算属性
+
+            }
+        });
+    </script>
+</body>
+</html>

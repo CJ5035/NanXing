@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" charset="utf-8">
+    <script src="/res/js/mui.js"></script>
+    <link href="/res/css/mui.css" rel="stylesheet" />
+    <title></title>
+
+    <style>
+        #fset {
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .form-group {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .inp {
+            width: 70%;
+            font-size: 20px;
+            text-align: center;
+            /* 这里是去除掉input的默认样式然后修改为自己的 */
+            background: none;
+            outline: none;
+            border: 0px;
+            /* 这里是修改为自己的样式 */
+            border-bottom: 2px solid #dcdcdc;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            /* 使用怪异盒模型，也可以不使用 */
+            box-sizing: border-box;
+        }
+
+            .inp:focus {
+                border-bottom: 2px solid #0F996B;
+                border-bottom-left-radius: 1px;
+                border-bottom-right-radius: 1px;
+            }
+
+        .loginb {
+            text-align: center;
+            margin-top: 20px;
+            width: 50%;
+            height: 40px;
+            border: none;
+            line-height: 40px;
+            background-color: rgb(7, 187, 127);
+            border-radius: 5px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+            .loginb:active {
+                background-color: #0F996B;
+            }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <fieldset id="fset" style="margin-top: 20px;">
+
+            <legend style="font-size:24px">岗位选择</legend>
+
+            <ul class="mui-table-view" style="margin-top: 20px;">
+                <li class="mui-table-view-cell" >
+                    <a class="mui-navigate-right" href="Instocks-All.html">自动进仓</a>
+                </li>
+
+
+                <li class="mui-table-view-cell" >
+                    <a class="mui-navigate-right" href="Outstocks-Auto-All.html">自动出仓</a>
+                </li>
+
+
+                <li class="mui-table-view-cell" style="display:none">
+                    <a class="mui-navigate-right" href="Outstocks-Auto-HC.html">缓存自动出仓</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view" style="margin-top: 20px;">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="Instocks.html">本层进仓</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="Outstocks-Auto.html">本层出仓</a>
+                </li>
+            </ul>
+
+            <ul class="mui-table-view" style="margin-top: 20px;">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="Moves.html">仓位调拨</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="Outstocks-Hand.html">手动出仓</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right" href="Instocks-Hand.html">手动进仓</a>
+                </li>
+                <li class="mui-table-view-cell" :style="{'display':formateTitleColor()}">
+                    <a class="mui-navigate-right" href="Outstocks-Hand-HC.html">批量缓存出仓</a>
+                </li>
+				<!--style="display:none"-->
+                <li class="mui-table-view-cell" >
+                    <a class="mui-navigate-right" href="Outstocks-Hand-All.html">批量手动出仓</a>
+                </li>
+
+                <li class="mui-table-view-cell" :style="{'display':formateTitleColor()}">
+                    <a class="mui-navigate-right" href="Movestocks-Auto-BatchNo-HC.html">批量缓存调拨</a>
+                </li>
+				
+				 <li class="mui-table-view-cell" >
+                    <a class="mui-navigate-right" href="Movestocks-Auto-BatchNo-CP.html">批量成品调拨</a>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+
+    <script src="/res/js/js.cookie.js"></script>
+    <script src="/res/js/jquery-3.3.1.min.js"></script>
+    <script src="/res/js/vue.js"></script>
+    <script src="/Scripts/vue-resource.min.js"></script>
+
+    <script>
+        //加载后执行
+        $(document).ready(function () {
+            //绑定表格
+            //bindTable();
+            //updateSummary();
+            //getInfo("2202109290000049");
+            datas.nowPosition = Cookies.get("nowWareHouse");
+            datas.nowPerson = Cookies.get("nowPerson");
+        })
+
+        mui.init();
+        var datas = new Vue({
+            el: "#app",
+            data: {
+                nowPerson: '',
+                nowPosition: '',
+            },
+            module() {
+                this.nowPerson = Cookies.get("nowPerson");
+                this.nowPosition = Cookies.get("nowWareHouse");
+            },
+            methods: {
+                formateTitleColor :function () {
+                    return this.nowPosition != '07一楼' ? 'none' : 'block';
+                }
+            }
+        })
+
+    </script>
+
+</body>
+</html>

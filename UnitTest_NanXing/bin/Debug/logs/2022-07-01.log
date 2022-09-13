@@ -1,0 +1,4 @@
+2022-07-01 16:28:01.2464                
+ [INFO]  : ***接收时间:2022-07-01 16:28:01，消息内容：{"crm_ID":"629092d1fa4c4f0001615657","taskName":"03小包装-小袋","startTime":"1656147047302","endTime":"1656147047302","count":3200.0,"unit":"件","updateUserID":"001","updateUserName":"001"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------

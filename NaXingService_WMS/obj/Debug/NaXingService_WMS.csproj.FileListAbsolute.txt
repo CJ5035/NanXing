@@ -1,0 +1,16 @@
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NLog.config
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NaXingService_WMS.dll
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NaXingService_WMS.pdb
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NanXingData_WMS.dll
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NLog.dll
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\EntityFramework.dll
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NanXingData_WMS.pdb
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NanXingData_WMS.dll.config
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\NLog.xml
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\EntityFramework.xml
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\obj\Debug\NaXingService_WMS.csproj.AssemblyReference.cache
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\obj\Debug\NaXingService_WMS.csproj.CoreCompileInputs.cache
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\obj\Debug\NaXingService_WMS.dll
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\obj\Debug\NaXingService_WMS.pdb
+F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\bin\Debug\EFBulkInsert.dll

@@ -1,0 +1,597 @@
+2022-03-24 14:45:46.4766                
+ [ERROR] AGVApi: : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 WCSApi.Controllers.BaseController.get__AGVApiManager() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\BaseController.cs:行号 125
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass1_0.<MissionStates>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 56
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStates>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 15:04:04.1326                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 System.Threading.Tasks.Task`1.get_Result()
+   在 EntityFramework.Batch.SqlServerBatchRunner.Update[TEntity](ObjectContext objectContext, EntityMap entityMap, ObjectQuery`1 query, Expression`1 updateExpression)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 723
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 98
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass1_0.<MissionStates>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 59
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStates>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 58
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 15:07:30.9747                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 System.Threading.Tasks.Task`1.get_Result()
+   在 EntityFramework.Batch.SqlServerBatchRunner.Update[TEntity](ObjectContext objectContext, EntityMap entityMap, ObjectQuery`1 query, Expression`1 updateExpression)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 723
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 98
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass1_0.<MissionStates>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 59
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStates>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 58
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 15:09:00.3689                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 System.Threading.Tasks.Task`1.get_Result()
+   在 EntityFramework.Batch.SqlServerBatchRunner.Update[TEntity](ObjectContext objectContext, EntityMap entityMap, ObjectQuery`1 query, Expression`1 updateExpression)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 723
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 98
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass1_0.<MissionStates>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 59
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStates>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 58
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 15:09:47.6074                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 System.Threading.Tasks.Task`1.get_Result()
+   在 EntityFramework.Batch.SqlServerBatchRunner.Update[TEntity](ObjectContext objectContext, EntityMap entityMap, ObjectQuery`1 query, Expression`1 updateExpression)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 723
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 98
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass1_0.<MissionStates>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 59
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStates>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 58
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 15:12:08.6588                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 System.Threading.Tasks.Task`1.get_Result()
+   在 EntityFramework.Batch.SqlServerBatchRunner.Update[TEntity](ObjectContext objectContext, EntityMap entityMap, ObjectQuery`1 query, Expression`1 updateExpression)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 723
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 98
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass1_0.<MissionStates>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 59
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStates>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 58
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetException: 非静态方法需要一个目标。
+   在 System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   在 System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryGetFieldOrPropertyValue(MemberExpression me, Object instance, Object& memberValue)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.TryEvaluatePath(Expression expression, ConstantExpression& constantExpression)
+   在 System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery.ToTraceString()
+   在 EntityFramework.Batch.SqlServerBatchRunner.GetSelectSql[TEntity](ObjectQuery`1 query, EntityMap entityMap, DbCommand command)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 15:59:35.7403                
+ [ERROR] AGVApi: : System.InvalidOperationException: 正在创建模型，此时不可使用上下文。如果在 OnModelCreating 方法内使用上下文或如果多个线程同时访问同一上下文实例，可能引发此异常。请注意不保证 DbContext 的实例成员和相关类是线程安全的。
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 723
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 81
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass2_0.<MissionStatesAsync>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 67
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStatesAsync>d__2.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 66
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 16:01:14.4150                
+ [ERROR] AGVApi: : System.InvalidOperationException: 正在创建模型，此时不可使用上下文。如果在 OnModelCreating 方法内使用上下文或如果多个线程同时访问同一上下文实例，可能引发此异常。请注意不保证 DbContext 的实例成员和相关类是线程安全的。
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 723
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 81
+   在 WCSApi.Controllers.AGVController.<>c__DisplayClass2_0.<MissionStatesAsync>b__0() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 67
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStatesAsync>d__2.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 66
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 16:35:18.8771                
+ [ERROR] AGVApi: : System.InvalidOperationException: 无法定义这两个对象之间的关系，因为它们附加到不同的 ObjectContext 对象。
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.ValidateContextsAreCompatible(RelatedEnd targetRelatedEnd)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IEntityWrapper wrappedOwner, RelatedEnd relatedEnd, IEntityWrapper entityToAdd, Boolean isForeignKeyChange)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IList`1 entries)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.DetectChanges()
+   在 System.Data.Entity.Core.Objects.ObjectContext.DetectChanges()
+   在 System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries(Func`2 predicate)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries()
+   在 System.Data.Entity.Infrastructure.DbChangeTracker.Entries()
+   在 System.Data.Entity.DbContext.GetValidationErrors()
+   在 System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.<SaveChangesAsync>d__33.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 1003
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 NanXingService_WMS.Managers.AGVApiManager.<UpdateMissionStatesAsync>d__6.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 204
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStatesAsync>d__2.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 66
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 16:36:08.6710                
+ [ERROR] AGVApi: : System.InvalidOperationException: 无法定义这两个对象之间的关系，因为它们附加到不同的 ObjectContext 对象。
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.ValidateContextsAreCompatible(RelatedEnd targetRelatedEnd)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IEntityWrapper wrappedOwner, RelatedEnd relatedEnd, IEntityWrapper entityToAdd, Boolean isForeignKeyChange)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IList`1 entries)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.DetectChanges()
+   在 System.Data.Entity.Core.Objects.ObjectContext.DetectChanges()
+   在 System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries(Func`2 predicate)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries()
+   在 System.Data.Entity.Infrastructure.DbChangeTracker.Entries()
+   在 System.Data.Entity.DbContext.GetValidationErrors()
+   在 System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.<SaveChangesAsync>d__33.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 1003
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 NanXingService_WMS.Managers.AGVApiManager.<UpdateMissionStatesAsync>d__6.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 204
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStatesAsync>d__2.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 66
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 16:36:30.2092                
+ [ERROR] AGVApi: : System.InvalidOperationException: 无法定义这两个对象之间的关系，因为它们附加到不同的 ObjectContext 对象。
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.ValidateContextsAreCompatible(RelatedEnd targetRelatedEnd)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IEntityWrapper wrappedOwner, RelatedEnd relatedEnd, IEntityWrapper entityToAdd, Boolean isForeignKeyChange)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IList`1 entries)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.DetectChanges()
+   在 System.Data.Entity.Core.Objects.ObjectContext.DetectChanges()
+   在 System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries(Func`2 predicate)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries()
+   在 System.Data.Entity.Infrastructure.DbChangeTracker.Entries()
+   在 System.Data.Entity.DbContext.GetValidationErrors()
+   在 System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.<SaveChangesAsync>d__33.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 1003
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 NanXingService_WMS.Managers.AGVApiManager.<UpdateMissionStatesAsync>d__6.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 204
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStatesAsync>d__2.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 66
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-03-24 16:39:59.6209                
+ [ERROR] AGVApi: : System.InvalidOperationException: 无法定义这两个对象之间的关系，因为它们附加到不同的 ObjectContext 对象。
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.ValidateContextsAreCompatible(RelatedEnd targetRelatedEnd)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Add(IEntityWrapper wrappedTarget, Boolean applyConstraints, Boolean addRelationshipAsUnchanged, Boolean relationshipAlreadyExists, Boolean allowModifyingOtherEndOfRelationship, Boolean forceForeignKeyChanges)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IEntityWrapper wrappedOwner, RelatedEnd relatedEnd, IEntityWrapper entityToAdd, Boolean isForeignKeyChange)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.PerformAdd(IList`1 entries)
+   在 System.Data.Entity.Core.Objects.ObjectStateManager.DetectChanges()
+   在 System.Data.Entity.Core.Objects.ObjectContext.DetectChanges()
+   在 System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries(Func`2 predicate)
+   在 System.Data.Entity.Internal.InternalContext.GetStateEntries()
+   在 System.Data.Entity.Infrastructure.DbChangeTracker.Entries()
+   在 System.Data.Entity.DbContext.GetValidationErrors()
+   在 System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.<SaveChangesAsync>d__33.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 1003
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 NanXingService_WMS.Managers.AGVApiManager.<UpdateMissionStatesAsync>d__6.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 208
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 WCSApi.Controllers.AGVController.<MissionStatesAsync>d__2.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 66
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------

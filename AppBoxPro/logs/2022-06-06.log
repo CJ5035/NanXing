@@ -1,0 +1,4 @@
+2022-06-06 19:27:45.3503                
+ [DEBUG]  : ID：3:S20220606001                
+  PlanToPro.btnAddOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f1392622b8404e32b925c1cb7645b1b2" Name="Diagram1">
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.AGVMissionInfo" Width="1.5" PointX="10.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Configs" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Depts" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Log" Width="1.5" PointX="12.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Menus" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Onlines" Width="1.5" PointX="7.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Powers" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Production" Width="1.5" PointX="13.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.ProductOrderheaders" Width="1.5" PointX="8.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.ProductOrderlists" Width="1.5" PointX="11" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Roles" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.StockPlan" Width="1.5" PointX="14.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.TelenClients" Width="1.5" PointX="5.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Titles" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.TrayPro" Width="1.5" PointX="15" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.TrayState" Width="1.5" PointX="12.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.Users" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.WareArea" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.WareAreaClass" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.WareHouse" Width="1.5" PointX="6" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.WareLocation" Width="1.5" PointX="10.5" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_dbo_Depts_dbo_Depts_ParentID" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_dbo_Users_dbo_Depts_DeptID" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_dbo_Menus_dbo_Menus_ParentID" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_dbo_Menus_dbo_Powers_ViewPowerID" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_dbo_Onlines_dbo_Users_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_ProductOrderlistsProduction" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_TrayStateTrayPro" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_TrayState_WareLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_WARELOCA_REFERENCE_USERS" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_WAREAREA_REFERENCE_WAREAREA" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_WAREAREA_REFERENCE_WAREHOUS" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_WARELOCA_REFERENCE_WAREAREA" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.RolePowers" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.RoleUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.TitleUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="NanXingGuoRen_WMSModel1.FK_AGVMissionInfo_StockPlan" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.TiShengJiState" Width="1.5" PointX="15.375" PointY="11.75" />
+        <EntityTypeShape EntityType="NanXingGuoRen_WMSModel1.AGVMissionInfo_Floor" Width="1.5" PointX="15.375" PointY="15.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

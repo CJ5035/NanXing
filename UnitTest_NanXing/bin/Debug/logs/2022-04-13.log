@@ -1,0 +1,4 @@
+2022-04-13 10:25:59.4594                
+ [INFO]  : 发送AGV任务指令：http://192.168.3.180:8001/ics/taskOrder/addTask                
+  AGVOrderUtils.SendOrder => AGVOrderUtils.SendMission => Logger.Process               
+ ------------------------------------------------

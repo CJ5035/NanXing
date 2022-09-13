@@ -1,0 +1,24 @@
+2022-06-30 15:43:53.5909                
+ [INFO]  : 修改状态发送到队列：生产明细单ID：62941fab42b30b0001eea37c生产状态：生产中                
+  WXProductController.ChangeOrderStatue => ProductOrderManager.UpdateProOrderStatue => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:43:53.8579                
+ [INFO]  :  --成功发送到broker服务器CRMChangeState--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:44:18.7885                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:53:06.6370                
+ [INFO]  : 修改状态发送到队列：生产明细单ID：62941fab42b30b0001eea37c生产状态：生产中                
+  WXProductController.ChangeOrderStatue => ProductOrderManager.UpdateProOrderStatue => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:53:07.1060                
+ [INFO]  :  --成功发送到broker服务器CRMChangeState--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-30 15:53:14.2043                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------

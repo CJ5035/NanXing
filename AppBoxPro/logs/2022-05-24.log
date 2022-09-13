@@ -1,0 +1,4 @@
+2022-05-24 17:13:20.2209                
+ [INFO]  :  --成功发送到broker服务器ChangeCRM--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------

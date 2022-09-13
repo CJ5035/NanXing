@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>售后服务工单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="../layui-v2.4.5/layui/css/layui.css" rel="stylesheet" />
+    <script src="../layui-v2.4.5/layui/layui.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <form class="layui-form layui-form-pane" id="form1">
+        <div id="app">
+            <input type="hidden" v-model="ID" name="ID" />
+            <fieldset class="layui-elem-field " style="margin-top: 10px;">
+                <legend><i class="layui-icon layui-icon-group" style="color: #009688;"></i>客户信息</legend>
+                <div class="layui-field-box">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">客户名称：</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="Name" lay-verify="title" autocomplete="off" placeholder="" class="layui-input" v-model="Name" readonly="readonly">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">联系人：</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="contact" lay-verify="required" lay-reqtext="不能为空？" placeholder="" autocomplete="off" class="layui-input" v-model="contact" readonly="readonly">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">联系地址：</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="address" lay-verify="required" lay-reqtext="不能为空？" placeholder="" autocomplete="off" class="layui-input" v-model="address" readonly="readonly">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <fieldset class="layui-elem-field " style="margin-top: 10px;">
+                <legend><i class="layui-icon layui-icon-form" style="color:#2F4056;"></i>请求服务内容</legend>
+                <div class="layui-field-box">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">服务需求描述</label>
+                        <div class="layui-input-block">
+                            <textarea placeholder="请输入内容" class="layui-textarea" rows="2" v-model="order_desc" readonly="readonly"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label ">服务性质</label>
+                        <div class="layui-input-block">
+                            <select name="nature" v-model="nature">
+                                <option value="保内免费服务">保内免费服务</option>
+                                <option value="扩展免费服务">扩展免费服务</option>
+                                <option value="保外收费服务">保外收费服务</option>
+                                <option value="其他免费服务">其他免费服务</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="layui-elem-field" style="margin-top: 10px;">
+                <legend><i class="layui-icon layui-icon-util" style="color: #FFB800;"></i>上门服务内容</legend>
+                <div class="layui-field-box">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">服务培训描述</label>
+                        <div class="layui-input-block">
+                            <textarea placeholder="" name="train_desc" class="layui-textarea" rows="2" v-model="train_desc"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">培训岗位:</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="train_instance" lay-verify="required" lay-reqtext="不能为空" placeholder="" autocomplete="off" class="layui-input" v-model="train_instance">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">设备信息:</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="equip_info" lay-verify="required" lay-reqtext="不能为空" placeholder="" autocomplete="off" class="layui-input" v-model="equip_info">
+                        </div>
+                    </div>
+
+                    <div class="layui-upload">
+                        <button type="button" class="layui-btn layui-btn-normal" id="imgupload">选择文件(现场图片)</button>
+                    </div>
+
+                </div>
+            </fieldset>
+
+
+            <fieldset class="layui-elem-field" style="margin-top: 10px;">
+                <legend><i class="layui-icon layui-icon-reply-fill" style="color: #FF5722;"></i>客户意见</legend>
+                <div class="layui-field-box">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">解决问题:</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="soulv_content" lay-verify="required" lay-reqtext="" placeholder="" autocomplete="off" class="layui-input" v-model="soulv_content">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">服务评价:</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="evaluate" lay-verify="required" lay-reqtext="岂能为空？" placeholder="" autocomplete="off" class="layui-input" v-model="evaluate">
+                        </div>
+                    </div>
+                    <label class="layui-form-label">评分:</label><div id="grade" style="margin-left:30px">
+
+                    </div>
+                    <input name="grade" type="text" v-model="grade" hidden="hidden" />
+                </div>
+
+            </fieldset>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button id="submit" type="submit" class="layui-btn" lay-submit="" lay-filter="demo1"><i class="layui-icon">&#xe609;</i>立即提交</button>
+                    <a class="layui-btn layui-btn-normal" href="pic.bmp"><i class="layui-icon">&#xe677;</i>关注我们</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </form>
+
+    <script>
+        var ID = getParam("ID", decodeURI(window.location));
+
+        $(document).ready(function () {
+            app.ID = ID;
+            $.ajax({
+                type: "GET",
+                url: "GetAllOrder.ashx?ID=" + ID,
+                dataType: "json",
+                success: function (result) {
+                    if (result.count == 0) {
+                        alert('参数错误');
+                        window.location = 'selectorder.html';
+                    }
+
+                    app.Name = result.data[0].Name;
+                    app.contact = result.data[0].contact;
+                    app.address = result.data[0].address;
+                    app.order_desc = result.data[0].order_desc;
+                    app.nature = result.data[0].nature;
+                    app.train_desc = result.data[0].train_desc;
+                    app.train_instance = result.data[0].train_instance;
+                    app.equip_info = result.data[0].equip_info;
+                    app.soulv_content = result.data[0].soulv_content;
+                    app.evaluate = result.data[0].evaluate;
+                }
+            })
+
+        });
+
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                ID: '',
+                Name: '',
+                contact: '',
+                address: '',
+                order_desc: '',
+                nature: '',
+                train_desc: '',
+                train_instance: '',
+                equip_info: '',
+                soulv_content: '',
+                evaluate: '',
+                grade: 0
+            }
+        })
+
+
+        layui.use(['form', 'upload'], function () {
+            var form = layui.form
+                , layer = layui.layer
+                , upload = layui.upload;
+
+
+
+            form.on('submit(demo1)', function (data) {
+                //判断有没有上传图片文件
+                var file = $(".layui-upload-file").get(0).files[0];
+                if (!file) {
+                    layer.msg('请选择现场图片上传');
+                    return false;//阻止表单跳转
+                }
+
+
+
+                $.ajax({
+                    type: "POST",
+                    url: "UpdateOrder.ashx",
+                    data: $("#form1").serialize(),
+                    beforeSend: function () {
+                        var loading = layer.msg('请选择现场图片上传', { icon: 16, shade: 0.3, time: 0 });
+                        layer.close(loading);
+                    },
+                    success: function (result) {
+                        if (result == 'true') {
+                            console.log($("#form1").serialize());
+                        } else {
+                            layer.msg("提交失败");
+                        }
+                    }
+                });
+
+                return false;//阻止表单跳转
+            })
+
+            //选完文件后不自动上传
+            upload.render({
+                elem: '#imgupload'
+                , url: 'UploadImage.ashx' //改成您自己的上传接口
+                , data: {
+                    id: getParam("ID", decodeURI(window.location))//额外参数id
+                }
+                , done: function (res, index, upload) {
+                    if (res.code == 0) {
+                        alert("提交成功");
+                        window.location = "selectorder.html"
+                    }
+                }
+                , auto: false
+                , accept: 'images'
+                , acceptMime: 'image/*'
+                //,multiple: true
+                , bindAction: '#submit'
+            });
+        });
+
+        layui.use(['rate'], function () {
+            var rate = layui.rate;
+            //基础效果
+            rate.render({
+                elem: '#grade',
+                choose: function (value) {
+                    app.grade = value;
+                }
+            })
+        });
+
+        function getParam(paramName, urlParamName) {
+
+            if (urlParamName == undefined || urlParamName == "") {
+
+                urlParamName = "returnurl";
+            }
+
+            paramValue = "";
+            isFound = false;
+            paramName = paramName.toLowerCase();
+            var arrSource = this.location.search.substring(1, this.location.search.length).split("&");
+            if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+                if (paramName == urlParamName) {
+                    var retIndex = this.location.search.toLowerCase().indexOf(urlParamName);
+                    if (retIndex > -1) {
+                        var returnUrl = unescape(this.location.search.substring(retIndex + 10, this.location.search.length));
+                        if ((returnUrl.indexOf("http") != 0) && returnUrl != "" && returnUrl.indexOf(location.host.toLowerCase()) == 0) returnUrl = "http://" + returnUrl;
+                        return returnUrl;
+                    }
+                }
+                i = 0;
+                while (i < arrSource.length && !isFound) {
+                    if (arrSource[i].indexOf("=") > 0) {
+                        if (arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase()) {
+                            paramValue = arrSource[i].toLowerCase().split(paramName + "=")[1];
+                            paramValue = arrSource[i].substr(paramName.length + 1, paramValue.length);
+                            isFound = true;
+                        }
+                    }
+                    i++;
+                }
+            }
+            return paramValue;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+2021-11-13 14:20:18.5940                
+ [WARN] FuJianApp.exe : 连接超时                
+  Form1.Form1_Load => SocketTimeOut.Connect => Logger.Process               
+ ------------------------------------------------
+2021-11-13 14:26:43.1762                
+ [WARN] FuJianApp.exe : 连接超时                
+  Form1.Form1_Load => SocketTimeOut.Connect => Logger.Process               
+ ------------------------------------------------

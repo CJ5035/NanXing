@@ -1,0 +1,52 @@
+2022-06-24 10:26:26.6475                
+ [INFO]  : ***接收时间:2022-06-24 10:26:26，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1656037581706,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:26:26.6445                
+ [INFO]  :  --成功发送到broker服务器CRMPushPlan--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:26:26.7243                
+ [INFO]  : ***接收时间:2022-06-24 10:26:26，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"待排产"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:26:26.7303                
+ [INFO]  :  --成功发送到broker服务器CRMChangeState--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:26:29.9746                
+ [INFO]  : CRMChangeState队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"待排产"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:26:30.1892                
+ [INFO]  : CRMPushPlan队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9998","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1656037581706,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:27:44.3351                
+ [INFO]  :  --成功发送到broker服务器CRMPushPlan--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:27:44.3381                
+ [INFO]  : ***接收时间:2022-06-24 10:27:44，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9996","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1656037662790,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:27:44.3660                
+ [INFO]  : ***接收时间:2022-06-24 10:27:44，消息内容：{"crmID":"62a7ea5859400d000135cc2a","pcState":"待排产"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:27:44.3670                
+ [INFO]  :  --成功发送到broker服务器CRMChangeState--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:27:46.5677                
+ [INFO]  : CRMPushPlan队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"已排产","pcCount":"9996","pcUnit":"11122222kg","fzCount":"996","fzUnit":"箱ssss1","pcTime":1656037662790,"batchNo":"eeee"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------
+2022-06-24 10:27:46.5667                
+ [INFO]  : CRMChangeState队列消息处理成功:
+数据内容:{"crmID":"62a7ea5859400d000135cc2a","pcState":"待排产"}                
+  EventingBasicConsumer.HandleBasicDeliver => <>c__DisplayClass12_1`1.<Recevice>b__3 => Logger.Process               
+ ------------------------------------------------

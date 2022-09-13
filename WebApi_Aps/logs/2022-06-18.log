@@ -1,0 +1,135 @@
+2022-06-18 13:07:41.6551                
+ [ERROR] AGVApi: : System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-18 13:25:14.1112                
+ [INFO]  : 转换用时：0.1382304                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 13:25:14.1332                
+ [INFO]  : 线程ID:39                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 13:25:14.6002                
+ [INFO]  : header_ID:285                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 13:25:15.4121                
+ [INFO]  : 事务用时：1.2779298                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 13:25:15.4121                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:01:50.9766                
+ [INFO]  : 转换用时：0.0109668                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:01:51.1183                
+ [INFO]  : 线程ID:57                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:01:51.1951                
+ [INFO]  : header_ID:285                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:01:51.5711                
+ [INFO]  : 事务用时：0.4508427                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:01:51.5711                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:21.8590                
+ [INFO]  : 转换用时：0.0104946                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:21.8799                
+ [INFO]  : 线程ID:82                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:21.9099                
+ [INFO]  : header_ID:285                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:21.9198                
+ [INFO]  : 事务用时：0.0398971                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:21.9198                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:42.8085                
+ [INFO]  : 转换用时：0.0139633                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:42.8989                
+ [INFO]  : 线程ID:64                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:42.9248                
+ [INFO]  : header_ID:285                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:42.9376                
+ [INFO]  : 事务用时：0.0367717                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 14:04:42.9386                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:38:27.5386                
+ [INFO]  : 转换用时：0.0159746                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:38:27.5611                
+ [INFO]  : 线程ID:72                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:38:27.5866                
+ [INFO]  : header_ID:285                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:38:27.5979                
+ [INFO]  : 事务用时：0.0358741                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:38:27.6004                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:42:48.5338                
+ [INFO]  : 转换用时：0.0086071                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:42:48.5484                
+ [INFO]  : 线程ID:66                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:42:48.5769                
+ [INFO]  : header_ID:286                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:42:48.6741                
+ [INFO]  : 事务用时：0.1246531                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-18 16:42:48.6751                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------

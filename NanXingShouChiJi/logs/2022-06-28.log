@@ -1,0 +1,60 @@
+2022-06-28 10:07:58.7177                
+ [INFO]  : 2G-15-4:解绑货物2202206090000002:ID 5148                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:07:58.7897                
+ [INFO]  : 2G-15-6:解绑货物2202206090000004:ID 5150                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:07:58.7907                
+ [INFO]  : 2G-15-6:解绑货物:ID 0                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:26:56.4942                
+ [INFO]  : 1A-1-4:绑定货物2202206090000002:ID 5148                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:27:04.3228                
+ [INFO]  : 1D-2-6:绑定货物2202206090000002:ID 5148                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:27:27.8828                
+ [INFO]  : 1D-4-5:绑定货物2202206090000004:ID 5150                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:27:47.0875                
+ [INFO]  : 1D-2-6:解绑货物2202206090000002:ID 5148                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:27:47.0935                
+ [INFO]  : 1D-4-5:解绑货物2202206090000004:ID 5150                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:34:32.6422                
+ [INFO]  : 1A-1-4:绑定货物2202206090000004:ID 5150                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:35:58.4904                
+ [INFO]  : 1D-3-6:绑定货物2202206090000002:ID 5148                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:39:53.1164                
+ [INFO]  : 1D-3-6:解绑货物2202206090000002:ID 5148                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:42:43.5853                
+ [INFO]  : 2G-6-1:解绑货物2202206010000009:ID 5133                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:50:04.1037                
+ [INFO]  : 1A-2-4:绑定货物2202206090000002:ID 5148                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:51:36.7948                
+ [INFO]  : 2G-1-2:绑定货物2202206090000004:ID 5150                
+  WareLocationTrayManager.ChangeTrayWareLocation => WareLocationTrayManager.BindTrayWarelocation => Logger.Process               
+ ------------------------------------------------
+2022-06-28 10:51:54.0456                
+ [INFO]  : 2G-1-2:解绑货物2202206090000004:ID 5150                
+  ChuKuOrder_Hand_All.ProcessRequest => WareLocationTrayManager.UnBindTrayWarelocationByBatchNo => Logger.Process               
+ ------------------------------------------------

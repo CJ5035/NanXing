@@ -1,0 +1,32 @@
+2022-06-11 10:10:17.6372                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:12:40.6773                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:13:39.9680                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:14:44.2542                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:15:31.1647                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:16:16.7253                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:18:05.1874                
+ [INFO]  : 2022061000038:请求位置                
+  UnitTest1.TestMethod1 => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:19:06.2937                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------

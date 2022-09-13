@@ -1,0 +1,17 @@
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\bin\Release\net6.0\NanXingApplication.deps.json
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\bin\Release\net6.0\NanXingApplication.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\bin\Release\net6.0\NanXingApplication.pdb
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\bin\Release\net6.0\NanXingEFCore.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\bin\Release\net6.0\NanXingModel.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\bin\Release\net6.0\NanXingEFCore.pdb
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\bin\Release\net6.0\NanXingModel.pdb
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.csproj.AssemblyReference.cache
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.AssemblyInfoInputs.cache
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.AssemblyInfo.cs
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.csproj.CoreCompileInputs.cache
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.csproj.CopyComplete
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\refint\NanXingApplication.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\NanXingApplication.pdb
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingApplication\obj\Release\net6.0\ref\NanXingApplication.dll

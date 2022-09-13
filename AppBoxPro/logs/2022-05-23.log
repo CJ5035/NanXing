@@ -1,0 +1,85 @@
+2022-05-23 18:54:50.5008                
+ [ERROR]  : System.TypeInitializationException: “NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils”的类型初始值设定项引发异常。 ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: 发生一个或多个错误。 ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.ArgumentNullException: 值不能为 null。
+参数名: hostName
+   在 System.Net.Dns.HostResolutionBeginHelper(String hostName, Boolean justReturnParsedIp, Boolean flowContext, Boolean includeIPv6, Boolean throwOnIPAny, AsyncCallback requestCallback, Object state)
+   在 System.Net.Dns.BeginGetHostAddresses(String hostNameOrAddress, AsyncCallback requestCallback, Object state)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1](Func`4 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, Object state, TaskCreationOptions creationOptions)
+   在 System.Net.Dns.GetHostAddressesAsync(String hostNameOrAddress)
+   在 RabbitMQ.Client.Impl.TcpClientAdapter.<ConnectAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.TaskExtensions.<TimeoutAfter>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   在 RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   在 RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.CreateConnection() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 54
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils..cctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 31
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.Send[T](String queueName, List`1 obj)
+   在 NanXingService_WMS.Services.ProPlanOrderManager.AddProOrders(List`1 list, Boolean changeCrm) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ProPlanOrderManager.cs:行号 124                
+  CRMApplyNew2.btnSave_Click => ProPlanOrderManager.AddProOrders => Logger.Process               
+ ------------------------------------------------
+2022-05-23 18:56:30.2879                
+ [ERROR]  : System.TypeInitializationException: “NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils”的类型初始值设定项引发异常。 ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: 发生一个或多个错误。 ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.ArgumentNullException: 值不能为 null。
+参数名: hostName
+   在 System.Net.Dns.HostResolutionBeginHelper(String hostName, Boolean justReturnParsedIp, Boolean flowContext, Boolean includeIPv6, Boolean throwOnIPAny, AsyncCallback requestCallback, Object state)
+   在 System.Net.Dns.BeginGetHostAddresses(String hostNameOrAddress, AsyncCallback requestCallback, Object state)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1](Func`4 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, Object state, TaskCreationOptions creationOptions)
+   在 System.Net.Dns.GetHostAddressesAsync(String hostNameOrAddress)
+   在 RabbitMQ.Client.Impl.TcpClientAdapter.<ConnectAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.TaskExtensions.<TimeoutAfter>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   在 RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   在 RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.CreateConnection() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 54
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils..cctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 31
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.Send[T](String queueName, List`1 obj)
+   在 NanXingService_WMS.Services.ProPlanOrderManager.AddProOrders(List`1 list, Boolean changeCrm) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ProPlanOrderManager.cs:行号 124                
+  CRMApplyNew2.btnSave_Click => ProPlanOrderManager.AddProOrders => Logger.Process               
+ ------------------------------------------------
+2022-05-23 18:59:36.8679                
+ [ERROR]  : Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'System.Data.Entity.DynamicProxies.CRMPlanList_6E4925B6AC6C2338FE13DDDC013426925FB73110356A2FAF4A0B9D3E76C1B2EB'. Path '[0].CRMPlanHead.CRMPlanList'.
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   在 Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.Send[T](String queueName, List`1 obj) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 126
+   在 NanXingService_WMS.Services.ProPlanOrderManager.AddProOrders(List`1 list, Boolean changeCrm) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ProPlanOrderManager.cs:行号 124                
+  CRMApplyNew2.btnSave_Click => ProPlanOrderManager.AddProOrders => Logger.Process               
+ ------------------------------------------------

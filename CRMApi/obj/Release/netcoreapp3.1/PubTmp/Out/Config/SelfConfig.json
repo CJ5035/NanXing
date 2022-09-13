@@ -1,0 +1,7 @@
+{
+
+  "upfileInfo": {
+    //上传存放文件的根目录
+    "uploadFilePath": "/Myupfiles/"
+  }
+}

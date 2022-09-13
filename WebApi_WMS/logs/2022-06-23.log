@@ -1,0 +1,171 @@
+2022-06-23 15:01:04.2825                
+ [ERROR] AGVApi: : System.TypeInitializationException: “NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils”的类型初始值设定项引发异常。 ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: 发生一个或多个错误。 ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.ArgumentNullException: 值不能为 null。
+参数名: hostName
+   在 System.Net.Dns.HostResolutionBeginHelper(String hostName, Boolean justReturnParsedIp, Boolean flowContext, Boolean includeIPv6, Boolean throwOnIPAny, AsyncCallback requestCallback, Object state)
+   在 System.Net.Dns.BeginGetHostAddresses(String hostNameOrAddress, AsyncCallback requestCallback, Object state)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1](Func`4 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, Object state, TaskCreationOptions creationOptions)
+   在 System.Net.Dns.GetHostAddressesAsync(String hostNameOrAddress)
+   在 RabbitMQ.Client.Impl.TcpClientAdapter.<ConnectAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.TaskExtensions.<TimeoutAfter>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   在 RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   在 RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.CreateConnection() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 54
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils..cctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 32
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.Send[T](String queueName, T obj)
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 140
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-23 15:10:20.7155                
+ [ERROR] AGVApi: : System.TypeInitializationException: “NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils”的类型初始值设定项引发异常。 ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: 发生一个或多个错误。 ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.ArgumentNullException: 值不能为 null。
+参数名: hostName
+   在 System.Net.Dns.HostResolutionBeginHelper(String hostName, Boolean justReturnParsedIp, Boolean flowContext, Boolean includeIPv6, Boolean throwOnIPAny, AsyncCallback requestCallback, Object state)
+   在 System.Net.Dns.BeginGetHostAddresses(String hostNameOrAddress, AsyncCallback requestCallback, Object state)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1](Func`4 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, Object state, TaskCreationOptions creationOptions)
+   在 System.Net.Dns.GetHostAddressesAsync(String hostNameOrAddress)
+   在 RabbitMQ.Client.Impl.TcpClientAdapter.<ConnectAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.TaskExtensions.<TimeoutAfter>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   在 RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   在 RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.CreateConnection() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 54
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils..cctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 32
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.Send[T](String queueName, T obj)
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 140
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-23 15:13:35.7995                
+ [INFO]  : 2022061000037:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-23 15:13:53.0605                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-23 15:15:31.0471                
+ [ERROR] AGVApi: : System.TypeInitializationException: “NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils”的类型初始值设定项引发异常。 ---> RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: 发生一个或多个错误。 ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.ArgumentNullException: 值不能为 null。
+参数名: hostName
+   在 System.Net.Dns.HostResolutionBeginHelper(String hostName, Boolean justReturnParsedIp, Boolean flowContext, Boolean includeIPv6, Boolean throwOnIPAny, AsyncCallback requestCallback, Object state)
+   在 System.Net.Dns.BeginGetHostAddresses(String hostNameOrAddress, AsyncCallback requestCallback, Object state)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1](Func`4 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, Object state, TaskCreationOptions creationOptions)
+   在 System.Net.Dns.GetHostAddressesAsync(String hostNameOrAddress)
+   在 RabbitMQ.Client.Impl.TcpClientAdapter.<ConnectAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.TaskExtensions.<TimeoutAfter>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   在 RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   在 RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   在 RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.CreateConnection() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 54
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils..cctor() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RabbitMQ\RabbitMQUtils.cs:行号 31
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NanXingService_WMS.Utils.RabbitMQ.RabbitMQUtils.Send[T](String queueName, T obj)
+   在 NanXingService_WMS.Managers.AGVApiManager.UpdateMissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 139
+   在 WebApi_WMS.Controllers.AGVController.MissionStates(MissionState ms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WebApi_WMS\Controllers\AGVController.cs:行号 42
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-23 15:15:31.1179                
+ [INFO]  : 2022061000037:返回2G-15-4                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-23 15:18:08.9746                
+ [INFO]  : 2022061000037:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-23 15:18:09.1103                
+ [INFO]  : 2022061000037:返回22000089                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------

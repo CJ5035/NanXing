@@ -1,0 +1,19 @@
+﻿body {
+}
+.div-lamptext {
+    width:120px;
+    height: 25px;
+    display: inline-block;
+}
+.image-lamp {
+    width: 25px;
+    height: 25px
+}
+.lampText-Value {
+    display: inline-block;
+    position: relative;
+    line-height: 15px;
+    font-size:14px;
+    color: white;
+    top: -18%
+}

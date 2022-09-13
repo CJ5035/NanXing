@@ -1,0 +1,26 @@
+2022-04-11 18:14:28.0651                
+ [ERROR]  : ItemThread:
+System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper.DeserializeByJsonUtils[T](Nullable`1 data) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RedisUtils\RedisHelper.cs:行号 1380
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper.StringGet[T](String redisKey, Nullable`1 expiry) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RedisUtils\RedisHelper.cs:行号 259
+   在 NanXingService_WMS.Services.ItemInfoManager.ParseItems() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 56
+   在 NanXingService_WMS.Services.ItemInfoManager.StartUpdate() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 37                
+  UnitTest1.TestMethod1 => ItemInfoManager.StartUpdate => Logger.Process               
+ ------------------------------------------------
+2022-04-11 18:32:37.9783                
+ [ERROR]  : ItemThread:
+System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper.DeserializeByJsonUtils[T](Nullable`1 data) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RedisUtils\RedisHelper.cs:行号 1380
+   在 NanXingService_WMS.Utils.RedisUtils.RedisHelper.StringGet[T](String redisKey, Nullable`1 expiry) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\RedisUtils\RedisHelper.cs:行号 259
+   在 NanXingService_WMS.Services.ItemInfoManager.ParseItems() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 56
+   在 NanXingService_WMS.Services.ItemInfoManager.StartUpdate() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ItemInfoManager.cs:行号 37                
+  UnitTest1.TestMethod1 => ItemInfoManager.StartUpdate => Logger.Process               
+ ------------------------------------------------

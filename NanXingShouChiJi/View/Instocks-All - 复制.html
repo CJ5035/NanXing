@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<html style="height:100%">
+<head>
+    <!--<meta charset="utf-8" />-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" charset="utf-8">
+    <title></title>
+   
+    <style>
+        #body {
+            height: 100%;
+        }
+
+        #app {
+            height: 100%;
+        }
+
+        #fset {
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .form-group {
+            margin-top: 3%;
+            text-align: center;
+        }
+
+        #fset1 {
+            margin-left: -5%;
+            width: 100%;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .inp {
+            width: 65%;
+            font-size: 14px;
+            text-align: center;
+            /* 这里是去除掉input的默认样式然后修改为自己的 */
+            background: none;
+            outline: none;
+            border: 0px;
+            /* 这里是修改为自己的样式 */
+            border-bottom: 2px solid #dcdcdc;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            /* 使用怪异盒模型，也可以不使用 */
+            box-sizing: border-box;
+        }
+
+            .inp:focus {
+                border-bottom: 2px solid #0F996B;
+                border-bottom-left-radius: 1px;
+                border-bottom-right-radius: 1px;
+            }
+
+        .loginb {
+            text-align: center;
+            margin-top: 0%;
+            width: 75%;
+            height: 16px;
+            border: none;
+            line-height: 16px;
+            background-color: rgb(7, 187, 127);
+            border-radius: 5px;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+            .loginb:active {
+                background-color: #0F996B;
+            }
+
+        .btnJinCang {
+            text-align: center;
+            margin-top: 0%;
+            width: 60%;
+            height: 24px;
+            border: none;
+            line-height: 24px;
+            background-color: rgb(7, 187, 127);
+            border-radius: 5px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        /*登陆框*/
+        #login-box {
+            padding: 0px;
+            display: none;
+            width: 90%;
+            height: 48%;
+            background: white;
+            border-radius: 5px;
+            position: absolute;
+            margin-left: 3%;
+            margin-top: 10%;
+        }
+
+            #login-box > form {
+                text-align: center;
+            }
+
+            #login-box label {
+                display: block;
+                font-size: 15px;
+                margin: 6% 0 0 0;
+            }
+
+                #login-box label input {
+                    width: 200px;
+                    height: 30px;
+                }
+
+            #login-box button {
+                width: 200px;
+                height: 30px;
+                margin: 10px 0 0 0;
+                width: 90px;
+                border-radius: 5px;
+            }
+
+        select {
+            line-height: 20px;
+        }
+        /*select {
+            position: relative;
+            left: -2px;
+            top: -2px;
+            font-size: 12px;
+            width: 183px;
+            line-height: 16px;
+            border:1px;
+            color: #909993;
+        }*/
+    </style>
+</head>
+<body id="body">
+    <div id="app">
+        <fieldset id="fset" style="margin-top: 3%;height:100%">
+
+            <legend style="font-size:20px">进仓</legend>
+
+            <div :style="log ==1?'display:none':'display:block'">
+                <div class="form-group" style="margin-top:-2%">
+                    <label style="width: 30%; display: inline-block; text-align: left;font-size:18px;font-weight:bold">进仓计划</label>
+                    <div style="display:inline-block;width: 65%;">
+                        <button class="loginb" style="background-color:#791E94" @click="createNewPlan">新建进仓计划</button>
+                    </div>
+                    <!--<label style="width:65%;display: inline-block;text-align: left;font-size: 14px"></label>-->
+                </div>
+                <div class="form-group">
+                    <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">品名:</label>
+                    <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{instockPlan.proname}}</label>
+                    <!--<input type="text" class="inp" v-model="instockPlan.proname" />-->
+                </div>
+                <div class="form-group">
+                    <label style="width: 20%;display: inline-block;text-align: left;font-size:16px">批号:</label>
+                    <label style="width: 75%; display: inline-block; text-align: left;font-size:14px">{{instockPlan.batchNo}}</label>
+                </div>
+                <div class="form-group">
+                    <label style="width: 30%;display: inline-block;text-align: left;font-size:16px">计划数量:</label>
+                    <label style="width: 16%; display: inline-block; text-align: center;font-size:14px">{{instockPlan.tuoCount}}</label>
+                    <label style="width: 30%;display: inline-block;text-align: left;font-size:16px">进仓数量:</label>
+                    <label style="width: 16%; display: inline-block; text-align: center;font-size:14px">{{instockPlan.hasTuo}}</label>
+                </div>
+            </div>
+            <div :style="log ==1?'display:none':'display:block'">
+                <fieldset id="fset1" style="margin-top:2%">
+                    <div>
+
+                        <div class="form-group" style="margin-top:0%">
+                            <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">条码:</label>
+                            <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{scanProsn}}</label>
+
+                            <!--<input type="text" class="inp" v-model="instockPlan.proname" />-->
+                        </div>
+                        <div class="form-group">
+                            <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">品名:</label>
+                            <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{nowPro.proname}}</label>
+
+                        </div>
+                        <div class="form-group">
+                            <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">批号:</label>
+                            <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{nowPro.batchNo}}</label>
+
+                        </div>
+                        <div class="form-group" hidden="hidden">
+                            <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">箱数:</label>
+                            <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{instockPlan.proname}}</label>
+
+                        </div>
+                        <div class="form-group" style="width:100%;  display:inline-block; ">
+                            <label style="width: 30%; display: inline-block; text-align: left;font-size:16px">起始位:</label>
+                            <div style="width: 65%;display:inline-block; ">
+                                <select style="width: 90%; text-align: center;" v-model="selectRuKu">
+                                    <option v-for="send  in rukuWls" name="sendSymbolId" :value="send.AGVPosition">{{send.WareLocaNo}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="width: 30%; display: inline-block; text-align: left;font-size:16px">入库仓位:</label>
+                            <!--<label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{instockPlan.proname}}</label>-->
+                            <input class="inp" v-model="wl" type="text" placeholder="请输入进仓仓位...">
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btnJinCang" @click="sendRuKuOrder">进仓</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="back" :style="log==0?'display:none':'display:block'"></div>
+
+            <div id="login-box" :style="log==0?'display:none':'display:block;zIndex:1'">
+                <!--<div><p id="close" @click="close">×</p></div>-->
+                <div>
+                    <label style="margin-left:5px;font-size:18px;font-weight:bold">
+                        创建进仓计划
+                        <!--<input v-model="uname" type="text" placeholder="请输入用户名...">-->
+                    </label>
+                    <div style="display: inline-block; margin-top:5%">
+                        <label style="margin-left:5px">
+                            品名:
+                        </label>
+                    </div>
+
+                    <div style="display: inline-block;margin-bottom:-3%">
+                        <cw-input-select component-id="cw-input-select-1"
+                                         v-bind:options="pronames" :value="newPlan.selectPro"
+                                         @input="onInput"></cw-input-select>
+                    </div>
+
+                    <label style="margin-left:5px;margin-top:8%">
+                        批次:
+                        <input class="inp" v-model="newPlan.newBatchNo" type="text" placeholder="请输入进仓批次...">
+                    </label>
+
+                    <label style="margin-left:5px">
+                        计划托数:
+                        <input class="inp" style="width:68%" v-model="newPlan.newTuoCount" type="text" placeholder="请输入进仓托数..." oninput="value=value.replace(/[^\d]/g,'')">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button style="text-align: center;vertical-align: middle;border: none;
+                    background-color: #2d9a68;color: white" @click="createPlan">
+                        确定
+                    </button>
+                    <button style="text-align: center;vertical-align: middle;border: none;background-color: #8c4f24;
+                       color: white" @click="close">
+                        取消
+                    </button>
+                </div>
+
+            </div>
+        </fieldset>
+    </div>
+
+    <script src="/res/js/js.cookie.js"></script>
+    <script src="/res/js/jquery-3.3.1.min.js"></script>
+    <script src="/res/js/vue.js"></script>
+    <script src="/res/js/vuex.js"></script>
+    <!--<script src="/res/vuex/store.js"></script>-->
+    <script src="/Scripts/vue-resource.min.js"></script>
+    <script src="/Scripts/ElementUI/element-ui.js"></script>
+    <link rel="stylesheet" href="/res/component/cw-input-select.css">
+    <script src="/res/component/cw-input-select.js"></script>
+
+    <script>
+
+        //加载后执行
+        $(document).ready(function () {
+            //绑定表格
+            //bindTable();
+            //updateSummary();
+            //getInfo("2202109290000049");
+            datas.nowPerson = Cookies.get("nowPerson");
+            datas.nowPosition = Cookies.get("nowWareHouse");
+           
+        })
+
+
+        window.onbeforeunload = function () {
+            return "你确定要离开吗";
+        }
+
+        //全局变量
+        const store = new Vuex.Store({
+            // 定义状态
+            state: {
+                selectValues: ''
+            },
+            mutations: {
+                newSelectValues(state, msg) {
+                    state.selectValues = msg
+                }
+            }
+        })
+
+        var datas = new Vue({
+            el: "#app",
+            store: store,
+            data: {
+                nowPerson: '',
+                nowPosition: '',
+
+                scanProsn: '',
+                isLogin: false,
+                log: 0,
+                newPlan: {
+                    selectPro: '',
+                    newBatchNo: '',
+                    newTuoCount: 0,
+                },
+                //进仓计划信息
+                instockPlan: {
+                    spId: '',
+                    proname: '',
+                    batchNo: '',
+                    tuoCount: 0,
+                    hasTuo: 0,
+                    instockWls: [],
+                },
+                //扫描的条码信息
+                nowPro: {
+                    prosn: '',
+                    proname: '',
+                    batchNo: '',
+                },
+                wl: '',
+                //品名集合
+                pronames: [],
+                //入库仓位集合
+                rukuWls: [],
+                selectRuKu: ''
+            },
+            mounted() {
+                this.getExcel();
+                setTimeout(this.getRuKuWls,500);
+                //setInterval(this.inputFunc, 1000);
+            },
+            methods: {
+                //新增进仓计划按钮
+                createNewPlan: function () {
+                    this.log = 1;
+                    getInfo("2202111270000004");
+                },
+                //确认新增进仓计划
+                createPlan: async function () {
+
+                    if (this.newPlan.newTuoCount > 0) {
+                        this.getWls();
+                        await this.$http.post('/ashx/instocks/NewInstockPlan.ashx', {
+                            selectPro: this.newPlan.selectPro,
+                            newBatchNo: this.newPlan.newBatchNo,
+                            newTuoCount: this.newPlan.newTuoCount,
+                            nowPerson: this.nowPerson
+                        })
+                            .then((res) => {
+                                console.log(res.data);
+                                console.log(res.data.indexOf('success'));
+                                if (res.data.indexOf('success') > -1) {
+                                    //console.log(res.data);
+                                    this.log = 0;
+                                    //响应正确回调
+                                    var msg = res.data.split(':')[1];
+                                    this.instockPlan.spId = msg;
+                                    this.instockPlan.proname = this.newPlan.selectPro;
+                                    this.instockPlan.batchNo = this.newPlan.newBatchNo;
+                                    this.instockPlan.tuoCount = this.newPlan.newTuoCount;
+                                    this.instockPlan.hasTuo = 0;
+                                    //this.getWls(msg);
+                                } else {
+                                    alert("新建进仓计划失败，请检查输入的内容是否正确")
+                                }
+                            }, (res) => {
+                                // 响应错误回调
+                                alert('请求新建处理失败');
+                            })
+                            .catch(function (err) {
+                                console.log(err);
+                            });
+                    } else {
+                        alert("提示：计划进仓数量必须大于0")
+                    }
+                },
+                //获取进仓计划的进仓排序
+                getWls: async function () {
+                    await this.$http.post('/ashx/instocks/GetInstockWLs.ashx',
+                        { count: this.newPlan.newTuoCount, position:'' })
+                        .then((res) => {
+                            //console.log(res.data);
+                            this.instockPlan.instockWls = res.data;
+                            console.log(this.instockPlan.instockWls);
+                        }, (res) => {
+                            // 响应错误回调
+                            alert('请求进仓处理失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err)
+                        });
+                },
+                //所有品名下拉框
+                getExcel: function () {
+                    this.$http.post('/ashx/instocks/GetPronames.ashx')
+                        .then((res) => {
+                            if (res.data.length > 0) {
+                                //console.log(res.data);
+                                this.pronames = [];
+                                res.data.forEach(temp => {
+                                    this.pronames.push(temp['物料名称'])
+                                });
+                                //响应正确回调
+                            }
+                        }, (res) => {
+                            // 响应错误回调
+                            console.log('请求失败处理');
+                        })
+                        .catch(function (err) {
+                            console.log(err)
+                        });
+                },
+                // 点击基本框显示或隐藏选项列表盒子
+                selectHandle: function () {
+                    this.isShowPop = !this.isShowPop;
+                },
+                onInput: function (val) {
+                    this.newPlan.selectPro = val;
+                },
+                //关闭进仓计划框
+                close: function () {
+                    this.log = 0;
+                    getInfo("2202111270000004");
+                    console.log(this.nowPro);
+                },
+                //获取进仓货位位置
+                getRuKuWls: function () {
+                    this.$http.post('/ashx/instocks/GetInStartWL.ashx',
+                        { position: this.nowPosition })
+                        .then((res) => {
+                            this.rukuWls = res.data;
+                            console.log(res.data);
+                        }, (res) => {
+                            // 响应错误回调
+                            alert('获取进仓货位位置失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                },
+                //发送进仓指令功能
+                sendRuKuOrder: function (val) {
+                    console.log(this.nowPreson);
+                    if (this.instockPlan.hasTuo < this.instockPlan.tuoCount) {
+                        this.$http.post('/ashx/instocks/RuKuOrder.ashx', {
+                            prosn: this.scanProsn, startPo: this.selectRuKu,
+                            endPo: this.wl, spId: this.instockPlan.spId,
+                            lie: this.instockPlan.instockWls[this.instockPlan.hasTuo].lie,
+                            nowPre: this.nowPerson,
+                            position: this.nowPosition,
+                        })
+                            .then((res) => {
+                                console.log(res.data);
+                                //this.instockPlan.instockWls = res.data;
+                                //console.log(this.instockPlan.instockWls);
+                                if (res.data == "success") {
+                                    this.instockPlan.hasTuo += 1;
+                                    alert('进仓指令下发成功');
+
+                                    this.wl = '';
+                                    this.selectRuKu = '';
+                                    this.nowPro.proname = '';
+                                    this.nowPro.batchNo = '';
+                                    this.nowPro.prosn = '';
+                                } else {
+                                    alert('进仓请求处理失败,请重试');
+                                }
+                            }, (res) => {
+                                // 响应错误回调
+                                alert('请求新建处理失败');
+                            })
+                            .catch(function (err) {
+                                console.log(err);
+                                alert('请求新建处理失败:' + err);
+                            });
+                    }
+                    else {
+                        alert("进仓计划数量已完成，请重新新建进仓计划");
+                    }
+
+                }
+            },
+            computed: {  //设置计算属性
+
+            }
+        });
+        //安卓手持机调用的方法
+        function callJS(prosn) {
+            //alert(prosn);
+            datas.scanProsn = prosn;
+            //alert(this.scanProsn);
+            //this.close();
+            getInfo(prosn);
+        }
+
+        function getInfo(prosn) {
+            //ajax
+            $.ajax({
+                type: "get",
+                url: "/ashx/instocks/GetProInfo.ashx",
+                async: false,
+                dataType: "json",
+                data: {
+                    prosn: prosn
+                },
+                success: function (res) {
+                    var obj = eval(res);
+
+                    if (datas.log == 1) {
+                        //1、新建进仓计划
+                        datas.newPlan.newBatchNo = obj.batchNo;
+                        datas.newPlan.selectPro = obj.proname;
+                        store.state.selectValues = obj.proname;
+                    } else {
+                        //2、扫描进仓
+                        if (datas.instockPlan.proname == obj.proname
+                            && datas.instockPlan.batchNo == obj.batchNo) {
+
+                            datas.scanProsn = prosn;
+                            datas.nowPro = obj;
+                            //console.log(datas.instockPlan.instockWls);
+                            //console.log(datas.instockPlan.instockWls[datas.instockPlan.hasTuo]);
+                            var selectWl = datas.instockPlan.instockWls[datas.instockPlan.hasTuo];
+                            console.log(datas.instockPlan.instockWls);
+
+                            datas.wl = selectWl.lie + selectWl.xuhao;
+                            console.log(datas.nowPro);
+                        } else {
+                            //扫描到的产品与进仓计划不符
+                            alert("扫描到的产品与进仓计划不符,请修改进仓计划或重新扫描正确的条码");
+                        }
+                    }
+                },
+                error: function (err) {
+                    console.log(err);
+                    alert("Warning:获取产品信息失败\r\n" + err.responseText);
+                }
+            })
+        }
+
+    </script>
+
+</body>
+</html>

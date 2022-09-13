@@ -1,0 +1,129 @@
+2021-12-30 15:55:33.6137                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2021/12/30 15:55:33
+异常类型：NullReferenceException
+异常消息：未将对象引用设置到对象的实例。
+异常信息：   在 NanXingCangKu.Form1.MenuPanel_NodeClick(Object sender, NodeClickEventArgs e) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Form1.cs:行号 66
+   在 WinformControlLibraryExtension.SlideMenuPanelExt.OnNodeClick(NodeClickEventArgs e) 位置 E:\Winform\花木兰控件库\花木兰控件库hml-master\hml-master\WinformControlLibraryExtension\控件\SlideMenuExt\SlideMenuPanelExt.cs:行号 1477
+   在 WinformControlLibraryExtension.SlideMenuPanelExt.OnMouseClick(MouseEventArgs e) 位置 E:\Winform\花木兰控件库\花木兰控件库hml-master\hml-master\WinformControlLibraryExtension\控件\SlideMenuExt\SlideMenuPanelExt.cs:行号 1379
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------
+2021-12-30 16:05:36.3925                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2021/12/30 16:05:36
+异常类型：NotSupportedException
+异常消息：在上一个异步操作完成前已在此上下文上开始了第二个操作。请使用“await”以确保在此上下文上调用其他方法前所有异步操作均已完成。任何实例成员均不保证是线程安全的。
+异常信息：   在 System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesAsync(SaveOptions options, CancellationToken cancellationToken)
+   在 System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.<SaveChangesAsync>d__25.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 501
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 NanXingCangKu.Controller.MainController.<Print>d__10.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 121
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 NanXingCangKu.Forms.PrintForm.<Btn_Print_Click>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Forms\PrintForm.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------
+2021-12-30 16:46:48.7210                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2021/12/30 16:46:48
+异常类型：DbEntityValidationException
+异常消息：对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+异常信息：   在 System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   在 System.Data.Entity.DbContext.SaveChangesAsync()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.<SaveChangesAsync>d__25.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 501
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 NanXingCangKu.Controller.MainController.<Print>d__11.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 133
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 NanXingCangKu.Forms.PrintForm.<Btn_Print_Click>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Forms\PrintForm.cs:行号 45
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------
+2021-12-30 19:01:30.3532                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2021/12/30 19:01:29
+异常类型：NotSupportedException
+异常消息：在上一个异步操作完成前已在此上下文上开始了第二个操作。请使用“await”以确保在此上下文上调用其他方法前所有异步操作均已完成。任何实例成员均不保证是线程安全的。
+异常信息：   在 System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.FindById(Object id, DbMainSlave dms) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 298
+   在 NanXingCangKu.Controller.MainController.ParsePrintItem(PrintItem noCodeItem, Int32 index, String trayNo)
+   在 NanXingCangKu.Controller.MainController.<Print>d__11.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 NanXingCangKu.Forms.PrintForm.<Btn_Print_Click>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------
+2021-12-30 20:26:44.2019                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2021/12/30 20:26:43
+异常类型：IndexOutOfRangeException
+异常消息：索引超出了数组界限。
+异常信息：   在 NanXingCangKu.Controller.MainController.ClassToDataTable[T](T t) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 266
+   在 NanXingCangKu.Controller.MainController.<Print>d__11.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 103
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 NanXingCangKu.Forms.PrintForm.<Btn_Print_Click>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Forms\PrintForm.cs:行号 44
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------
+2021-12-30 20:27:09.2162                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2021/12/30 20:27:09
+异常类型：IndexOutOfRangeException
+异常消息：索引超出了数组界限。
+异常信息：   在 NanXingCangKu.Controller.MainController.ClassToDataTable[T](T t) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 266
+   在 NanXingCangKu.Controller.MainController.<Print>d__11.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 103
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 NanXingCangKu.Forms.PrintForm.<Btn_Print_Click>d__1.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Forms\PrintForm.cs:行号 44
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------
+2021-12-30 20:44:51.0544                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2021/12/30 20:44:50
+异常类型：ArgumentException
+异常消息：列“class”不属于表 。
+异常信息：   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.set_Item(String columnName, Object value)
+   在 NanXingCangKu.Controller.MainController.ParsePrintItem(DataTable dt, String prosn, PrintItem noCodeItem)
+   在 NanXingCangKu.Controller.MainController.<Print>d__11.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 NanXingCangKu.Forms.PrintForm.<Btn_Print_Click>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------

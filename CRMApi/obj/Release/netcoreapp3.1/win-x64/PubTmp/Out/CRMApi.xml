@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CRMApi</name>
+    </assembly>
+    <members>
+        <member name="T:CRMApi.Controllers.AuthController">
+            <summary>
+            认证接口
+            </summary>
+        </member>
+        <member name="M:CRMApi.Controllers.AuthController.RequestToken(CRMApi.Controllers.TokenRequest)">
+            <summary>
+            login
+            </summary>
+            <param name="request">认证token凭证</param>
+            <returns>token</returns>
+        </member>
+        <member name="T:CRMApi.Controllers.TokenRequest">
+            <summary>
+            认证token凭证
+            </summary>
+        </member>
+        <member name="P:CRMApi.Controllers.TokenRequest.Username">
+            <summary>
+            认证用户名
+            </summary>
+        </member>
+        <member name="P:CRMApi.Controllers.TokenRequest.Password">
+            <summary>
+            认证密码
+            </summary>
+        </member>
+        <member name="T:CRMApi.Controllers.CRMController">
+            <summary>
+            CRM调用接口
+            </summary>
+        </member>
+        <member name="M:CRMApi.Controllers.CRMController.AddCRMPlanApply(System.Collections.Generic.List{CRMApi.Models.Entity.CRMPlanWriter})">
+            <summary>
+            插入CRM任务单
+            </summary>
+            <param name="crmpPlanList">多个任务单列表</param>
+            <returns>插入结果</returns>
+        </member>
+        <member name="M:CRMApi.Controllers.CRMController.Get">
+            <summary>
+            预热接口，减少初次执行时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CRMApi.Controllers.WarnController">
+            <summary>
+            预热控制类
+            </summary>
+        </member>
+        <member name="T:CRMApi.Filter.SwaggerDocTag">
+            <summary>
+            Swagger注释帮助类
+            </summary>
+        </member>
+        <member name="M:CRMApi.Filter.SwaggerDocTag.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            添加附加注释
+            </summary>
+            <param name="swaggerDoc"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.GetAllEntities``1">
+            <summary>
+            返回该表所有数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Any``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            判断是否存在
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="whereLambd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Count``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            获取数量
+            </summary>
+            <typeparam name="T">表名</typeparam>
+            <param name="predicate">条件</param>
+            <returns>数量</returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.CountAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},CRMApi.Models.ModelUtils.ReadWriteEnum)">
+            <summary>
+            获取数量
+            </summary>
+            <typeparam name="T">表名</typeparam>
+            <param name="predicate">条件</param>
+            <returns>数量</returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Find``1(System.Int32,CRMApi.Models.ModelUtils.ReadWriteEnum)">
+            <summary>
+            根据ID查询.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id"></param>
+            <param name="readWriteEnum">主从库  即可以读取也可以增删改；</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Find``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            根据条件查询单个数据
+            </summary>
+            <typeparam name="T">表类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪信息，是否需要修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.FindAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            根据条件查询单个数据（异步）
+            </summary>
+            <typeparam name="T">表类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪信息，是否需要修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.GetList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String,System.Boolean)">
+            <summary>
+            获取排序集合
+            </summary>
+            <typeparam name="T">类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="ordering">排序的属性，倒序用-号在前面，逗号分割</param>
+            <param name="isNoTracking">是否带跟踪属性</param>
+            <returns>返回List()</returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.GetListAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String,System.Boolean)">
+            <summary>
+            异步获取排序集合
+            </summary>
+            <typeparam name="T">类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="ordering">排序的属性，倒序用-号在前面，逗号分割</param>
+            <param name="isNoTracking">是否带跟踪属性</param>
+            <returns>返回List()</returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Query``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            获取查询结果IQueryable
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪</param>
+            <returns>IQueryable结果</returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.QueryAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            异步获取查询结果IQueryable
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪</param>
+            <returns>IQueryable结果</returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.SqlQuery``1(System.String,CRMApi.Models.ModelUtils.ReadWriteEnum,System.Object[])">
+            <summary>
+            通过sql返回实例
+            </summary>
+            <typeparam name="T">实例类名</typeparam>
+            <param name="sql">sql语句</param>
+            <param name="readWriteEnum">读写分离</param>
+            <param name="parameters">sql条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Insert``1(``0)">
+            <summary>
+            新增数据，即时Commit
+            </summary>
+            <param name="t"></param>
+            <returns>返回带主键的实体</returns>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Delete``1(System.Int32)">
+            <summary>
+            根据主键删除数据，即时Commit
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:CRMApi.Interface.IBaseService.Commit">
+            <summary>
+            立即保存全部修改
+            把增/删的savechange给放到这里，是为了保证事务的
+            </summary>
+        </member>
+        <member name="T:CRMApi.Models.Entity.ApiResult">
+            <summary>
+            WebApi 通用返回值
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.ApiResult.message">
+            <summary>
+            接口返回结果
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.ApiResult.code">
+            <summary>
+            接口返回结果代码
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.ApiResult.data">
+            <summary>
+            接口返回结果数据
+            </summary>
+        </member>
+        <member name="T:CRMApi.Models.Entity.CRMPlanWriter">
+            <summary>
+            CRM排产申请单写入类
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.CRMApplyNo">
+            <summary>
+            排产申请单号
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ClientNo">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ClientName">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ApplicantId">
+            <summary>
+            申请人工号
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ApplicantName">
+            <summary>
+            申请人姓名
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ApplicantPhone">
+            <summary>
+            申请人电话
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ApplicantDept">
+            <summary>
+            申请人部门
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ApplicantJob">
+            <summary>
+            申请人岗位
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.ApplyTime">
+            <summary>
+            申请时间
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.OrderDate">
+            <summary>
+            客户下单日期
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.SaleGroup">
+            <summary>
+            销售组
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.OrderSource">
+            <summary>
+            单据来源
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.Remark">
+            <summary>
+            单据备注
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.Reserve1">
+            <summary>
+            备用字段1
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.Reserve2">
+            <summary>
+            备用字段2
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.Reserve3">
+            <summary>
+            备用字段3
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanWriter.CRMPlanLists">
+            <summary>
+            CRM排产申请单 子单
+            </summary>
+        </member>
+        <member name="T:CRMApi.Models.Entity.CRMPlanListWriter">
+            <summary>
+            CRM排产申请单 子单 写入类
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.CRMApplyNo_Xuhao">
+            <summary>
+            排产申请单行号
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.ItemNo">
+            <summary>
+            产品编码
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.ItemName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Spec">
+            <summary>
+            包装规格
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.OrderCount">
+            <summary>
+            订货数量
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Unit">
+            <summary>
+            订货单位
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.InventoryCount">
+            <summary>
+            库存情况(件)
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.OrderCountONkg">
+            <summary>
+            订货数量(Kg)
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.BoxNo">
+            <summary>
+            包装箱号
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.BoxName">
+            <summary>
+            包装箱名
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Biaozhun">
+            <summary>
+            执行标准
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.ProductRecipe">
+            <summary>
+            生产配方
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.ApplyNoState">
+            <summary>
+            单据状态
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.EmergencyDegree">
+            <summary>
+            紧急程度
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Remark">
+            <summary>
+            申请备注
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Reserve1">
+            <summary>
+            备用字段1
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Reserve2">
+            <summary>
+            备用字段2
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Reserve3">
+            <summary>
+            备用字段3
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Reserve4">
+            <summary>
+            备用字段4
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Reserve5">
+            <summary>
+            备用字段5
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Reserve6">
+            <summary>
+            备用字段6
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.CRMPlanListWriter.Reserve7">
+            <summary>
+            备用字段7
+            </summary>
+        </member>
+        <member name="T:CRMApi.Models.Entity.SelfConfigEntity">
+            <summary>
+            自定义的配置文件数据
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.SelfConfigEntity.upfileInfo">
+            <summary>
+            上传功能的信息实例
+            </summary>
+        </member>
+        <member name="T:CRMApi.Models.Entity.UpfileInfo">
+            <summary>
+            上传功能的信息类
+            </summary>
+        </member>
+        <member name="P:CRMApi.Models.Entity.UpfileInfo.uploadFilePath">
+            <summary>
+            上传文件的保存路径
+            </summary>
+        </member>
+        <member name="T:CRMApi.Models.Entity.StatusCodeS">
+            <summary>
+            状态代码
+            </summary>
+        </member>
+        <member name="F:CRMApi.Models.Entity.StatusCodeS.success">
+            <summary>
+            请求成功
+            </summary>
+        </member>
+        <member name="F:CRMApi.Models.Entity.StatusCodeS.fail">
+            <summary>
+            请求失败
+            </summary>
+        </member>
+        <member name="F:CRMApi.Models.Entity.StatusCodeS.paramError">
+            <summary>
+            参数错误
+            </summary>
+        </member>
+        <member name="F:CRMApi.Models.Entity.StatusCodeS.other">
+            <summary>
+            其他错误
+            </summary>
+        </member>
+        <member name="M:CRMApi.Models.ModelUtils.DbContextFactory.#ctor(Microsoft.EntityFrameworkCore.DbContext,Microsoft.Extensions.Options.IOptionsMonitor{CRMApi.Models.ModelUtils.DBConnectionOption})">
+             <summary>
+            能把链接信息也注入进来
+            需要IOptionsMonitor
+             </summary>
+             <param name="context"></param>
+        </member>
+        <member name="M:CRMApi.Models.ModelUtils.DbContextFactory.SetMainConnnectionString">
+            <summary>
+            更换成主库连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Models.ModelUtils.DbContextFactory.SetSlaveConnectionString">
+            <summary>
+            更换成主库连接
+            
+            ///策略---数据库查询的负载均衡
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.#ctor(CRMApi.Models.ModelUtils.IDbContextFactory)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.GetAllEntities``1">
+            <summary>
+            返回该表所有数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.Any``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            判断是否存在
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="whereLambd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.Count``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            获取数量
+            </summary>
+            <typeparam name="T">表名</typeparam>
+            <param name="predicate">条件</param>
+            <returns>数量</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.CountAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},CRMApi.Models.ModelUtils.ReadWriteEnum)">
+            <summary>
+            获取数量
+            </summary>
+            <typeparam name="T">表名</typeparam>
+            <param name="predicate">条件</param>
+            <returns>数量</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.Find``1(System.Int32,CRMApi.Models.ModelUtils.ReadWriteEnum)">
+            <summary>
+            根据ID查询.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id"></param>
+            <param name="readWriteEnum">主从库  即可以读取也可以增删改；</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.Find``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            根据条件查询单个数据
+            </summary>
+            <typeparam name="T">表类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪信息，是否需要修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.FindAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            根据条件查询单个数据（异步）
+            </summary>
+            <typeparam name="T">表类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪信息，是否需要修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.GetListAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String,System.Boolean)">
+            <summary>
+            异步获取排序集合
+            </summary>
+            <typeparam name="T">类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="ordering">排序的属性，倒序用-号在前面，逗号分割</param>
+            <param name="isNoTracking">是否带跟踪属性</param>
+            <returns>返回List()</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.GetList``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String,System.Boolean)">
+            <summary>
+            获取排序集合
+            </summary>
+            <typeparam name="T">类</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="ordering">排序的属性，倒序用-号在前面，逗号分割</param>
+            <param name="isNoTracking">是否带跟踪属性</param>
+            <returns>返回List()</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.QueryAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            异步获取查询结果IQueryable
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪</param>
+            <returns>IQueryable结果</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.Query``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+            <summary>
+            获取查询结果IQueryable
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="predicate">筛选条件</param>
+            <param name="isNoTracking">是否带跟踪</param>
+            <returns>IQueryable结果</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.SqlQuery``1(System.String,CRMApi.Models.ModelUtils.ReadWriteEnum,System.Object[])">
+            <summary>
+            通过sql返回实例
+            </summary>
+            <typeparam name="T">实例类名</typeparam>
+            <param name="sql">sql语句</param>
+            <param name="readWriteEnum">读写分离</param>
+            <param name="parameters">sql条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.ParseValue``1(``0,System.Type)">
+            <summary>
+            将实例对象的数据存入新的实例中
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="type2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.SetDataTableToTable(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            批量插入（优先推荐）
+            </summary>
+            <param name="source"></param>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.ClassToDataTable(System.Type)">
+            <summary>
+            将类转换成空的dataTable
+            </summary>
+            <param name="t">类</param>
+            <returns>dataTable</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.ClassToDataTableAsync(System.Type)">
+            <summary>
+            将类转换成空的dataTable
+            </summary>
+            <param name="t">类</param>
+            <returns>dataTable</returns>
+        </member>
+        <member name="M:CRMApi.Service.BaseService.ParsePrintItem``1(System.Data.DataTable,``0)">
+            <summary>
+            将对象数据插入DataTable中
+            </summary>
+            <param name="dt">原DataTable</param>
+            <param name="obj">实例</param>
+            <returns>新的DataTable</returns>
+        </member>
+        <member name="T:CRMApi.Service.ExtensionClass">
+            <summary>
+            静态拓展方法，原因：静态方法不能放在Service中
+            </summary>
+        </member>
+        <member name="M:CRMApi.Service.ExtensionClass.OrderByBatch``1(System.Linq.IQueryable{``0},System.String)">
+            <summary>
+            多个OrderBy用逗号隔开,属性前面带-号表示反序排序，exp:"name,-createtime"
+            </summary>
+            <typeparam name="T">类名</typeparam>
+            <param name="query">查询集合</param>
+            <param name="name">排序的属性，反序用-号表示</param>
+            <returns>查询集合</returns>
+        </member>
+        <member name="M:CRMApi.Service.ExtensionClass.GetPropertyInfo``1(System.Type,System.String)">
+            <summary>
+            获取到类中某个名称的属性信息
+            </summary>
+            <param name="objType">实体类</param>
+            <param name="name">属性名称</param>
+            <returns>属性信息</returns>
+        </member>
+        <member name="M:CRMApi.Service.ExtensionClass.GetOrderExpression``1(System.Type,System.Reflection.PropertyInfo)">
+            <summary>
+            获取到排序信息
+            </summary>
+            <param name="objType">实体类</param>
+            <param name="pi">属性信息</param>
+            <returns>排序信息</returns>
+        </member>
+        <member name="M:CRMApi.Service.LoginService.#ctor(CRMApi.Models.ModelUtils.IDbContextFactory)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CRMApi.Service.LoginService.GetRolePowerNames(CRMApi.Entity.User)">
+            <summary>
+            获取当前登录用户拥有的全部权限列表
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CRMApi.Utils.AppJsonHelper">
+            <summary>
+            读取配置文件到缓存中，或从缓存中取出配置信息
+            </summary>
+        </member>
+        <member name="M:CRMApi.Utils.AppJsonHelper.InitJsonModel">
+            <summary>
+            将配置文件内容放进缓存中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.AppJsonHelper.GetJsonModelByFilePath``1(System.String,System.String)">
+            <summary>
+            获取到配置文件内容的实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="jsonName">jason 配置文件中内容节点</param>
+            <param name="jsonFilePath">./configs/zrfjwt.json  json文件的路径需要始终赋值一下</param>
+            <returns></returns>
+        </member>
+        <member name="T:CRMApi.Utils.PasswordUtil">
+            <summary>
+            单相混淆加密用户密码，并比较密码是否一致的类
+            </summary>
+        </member>
+        <member name="M:CRMApi.Utils.PasswordUtil.ComparePasswords(System.String,System.String)">
+            <summary>
+            对比用户明文密码是否和加密后密码一致
+            </summary>
+            <param name="dbPassword">数据库中单向加密后的密码</param>
+            <param name="userPassword">用户明文密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.PasswordUtil.CreateDbPassword(System.String)">
+            <summary>
+            创建用户的数据库密码
+            </summary>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.PasswordUtil.HashString(System.String)">
+            <summary>
+            将一个字符串哈希化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CRMApi.Utils.SystemCacheHelper">
+            <summary>
+            内存缓存帮助类
+            </summary>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.Exists(System.String)">
+            <summary>
+            验证缓存项是否存在
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns>返回结果（true:存在）</returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.Set(System.String,System.Object)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <returns>返回结果（true:存在）</returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.Set(System.String,System.Object,System.TimeSpan,System.Boolean)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <param name="expiresIn">缓存时长</param>
+            <param name="isSliding">是否滑动过期（如果在过期时间内有操作，则以当前时间点延长过期时间）</param>
+            <returns>返回结果（true:存在）</returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.Remove(System.String)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.RemoveCacheRegex(System.String)">
+            <summary>
+            删除匹配到的缓存
+            </summary>
+            <param name="key">缓存key</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.RemoveAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            批量删除缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.RemoveCacheAll">
+            <summary>
+            删除所有缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.Get``1(System.String)">
+            <summary>
+            获取缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns>返回对应类型</returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.Get(System.String)">
+            <summary>
+            获取缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <returns>返回object</returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.SearchCacheRegex(System.String)">
+            <summary>
+            搜索匹配到的缓存
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.GetCacheKeys">
+            <summary>
+            获取所有缓存键
+            </summary>
+            <returns>返回所有的缓存键列表</returns>
+        </member>
+        <member name="M:CRMApi.Utils.SystemCacheHelper.GetAll(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            获取缓存集合
+            </summary>
+            <param name="keys">缓存Key集合</param>
+            <returns>返回字典</returns>
+        </member>
+        <member name="T:CRMApi.Utils.UpLoadFileStreamHelper">
+            <summary>
+            上传文件的测试帮助类
+            </summary>
+        </member>
+        <member name="M:CRMApi.Utils.UpLoadFileStreamHelper.UploadWriteFile(System.IO.Stream,System.String)">
+            <summary>
+            同步上传的方法WriteFile(Stream stream, string path)
+            </summary>
+            <param name="stream">文件流</param>
+            <param name="path">物理路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.UpLoadFileStreamHelper.UploadWriteFileAsync(System.IO.Stream,System.String)">
+            <summary>
+            WriteFileAsync(Stream stream, string path)
+            </summary>
+            <param name="stream">文件流</param>
+            <param name="path">物理路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.UpLoadFileStreamHelper.UploadWriteFileAsync(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            上传文件，需要自定义上传的路径
+            </summary>
+            <param name="file">文件接口对象</param>
+            <param name="path">需要自定义上传的路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:CRMApi.Utils.UpLoadFileStreamHelper.UploadWriteFileAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传文件，配置信息从自定义的json文件中拿取
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

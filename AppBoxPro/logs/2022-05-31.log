@@ -1,0 +1,8 @@
+2022-05-31 09:19:19.2688                
+ [DEBUG]  : ID：1:S20220531001                
+  PlanToPro.btnAddOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------
+2022-05-31 17:49:28.0206                
+ [DEBUG]  : ID：2:S20220531002                
+  PlanToPro.btnAddOrder_Click => ProductOrderManager.PushToProOrder => Logger.Process               
+ ------------------------------------------------

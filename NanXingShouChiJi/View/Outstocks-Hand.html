@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html style="height:100%">
+<head>
+    <!--<meta charset="utf-8" />-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" charset="utf-8">
+    <title></title>
+   
+    <style>
+        #body {
+            height: 100%;
+        }
+
+        #app {
+            height: 100%;
+        }
+
+        #fset {
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .form-group {
+            margin-top: 3%;
+            text-align: center;
+        }
+
+        #fset1 {
+            margin-left: -5%;
+            width: 100%;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .inp {
+            width: 65%;
+            font-size: 14px;
+            text-align: center;
+            /* 这里是去除掉input的默认样式然后修改为自己的 */
+            background: none;
+            outline: none;
+            border: 0px;
+            /* 这里是修改为自己的样式 */
+            border-bottom: 2px solid #dcdcdc;
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            /* 使用怪异盒模型，也可以不使用 */
+            box-sizing: border-box;
+        }
+
+            .inp:focus {
+                border-bottom: 2px solid #0F996B;
+                border-bottom-left-radius: 1px;
+                border-bottom-right-radius: 1px;
+            }
+
+        .loginb {
+            text-align: center;
+            margin-top: 0%;
+            width: 75%;
+            height: 16px;
+            border: none;
+            line-height: 16px;
+            background-color: rgb(7, 187, 127);
+            border-radius: 5px;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+            .loginb:active {
+                background-color: #0F996B;
+            }
+
+        .btnJinCang {
+            text-align: center;
+            margin-top: 0%;
+            width: 60%;
+            height: 24px;
+            border: none;
+            line-height: 24px;
+            background-color: rgb(7, 187, 127);
+            border-radius: 5px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        /*登陆框*/
+        #login-box {
+            padding: 0px;
+            display: none;
+            width: 90%;
+            height: 48%;
+            background: white;
+            border-radius: 5px;
+            position: absolute;
+            margin-left: 3%;
+            margin-top: 10%;
+        }
+
+            #login-box > form {
+                text-align: center;
+            }
+
+            #login-box label {
+                display: block;
+                font-size: 15px;
+                margin: 6% 0 0 0;
+            }
+
+                #login-box label input {
+                    width: 200px;
+                    height: 30px;
+                }
+
+            #login-box button {
+                width: 200px;
+                height: 30px;
+                margin: 10px 0 0 0;
+                width: 90px;
+                border-radius: 5px;
+            }
+
+        select {
+            line-height: 20px;
+        }
+        /*select {
+            position: relative;
+            left: -2px;
+            top: -2px;
+            font-size: 12px;
+            width: 183px;
+            line-height: 16px;
+            border:1px;
+            color: #909993;
+        }*/
+    </style>
+</head>
+<body id="body">
+    <div id="app">
+        <fieldset id="fset" style="margin-top: 3%;height:100%">
+
+            <legend style="font-size:20px">手动出仓</legend>
+
+            <div>
+
+                <div class="form-group" style="margin-top:0%">
+                    <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">条码:</label>
+                    <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{scanProsn}}</label>
+
+                </div>
+                <div class="form-group">
+                    <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">品名:</label>
+                    <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{nowPro.proname}}</label>
+
+                </div>
+                <div class="form-group">
+                    <label style="width: 20%; display: inline-block; text-align: left;font-size:16px">批号:</label>
+                    <label style="width: 75%; display: inline-block;text-align: left;font-size: 14px">{{nowPro.batchNo}}</label>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label style="width: 30%; display: inline-block; text-align: left;font-size:16px">仓位:</label>
+                    <input class="inp" v-model="nowPro.wl" type="text" placeholder="请输入进仓仓位...">
+                </div>
+
+                <div class="form-group">
+                    <button class="btnJinCang" @click="sendChuKuOrder">出仓</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+
+    <script src="/res/js/js.cookie.js"></script>
+    <script src="/res/js/jquery-3.3.1.min.js"></script>
+    <script src="/res/js/vue.js"></script>
+    <script src="/res/js/vuex.js"></script>
+    <!--<script src="/res/vuex/store.js"></script>-->
+    <script src="/Scripts/vue-resource.min.js"></script>
+    <script src="/Scripts/ElementUI/element-ui.js"></script>
+    <link rel="stylesheet" href="/res/component/cw-input-select.css">
+    <script src="/res/component/cw-input-select.js"></script>
+
+    <link rel="stylesheet" href="/res/component/confirm-fade.css">
+    <script src="/res/component/confirm-fade.js"></script>
+
+    <script>
+
+        //加载后执行
+        $(document).ready(function () {
+            //绑定表格
+            //bindTable();
+            //updateSummary();
+            //callJS("2202207200000003");
+            datas.nowPerson = Cookies.get("nowPerson");
+            datas.nowPosition = Cookies.get("nowWareHouse");
+        })
+        //全局变量
+        const store = new Vuex.Store({
+            // 定义状态
+            state: {
+                selectValues: ''
+            },
+            mutations: {
+                newSelectValues(state, msg) {
+                    state.selectValues = msg
+                }
+            }
+        })
+
+        var datas = new Vue({
+            el: "#app",
+            store: store,
+            data: {
+                nowPerson: '',
+                nowPosition: '',
+                scanProsn: '',
+                isLogin: false,
+                log: 0,
+
+                //扫描的条码信息
+                nowPro: {
+                    prosn: '',
+                    proname: '',
+                    batchNo: '',
+                    wl: '',
+                },
+                wl: '',
+                //品名集合
+                pronames: [],
+                //入库仓位集合
+                rukuWls: [],
+                selectRuKu: '',
+                doAjax: false
+            },
+            mounted() {
+                //this.getExcel();
+                //this.getRuKuWls();
+                //setInterval(this.inputFunc, 1000);
+            },
+            methods: {
+
+                //发送进仓指令功能
+                sendChuKuOrder: function (val) {
+                    if (this.doAjax) {
+                        return false;
+                    }
+                    this.doAjax = true;
+                    if (datas.nowPro.wl != '') {
+                        this.$http.post('/ashx/outstocks/ChuKuOrder-Hand.ashx', {
+                            prosn: this.scanProsn,
+                            userID: this.nowPerson
+                        })
+                            .then((res) => {
+                                console.log(res.data);
+                                //this.instockPlan.instockWls = res.data;
+                                //console.log(this.instockPlan.instockWls);
+                                if (res.data == "success") {
+                                    //this.instockPlan.hasTuo += 1;
+
+                                    this.nowPro.wl = '';
+                                    this.nowPro.proname = '';
+                                    this.nowPro.batchNo = '';
+                                    this.nowPro.prosn = '';
+                                    alert('手动出仓指令下发成功');
+                                }
+                                this.doAjax = false;
+                            }, (res) => {
+
+                                this.doAjax = false;
+                                // 响应错误回调
+                                alert('请求出库处理失败');
+                            })
+                            .catch(function (err) {
+                                console.log(err);
+                                this.doAjax = false;
+                                alert('请求出库处理失败:' + err);
+                            });
+                    }
+                    else {
+                        this.doAjax = false;
+                        alert("该产品条码仓位不存在，请重新扫描已进仓的条码");
+                    }
+                }
+            },
+            computed: {  //设置计算属性
+
+            }
+        });
+        //安卓手持机调用的方法
+        function callJS(prosn) {
+            //alert(prosn);
+            datas.scanProsn = prosn;
+            //alert(this.scanProsn);
+            //this.close();
+            getInfo(prosn);
+            getOutWL(prosn);
+        }
+
+        function getInfo(prosn) {
+            //ajax
+            $.ajax({
+                type: "get",
+                url: "/ashx/moves/GetProInfo2.ashx",
+                async: false,
+                dataType: "json",
+                data: {
+                    prosn: prosn
+                },
+                success: function (res) {
+                    var obj = eval(res);
+
+                    datas.scanProsn = prosn;
+                    datas.nowPro = obj;
+                },
+                error: function (err) {
+                    console.log(err);
+                    alert("Warning:获取产品信息失败\r\n" + err.responseText);
+                }
+            })
+        }
+
+        function getOutWL(prosn) {
+            console.log(314);
+
+            //ajax
+            $.ajax({
+                type: "get",
+                url: "/ashx/moves/GetOutPro.ashx",
+                async: false,
+                dataType: "json",
+                data: {
+                    prosn: prosn
+                },
+                success: function (res) {
+                    console.log(res);
+                    if (res.data.indexOf('success') > -1) {
+                        datas.nowPro.wl = res.data.split(':')[1];
+                        console.log(datas.nowPro.wl);
+                    }
+                },
+                error: function (err) {
+
+                    console.log(err);
+                    //alert("Warning:获取产品仓位信息失败\r\n" + err.responseText);
+                    if (err.responseText.indexOf('success') > -1) {
+                        datas.nowPro.wl = err.responseText.split(':')[1];
+                        console.log(datas.nowPro.wl);
+                    }
+                }
+            })
+        }
+
+    </script>
+
+</body>
+</html>

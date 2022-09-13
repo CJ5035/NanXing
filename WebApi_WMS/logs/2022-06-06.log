@@ -1,0 +1,81 @@
+2022-06-06 13:52:49.3073                
+ [ERROR] AGVApi: : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 WCSApi.Controllers.BaseController.get_UserService() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\BaseController.cs:行号 45
+   在 WCSApi.Controllers.AuthController.<RequestTokenTimeOut>d__2.MoveNext() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AuthController.cs:行号 102
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-06 14:23:36.3412                
+ [ERROR] AGVApi: : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 WCSApi.Controllers.BaseController.get_UserService()
+   在 WCSApi.Controllers.AuthController.<RequestTokenTimeOut>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-06 15:08:30.6640                
+ [ERROR] AGVApi: : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 WCSApi.Controllers.BaseController.get_UserService()
+   在 WCSApi.Controllers.AuthController.<RequestTokenTimeOut>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-06 16:27:53.8791                
+ [ERROR]  : System.Exception: 交付日期不能为空
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 207                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-06 16:28:58.4491                
+ [ERROR]  : System.Exception: 订单 123 交付日期不能为空
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-06 16:30:41.8525                
+ [ERROR]  : System.Exception: 订单 123 交付日期不能为空
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 207                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddCRMApply => Logger.Process               
+ ------------------------------------------------

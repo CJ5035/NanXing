@@ -1,0 +1,52 @@
+2022-01-26 11:01:34.2203                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2022/1/26 11:01:33
+异常类型：JsonReaderException
+异常消息：Unexpected character encountered while parsing value: !. Path '', line 0, position 0.
+异常信息：   在 Newtonsoft.Json.JsonTextReader.ParseValue()
+   在 Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 NanXingService_WMS.Services.ItemService.GetItemFromApi()
+   在 NanXingCangKu.Controller.MainController.Init() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 81
+   在 NanXingCangKu.Form1.Form1_Load(Object sender, EventArgs e) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Form1.cs:行号 42
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 WinformControlLibraryExtension.FormExt.WndProc(Message& m) 位置 E:\Winform\花木兰控件库\花木兰控件库hml-master\hml-master\WinformControlLibraryExtension\控件\Form\FormExt.cs:行号 873
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------
+2022-01-26 22:54:55.1118                
+ [ERROR] NanXingCangKu.exe :  出现应用程序未处理的异常：2022/1/26 22:54:54
+异常类型：InvalidOperationException
+异常消息：到值类型“System.DateTime”的强制转换失败，因为具体化值为 null。结果类型的泛型参数或查询必须使用可以为 null 的类型。
+异常信息：   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NanXingData_WMS.DaoUtils.DbBase.Query[TModel](String sql, List`1 parms, DbMainSlave dms, CommandType cmdType) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 66
+   在 NanXingService_WMS.Services.ItemService.GetMAXModTime() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Services\ItemService.cs:行号 38
+   在 NanXingService_WMS.Services.ItemService.ParseItems() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Services\ItemService.cs:行号 23
+   在 NanXingCangKu.Controller.MainController.Init() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Controller\MainController.cs:行号 81
+   在 NanXingCangKu.Form1.Form1_Load(Object sender, EventArgs e) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Form1.cs:行号 42
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 WinformControlLibraryExtension.FormExt.WndProc(Message& m) 位置 E:\Winform\花木兰控件库\花木兰控件库hml-master\hml-master\WinformControlLibraryExtension\控件\Form\FormExt.cs:行号 873
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+                
+  ThreadContext.OnThreadException => Program.Application_ThreadException => Logger.Process               
+ ------------------------------------------------

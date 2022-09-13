@@ -1,0 +1,47 @@
+2022-08-30 12:45:56.7840                
+ [INFO]  : PLC连接 False:Socket Connect 127.0.0.1:102 Exception -> 由于目标计算机积极拒绝，无法连接。 127.0.0.1:102                
+  S7SmartThread.Control => S7SmartThread.ConnectPLC => Logger.Process               
+ ------------------------------------------------
+2022-08-30 12:46:41.0080                
+ [INFO]  : PLC连接 False:Socket Connect 127.0.0.1:102 Exception -> 由于目标计算机积极拒绝，无法连接。 127.0.0.1:102                
+  S7SmartThread.Control => S7SmartThread.ConnectPLC => Logger.Process               
+ ------------------------------------------------
+2022-08-30 12:48:45.3832                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/corpAccessToken/get/V2
+body:{"appId":"FSAID_131a6f5","appSecret":"cd3775a3122c4c70b4507afea46de5bf","permanentCode":"2787203B641C1BC8B83738007DD1DAA7"}                
+  CRMApiHelper.GetToken => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-30 12:48:45.8924                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/query
+body:{"corpAccessToken":"C320A1DECED72FB0A1B340851B630B09","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","data":{"dataObjectApiName":"object_S1KIF__c","search_query_info":{"offset":0,"limit":200,"filters":[{"field_name":"_id","field_values":"62f4e17e1f52230001f6acfb","operator":"EQ"}]}}}                
+  CRMApiHelper.GetCRMDetailFromApi => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-30 16:31:00.8296                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/corpAccessToken/get/V2
+body:{"appId":"FSAID_131a6f5","appSecret":"cd3775a3122c4c70b4507afea46de5bf","permanentCode":"2787203B641C1BC8B83738007DD1DAA7"}                
+  CRMApiHelper.GetToken => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-30 16:31:01.5429                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/query
+body:{"corpAccessToken":"3F1B881C14893793D81F351DE9C4D57C","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","data":{"dataObjectApiName":"object_S1KIF__c","search_query_info":{"offset":0,"limit":200,"filters":[{"field_name":"_id","field_values":"62f4e17e1f52230001f6acfa","operator":"EQ"}]}}}                
+  CRMApiHelper.GetCRMDetailFromApi => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-30 16:31:02.5816                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/update
+body:{"currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","corpAccessToken":"3F1B881C14893793D81F351DE9C4D57C","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","triggerWorkFlow":true,"data":{"object_data":{"dataObjectApiName":"object_S1KIF__c","field_yAnwj__c":"03小包装-小袋","field_4iY04__c":"S20220830007-02","field_6mobW__c":"未生产","field_s9KMk__c":"超级管理员","field_1yTW1__c":"1656604800000","field_4yUJU__c":"已下推","_id":"62f4e17e1f52230001f6acfa"}}}                
+  CRMApiHelper.WriteCRMApply => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-30 16:31:47.5451                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/query
+body:{"corpAccessToken":"3F1B881C14893793D81F351DE9C4D57C","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","data":{"dataObjectApiName":"object_S1KIF__c","search_query_info":{"offset":0,"limit":200,"filters":[{"field_name":"_id","field_values":"62f4e17e1f52230001f6acfa","operator":"EQ"}]}}}                
+  CRMApiHelper.GetCRMDetailFromApi => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-30 16:33:46.4956                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/update
+body:{"currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","corpAccessToken":"3F1B881C14893793D81F351DE9C4D57C","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","triggerWorkFlow":true,"data":{"object_data":{"dataObjectApiName":"object_S1KIF__c","field_yAnwj__c":"03小包装-小袋","field_4iY04__c":"S20220830007-02","field_6mobW__c":"未生产","field_s9KMk__c":"超级管理员","field_1yTW1__c":"1656604800000","field_4yUJU__c":"已下推","_id":"62f4e17e1f52230001f6acfa"}}}                
+  CRMApiHelper.WriteCRMApply => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-30 16:33:47.2716                
+ [INFO]  : 下推任务状态成功：62f4e17e1f52230001f6acfa--已下推-请求成功                
+  UnitTest1.TestMethod1 => CRMReturnWriteThread.WriteCRMPushPro => Logger.Process               
+ ------------------------------------------------

@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>小包装车间驾驶舱-南兴天虹</title>
+    <link rel="stylesheet" type="text/css" href="/res/css/index2.css">
+    <script src="/res/js/echarts.js"></script>
+
+    <!--<script src="/res/js/echarts.min.js"></script>-->
+</head>
+<body id="back">
+    <div id="app">
+        <div id="head">
+            <div id="headleft">
+                <p id="Date"></p>
+            </div>
+            <div id="headmiddle">
+                <h2>南兴天虹小包装车间驾驶舱 
+                    
+                </h2>
+            </div>
+            <div id="headright" ref="mycolor">
+
+                <!--<iframe style="margin-top:1.8%" width="320" height="50" src="https://i.tianqi.com?c=code&id=34&color=%2357BEF3&icon=1&num=5&site=19" frameborder="0"></iframe>-->
+                <!--<p>今日天气：晴 14°C-22°C</p>-->
+
+                <button class="btnImage" style=" background-color: transparent; width:22px; height: 22px;
+                border: 0px;margin-left:10%;margin-top:4.5%;float:left " @click="func"></button>
+                <p style="margin-left: -5%; line-height: 22px; height: 22px; font-size: 20px">
+                    {{currentTime}}
+                </p>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="first">
+                <div id="first-one" class="borderDiv">
+                    <title-bar value="03小包装-小袋"></title-bar>
+                    <div id="jiTaiCLChart-03BAG" class="echarts"></div>
+                </div>
+                <div id="first-two" class="borderDiv">
+                    <title-bar value="03小包装-罐"></title-bar>
+                    <div id="jiTaiCLChart-03BOX" class="echarts"></div>
+                </div>
+                <div id="first-three" class="borderDiv">
+                    <title-bar value="03小包装-每日坚果"></title-bar>
+                    <div id="jiTaiCLChart-03MRJG" class="echarts"></div>
+
+                </div>
+            </div>
+            <div id="second">
+                <div id="second-one" style="border: 0px; overflow: hidden;">
+                    <div class="echarts">
+                        <div id="dingdanXX">
+
+                            <div class="dingdanDiv">
+                                <div class="dingdanTitle" style="text-align:center">7天任务</div>
+                                <div class="dingdanText"
+                                     style="text-align: center">
+                                    {{second.renwuCount}}
+                                </div>
+
+                            </div>
+                            <div class="dingdanDiv">
+                                <div class="dingdanTitle" style="text-align: center">总计划数</div>
+
+                                <div class="dingdanText" style="text-align: center">
+                                    {{second.renwuTotal}}
+                                </div>
+
+                            </div>
+                            <div class="dingdanDiv">
+                                <div class="dingdanTitle" style="text-align: center">已生产数</div>
+
+                                <div class="dingdanText" style="text-align: center;">
+                                    {{second.ProCount}}
+                                </div>
+
+                            </div>
+                            <div class="dingdanDiv">
+                                <div class="dingdanTitle" style="text-align: center">待生产数</div>
+
+                                <div class="dingdanText" style="text-align: center;color:white">
+                                    {{second.NoProCount}}
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="dingdanDiv" style="width: 14%;background-color:transparent">
+                                <div class="dingdanTitle">已生产量(kg)</div>
+                                <div class="dingdanText" style="text-align: center; width: 100%; height:50%">
+
+                                    <div class="dingdanText1" style="width: 55%; text-align: right; position: relative;">
+                                        {{second.ProCountOnKg}}
+                                    </div>
+                                    <!--<div class="dingdanText1" style="margin-left: 0%;color:white">/</div>-->
+                                    <div class="dingdanPre">({{second.ProCountPre}}%)</div>
+                                </div>
+                            </div>
+                            <div class="dingdanDiv" style="width: 14% ">
+                                <div class="dingdanTitle">待生产量(kg)</div>
+                                <div class="dingdanText" style="text-align: center; width: 100%; height: 50%">
+                                    <div class="dingdanText1" style="width: 55%; text-align: right; position: relative; color: white">{{second.NoProCountOnKg}}</div>
+                                    <!--<div class="dingdanText1" style="margin-left: 0%;color:white">(</div>-->
+                                    <div class="dingdanPre">({{second.NoProCountPre}}%)</div>
+                                </div>
+                            </div>
+
+
+                            <!--<div class="dingdanDiv">
+                                <div class="dingdanTitle" style="text-align:center">交付超期
+                                </div>
+                                <div class="dingdanText2"
+                                     style="text-align: center">
+                                    {{second.JfCQ}}
+                                </div>
+
+                            </div>-->
+                        </div>
+                        <div id="dingdanTable">
+                            <css-table></css-table>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="second-two" style="display: inline-block; position: relative;" >
+                    <div style="display: inline-block; width: 75%; height: 99%; position: 
+          relative; margin-top: 0px; overflow: visible; float: left; "  class="borderDiv">
+                        <title-bar value="最近15天产量合计(kg)"></title-bar>
+                        <div id="riChanLiangChart" class="echarts">
+                            
+                        </div>
+                    </div>
+
+                    
+                    <div style="display: inline-block; width: 24.5%; height: 99%; 
+       position: relative;margin-left:5px"  class="borderDiv">
+                        <title-bar value="生产状况"></title-bar>
+                        <div class="echarts">
+
+
+                            <div style="height:10%;width:90%">
+                                <span class="StateTitle">未生产：</span>
+                                <span class="StateValue noWorkState">
+                                    {{this.second.NoWorkCount}}
+                                </span>
+                            </div>
+                            <div style="height:10%;width:90%">
+                                <span class="StateTitle">生产中：</span>
+                                <span class="StateValue productState">
+                                    {{this.second.WorkCount}}
+                                </span>
+                            </div>
+
+                            <div style="height:10%;width:90%">
+                                <span class="StateTitle">暂停生产：</span>
+                                <span class="StateValue stopProduct">
+                                    {{this.second.StopCount}}
+                                </span>
+                            </div>
+
+                            <div style="height:10%;width:90%">
+                                <span class="StateTitle">已完成：</span>
+                                <span class="StateValue finishedState">
+                                    {{this.second.FinishCount}}
+                                </span>
+                            </div>
+                           
+                            <div style="height:10%;width:90%">
+                                <span class="StateTitle">异常完成：</span>
+                                <span class="StateValue errorFinishedState">
+                                    {{this.second.ErrorFinishCount}}
+                                </span>
+                            </div>
+
+                            <div style="height:10%;width:90%">
+                                <span class="StateTitle">异常：</span>
+                                <span class="StateValue errorState">
+                                    {{this.second.ErrorCount}}
+                                </span>
+                            </div>
+
+                            <div style="height:10%;width:90%;margin-top:10%;">
+                                <span class="StateTitle">交付超期：</span>
+                                <span class="StateValue errorState">
+                                    {{this.second.JfCQ}}
+                                </span>
+                            </div>
+
+                            <div style="height:10%;width:90%">
+                                <span class="StateTitle">交付正常：</span>
+                                <span class="StateValue productState">
+                                    {{this.second.JfZC}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="third">
+                <div id="third-one" class="borderDiv">
+                    <title-bar value="07小包装-小袋"></title-bar>
+                    <div id="jiTaiCLChart-07BAG" class="echarts"></div>
+                </div>
+                <div id="third-two" class="borderDiv">
+                    <title-bar value="07小包装-罐"></title-bar>
+                    <div id="jiTaiCLChart-07BOX" class="echarts"></div>
+                </div>
+                <div id="third-three" class="borderDiv">
+                    <title-bar value="07小包装-每日坚果"></title-bar>
+                    <div id="jiTaiCLChart-07MRJG" class="echarts"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/res/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/res/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/res/js/jsmpeg.min.js"></script>
+    <!--<script src="/res/js/jquery-3.3.1.min.js"></script>-->
+    <script src="/res/js/vue.js"></script>
+    <script src="/res/js/vuex.js"></script>
+    <script src="/res/js/vue-resource.min.js"></script>
+    <script src="/res/js/ElementUI/element-ui.js"></script>
+    <link rel="stylesheet" href="/res/component/title-bar/title-bar.css">
+    <script src="/res/component/title-bar/title-bar.js"></script>
+    <link rel="stylesheet" href="/res/component/image-text/image-text.css">
+    <script src="/res/component/image-text/image-text.js"></script>
+    <link rel="stylesheet" href="/res/component/lamp-text/lamp-text.css">
+    <script src="/res/component/lamp-text/lamp-text.js"></script>
+    <link rel="stylesheet" href="/res/component/css-table/css-table.css">
+    <script src="/res/component/css-table/css-table.js"></script>
+
+    <script type="text/javascript">
+        //全局变量
+        const store = new Vuex.Store({
+            // 定义状态
+            state: {
+                currentPageData: [], //当前页显示内容
+                selectIndex: 1
+            },
+            mutations: {
+                newSelectIndex(state, msg) {
+                    state.selectIndex = msg
+                },
+                newTabledata(state, data) {
+                    state.currentPageData = data
+                },
+            }
+        });
+
+
+        var datas = new Vue({
+            el: "#app",
+            store: store,
+            data: {
+                initbool: true,
+                currentTime: '',
+                IsOpenNext: true,
+                BtnText: "停止",
+                BtnImage: "/res/images/小灯/button3.png",
+                first: {
+                    firstOne: {
+                        yName1: '03小包装',
+                        yName2: '07小包装',
+                        yName3: '03小包装排产数',
+                        yName4: '07小包装排产数',
+                        xLine: ['07-10', '07-11', '07-12', '07-13', '07-14', '07-15', '07-16'],
+                        yLine1: [600, 400, 300, 700, 200, 350, 500],
+                        yLine3: [600, 400, 300, 700, 200, 350, 500],
+                        yLine2: [200, 200, 450, 200, 850, 550, 300],
+                        yLine4: [200, 200, 450, 200, 850, 550, 300],
+                    }
+                },
+                second: {
+                    tabledata: [
+                        {
+                            ProductOrder_XuHao: 'P20210917001', ItemName: '21/25甜味美国自然开心果(华民3:7沟果4号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '异常完成'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917002', ItemName: '21/25盐焗美国自然开心果(3:7沟果2号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '生产中'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917003', ItemName: 'Jumbo美国Ennis壳榛子'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '暂停生产'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917004', ItemName: '23/25原焗美国(NP)巴旦木仁'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '未生产'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917005', ItemName: '23/25原焗美国(NP)巴旦木仁'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '异常'
+
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917001', ItemName: '21/25甜味美国自然开心果(华民3:7沟果4号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '已完成'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917001', ItemName: '21/25甜味美国自然开心果(华民3:7沟果4号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '已完成'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917001', ItemName: '21/25甜味美国自然开心果(华民3:7沟果4号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '已完成'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917001', ItemName: '21/25甜味美国自然开心果(华民3:7沟果4号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '已完成'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917001', ItemName: '21/25甜味美国自然开心果(华民3:7沟果4号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '已完成'
+                        },
+                        {
+                            ProductOrder_XuHao: 'P20210917001', ItemName: '21/25甜味美国自然开心果(华民3:7沟果4号)'
+                            , PlanDate: '2021-11-10', DeliveryDate: '2021-11-10'
+                            , PlanProDate: '2021-11-10', FinishTime: '2021-11-10'
+                            , PcCQ: '超期', JFCQ: '正常', PcCount: '1000', ProCount: '1000'
+                            , Unit: '箱', WCL: '100', ProOrderList_State: '已完成'
+                        },
+                    ],
+                    totalPage: 1, // 统共页数，默认为1
+                    currentPage: 1, //当前页数 ，默认为1
+                    pageSize: 10, // 每页显示数量
+
+                    //统计数据
+                    renwuCount: 0,
+                    renwuTotal: 0,
+                    ProCount: 0,
+                    ProCountOnKg: 0,
+                    NoProCount: 0,
+                    NoProCountOnKg: 0,
+                    ProCountPre: 0,
+                    NoProCountPre: 0,
+                    JfCQ: 0,
+                    JfZC: 0,
+
+                    NoWorkCount : 0,
+                    WorkCount : 0,
+                    StopCount : 0,
+                    FinishCount : 0,
+                    ErrorFinishCount : 0,
+                    ErrorCount : 0,
+
+
+                    //中下
+
+                    middleDown: {
+                        yName1: '03小包装',
+                        yName2: '07小包装',
+                        yName3: '03小包装排产数',
+                        yName4: '07小包装排产数',
+                        xLine: ['07-10', '07-11', '07-12', '07-13', '07-14', '07-15', '07-16', '07-17'
+                            , '07-18', '07-19', '07-20', '07-21', '07-22', '07-23', '07-24'],
+                        yLine1: [600, 400, 300, 700, 200, 350, 500, 600, 900, 300, 200, 200, 450, 200, 850],
+                        yLine3: [600, 400, 300, 700, 200, 350, 500, 600, 900, 300, 200, 200, 450, 200, 850],
+                        yLine2: [200, 200, 450, 200, 850, 550, 300, 600, 900, 300, 200, 200, 450, 200, 850],
+                        yLine4: [200, 200, 450, 200, 850, 550, 300, 600, 900, 300, 200, 200, 450, 200, 850],
+                    }
+                },
+                third: {
+                    scHeGeLv_1: 88,
+                    scHeGeLv_2: 92,
+                }
+            },
+            mounted() {
+                //setInterval(this.GetLuQianData, 1000);
+                this.GetPCDData();
+                this.GetCheJianCL();
+                this.Get10DaysData();
+
+                
+                if (this.initbool) {
+                    setTimeout(setInterval(this.nextPage, 5000), 5000);
+                    
+                    setInterval(this.GetCheJianCL, 30000);
+                    setInterval(this.Get10DaysData, 30000);
+
+                    setInterval(this.GetCurrentTime, 1000);
+                    this.initbool = false;
+                }
+            },
+            methods: {
+
+                WriteZhuZhuangTu: function (ElementId, yName1, yName2,yLineName1,yLineName2
+                    , xLine, yLine1, yLine2, max1, max2) {
+                    var myChart = echarts.init(document.getElementById(ElementId));;
+
+                    option = {
+                        tooltip: {
+                            trigger: 'axis',
+                            axisPointer: {
+                                type: 'cross',
+                                crossStyle: {
+                                    color: '#999'
+                                }
+                            }
+                        },
+                        grid: {
+                            top: '20%',
+                            left: '2%',
+                            right: '1%',
+                            bottom: '2%',
+                            containLabel: true
+                        },
+                        legend: {
+                            data: [yName1, yName2]
+                            ,
+                            textStyle: {
+                                fontSize: 14,
+                                color: '#C1FFC1',
+
+                            },
+
+                            right: '0%',
+                            top: '0%'
+                        },
+                        xAxis: [
+                            {
+                                type: 'category',
+                                data: xLine,
+                                axisLabel: {
+                                    interval: 0,
+                                    textStyle: {
+                                        color: '#98F5FF',
+                                        fontSize: 11,
+                                        //color: 'rgb(0,253,255,0.6)'
+                                    },
+                                    formatter: function (params) {
+                                        return params
+                                    }
+                                }
+                            }
+                        ],
+                        yAxis: [
+                            {
+                                type: 'value',
+                                name: yLineName1,
+                                min: 0,
+                                max: max1,
+                                interval: max1 / 5,
+                                axisLabel: {
+                                    textStyle: {
+                                        color: '#98F5FF'
+                                    }
+                                },
+                                splitLine: {
+
+                                    lineStyle: {
+                                        color: '#122659'
+                                        //color: '#4682B4'
+                                    }
+                                },
+                                axisLine: {
+
+                                    lineStyle: {
+                                        color: '#4682B4'
+                                    }
+                                }
+                            },
+                            {
+                                type: 'value',
+                                name: yLineName2,
+                                show: true,
+                                min: 0,
+                                max: max2,
+                                interval: max2 / 5,
+                                axisLabel: {
+                                    formatter: '{value} ',
+                                    textStyle: {
+                                        color: '#98F5FF'
+                                    }
+                                },
+                                splitLine: {
+
+                                    lineStyle: {
+                                        color: '#122659'
+                                        //color: '#4682B4'FF377F
+                                    }
+                                },
+                                axisLine: {
+
+                                    lineStyle: {
+                                        color: '#4682B4'
+                                    }
+                                }
+                            }
+                        ],
+                        series: [
+                            {
+                                name: yName1,
+                                type: 'bar',
+                                barWidth: 5,
+                                itemStyle: {
+                                    normal: {
+                                        color: new echarts.graphic.LinearGradient(
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            [
+                                                {
+                                                    offset: 0,
+                                                    color: '#36ACEC' // 0% 处的颜色
+                                                },
+                                                {
+                                                    offset: 0.4,
+                                                    color: '#688FDE' // 60% 处的颜色
+                                                },
+                                                {
+                                                    offset: 1,
+                                                    color: '#9171D4' // 100% 处的颜色
+                                                }
+                                            ],
+                                            false
+                                        )
+                                    }
+                                },
+                                data: yLine1
+                            },
+                            {
+                                name: yName2,
+                                type: 'line',
+                                yAxisIndex: 1,
+                                symbol: 'circle',
+                                symbolSize: 8,
+                                itemStyle: {
+                                    normal: {
+                                        color: '#FFF',
+                                        lineStyle: {
+                                            color: '#FF377F'
+                                        }
+                                    }
+                                },
+                                data: yLine2
+                            },
+
+                        ]
+                    };
+                    myChart.clear();
+                    myChart.setOption(option, true);
+                },
+
+                GetCheJianCL: async function () {
+                    await this.$http.post('/ashx/html2/GetCheJianCL.ashx', {
+                        beforeDays: '-7',
+                        afterDays: '-0'
+                    }).then((res) => {
+
+                        //用局部变量遍历，最后赋值给echart变量
+                        console.log(res.data.desc);
+                        var max1 = 1000;
+                        var max2 = 1000;
+                        var max3 = 1000;
+                        for (var i = 0; i < res.data.desc.length; i++) {
+                            var maxI1 = (Math.floor(Math.max.apply(null, res.data.desc[i].YData1) / 1000) + 1) * 1000;
+                            var maxI2 = (Math.floor(Math.max.apply(null, res.data.desc[i].YData2) / 1000) + 1) * 1000;
+
+                            if (res.data.desc[i].CheJianName.indexOf("小包装-小袋") > -1) {
+                                if (max1 < maxI1) {
+                                    max1 = maxI1;
+                                }
+                                if (max1 < maxI2) {
+                                    max1 = maxI2;
+                                }
+                            }
+                            else if (res.data.desc[i].CheJianName.indexOf("小包装-罐") > -1) {
+                                if (max2 < maxI1) {
+                                    max2 = maxI1;
+                                }
+                                if (max2 < maxI2) {
+                                    max2 = maxI2;
+                                }
+                            }
+                            else if (res.data.desc[i].CheJianName.indexOf("小包装-每日坚果") > -1) {
+                                if (max3 < maxI1) {
+                                    max3 = maxI1;
+                                }
+                                if (max3 < maxI2) {
+                                    max3 = maxI2;
+                                }
+                            }
+                           
+                        }
+
+                        for (var i = 0; i < res.data.desc.length; i++) {
+                            console.log(res.data.desc[i].CheJianName);
+                          
+                            if (res.data.desc[i].CheJianName == "03小包装-小袋") {
+                                this.WriteZhuZhuangTu('jiTaiCLChart-03BAG', '实际产量', '计划产量',
+                                    'kg','kg',
+                                    res.data.desc[i].XData, res.data.desc[i].YData1, res.data.desc[i].YData2
+                                    , max1, max1);
+                            }
+                            else if (res.data.desc[i].CheJianName == "03小包装-每日坚果") {
+                                this.WriteZhuZhuangTu('jiTaiCLChart-03MRJG', '实际产量', '计划产量',
+                                    'kg', 'kg',
+                                    res.data.desc[i].XData, res.data.desc[i].YData1, res.data.desc[i].YData2
+                                    , max3, max3);
+                            }
+                            else if (res.data.desc[i].CheJianName == "03小包装-罐") {
+                                this.WriteZhuZhuangTu('jiTaiCLChart-03BOX', '实际产量', '计划产量',
+                                    'kg', 'kg',
+                                    res.data.desc[i].XData, res.data.desc[i].YData1, res.data.desc[i].YData2
+                                    , max2, max2);
+                            }
+                            else if (res.data.desc[i].CheJianName == "07小包装-小袋") {
+                                this.WriteZhuZhuangTu('jiTaiCLChart-07BAG', '实际产量', '计划产量',
+                                    'kg', 'kg',
+                                    res.data.desc[i].XData, res.data.desc[i].YData1, res.data.desc[i].YData2
+                                    , max1, max1);
+                            }
+                            else if (res.data.desc[i].CheJianName == "07小包装-每日坚果") {
+                                this.WriteZhuZhuangTu('jiTaiCLChart-07MRJG', '实际产量', '计划产量',
+                                    'kg', 'kg',
+                                    res.data.desc[i].XData, res.data.desc[i].YData1, res.data.desc[i].YData2
+                                    , max3, max3);
+                            }
+                            else if (res.data.desc[i].CheJianName == "07小包装-罐") {
+                                this.WriteZhuZhuangTu('jiTaiCLChart-07BOX', '实际产量', '计划产量',
+                                    'kg', 'kg',
+                                    res.data.desc[i].XData, res.data.desc[i].YData1, res.data.desc[i].YData2
+                                    , max2, max2);
+                            }
+
+                        }
+                        //this.second.tabledata = res.data.desc;
+                        //this.InitTable();
+                        //this.SetTongJiData(res.data.desc);
+                        //this.$store.commit('newTabledata', res.data);
+                        //this.WriteJiTai(xLine, yLine1, yLine2);
+                    }, (res) => {
+                        // 响应错误回调
+                        //alert('请求新建处理失败');
+                    }).catch(function (err) {
+                            console.log(err);
+                    });
+                },
+
+                //获取排产单明细数据
+                GetPCDData: async function () {
+                    await this.$http.post('/ashx/html2/GetProOrderTable.ashx', {
+                        beforeDays: '-30',
+                        afterDays: '0'
+                    })
+                        .then((res) => {
+
+                            //用局部变量遍历，最后赋值给echart变量
+                            console.log(res.data.desc);
+                            this.SetTongJiData(res.data.desc);
+                            var table = res.data.desc;
+                            var yushu = res.data.desc.length % 10;
+                            if (yushu >0) {
+                                var count = 10 - yushu;
+                                for (var i = 0; i < count;i++) {
+                                    table.push({});
+                                }
+                            }
+                            
+                            this.second.tabledata = table;
+                            this.InitTable();
+                            
+                            //this.$store.commit('newTabledata', res.data);
+                            //this.WriteJiTai(xLine, yLine1, yLine2);
+                        }, (res) => {
+                            // 响应错误回调
+                            //alert('请求新建处理失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                },
+                SetTongJiData: async function (data) {
+                    var totalCount = 0;
+                    var totalCountOnKg = 0;
+
+                    var proCount = 0;
+                    var proCountOnKg = 0;
+                    var JFCQ = 0;
+                    
+                    var NoWorkCount = 0;
+                    var WorkCount = 0;
+                    var StopCount = 0;
+                    var FinishCount = 0;
+                    var ErrorFinishCount = 0;
+                    var ErrorCount = 0;
+
+                    for (var i = 0; i < data.length; i++) {
+                        totalCount += data[i]["PcCount"];
+                        totalCountOnKg += data[i]["PcCountOnKg"];
+
+                        proCount += data[i]["ProCount"];
+                        proCountOnKg += data[i]["ProCountOnKg"];
+                        if (data[i]["JFCQ"] == "是")
+                            JFCQ++;
+
+                        if (data[i]["ProOrderList_State"] == "未生产")
+                            NoWorkCount++;
+                        else if (data[i]["ProOrderList_State"] == "生产中")
+                            WorkCount++;
+                        else if (data[i]["ProOrderList_State"] == "暂停生产")
+                            StopCount++;
+                        else if (data[i]["ProOrderList_State"] == "已完成")
+                            FinishCount++;
+                        else if (data[i]["ProOrderList_State"] == "异常完成")
+                            ErrorFinishCount++;
+                        else if (data[i]["ProOrderList_State"].indexOf("异常")>=-1 )
+                            ErrorCount++;
+                        
+                    }
+                   
+                    this.second.renwuCount = data.length;
+                    this.second.renwuTotal = totalCount;
+                    this.second.ProCount = proCount;
+                    this.second.ProCountOnKg = Math.floor(proCountOnKg);
+                    this.second.ProCountPre = Math.floor(this.GetPercent(proCount, totalCount));
+                    this.second.NoProCount = totalCount - proCount;
+                    this.second.NoProCountOnKg = Math.ceil(totalCountOnKg) - Math.floor(proCountOnKg);
+                    this.second.NoProCountPre = Math.ceil(this.GetPercent(totalCount - proCount, totalCount));
+                    this.second.JfCQ = JFCQ;
+
+                    this.second.JfZC = data.length - JFCQ;
+                    this.second.NoWorkCount = NoWorkCount;
+                    this.second.WorkCount = WorkCount;
+                    this.second.StopCount = StopCount;
+                    this.second.FinishCount = FinishCount;
+                    this.second.ErrorFinishCount = ErrorFinishCount
+                    this.second.ErrorCount = ErrorCount;
+                },
+
+                Get10DaysData: async function () {
+                    await this.$http.post('/ashx/html2/GetAllCheJianCL.ashx',
+                        {
+                            beforeDays: '-15',
+                            afterDays: '-0'
+                        })
+                        .then((res) => {
+                            //用局部变量遍历，最后赋值给echart变量
+                            console.log(res.data);
+                            var max1 = 1000;
+                            var max2 = 250;
+                            max1 = (Math.floor(Math.max.apply(null, res.data.desc[0].YData1) / 1000) + 1) * 1000;
+                            max2 = (Math.floor(Math.max.apply(null, res.data.desc[0].YData2) / 1000) + 1) * 1000;
+                            var max = max1;
+                            if (max1 < max2)
+                                max = max2;
+                            this.WriteZhuZhuangTu('riChanLiangChart', '实际产量', '计划产量',
+                                '产量(kg)', '产量(kg)',
+                                res.data.desc[0].XData, res.data.desc[0].YData1, res.data.desc[0].YData2
+                                , max, max);
+                            console.log(res.data.desc.YData1);
+                            //this.WriteRiChanLiang(xLine, yLine1, yLine2, max1, max2);
+                            //this.WriteJiTai(xLine, yLine1, yLine2);
+                        }, (res) => {
+                            // 响应错误回调
+                            //alert('请求新建处理失败');
+                        })
+                        .catch(function (err) {
+                            console.log(err);
+                        });
+                },
+
+                InitTable: function () {
+                    //console.log(641);
+                    //this.GetPCDData();
+                    // 计算一共有几页
+                    this.second.totalPage = Math.ceil(this.second.tabledata.length / this.second.pageSize);
+                    // 计算得0时设置为1
+                    this.second.totalPage = this.second.totalPage == 0 ? 1 : this.second.totalPage;
+                    this.second.currentPage = 1;
+                    this.setCurrentPageData();
+
+                },
+                nextPage: function () {
+                    if (!this.IsOpenNext)
+                        return false;
+                    
+                    //最后一页时刷新数据
+                    if (this.second.currentPage == this.second.totalPage) {
+                        //获取数据
+                        console.log("获取数据");
+                        this.InitTable();
+                        this.GetPCDData();
+                    }
+                    else {
+                        //非最后一页时刷新页面
+                        console.log("非最后一页");
+                        console.log(this.second.currentPage);
+                        console.log(this.second.totalPage);
+                        this.second.currentPage++;
+                        this.setCurrentPageData();
+                    }
+                },
+                setCurrentPageData: function () {
+                    let begin = (this.second.currentPage - 1) * this.second.pageSize;
+                    let end = this.second.currentPage * this.second.pageSize;
+                    var cPageData = this.second.tabledata.slice(
+                        begin,
+                        end
+                    );
+                    this.$store.commit('newTabledata', cPageData);
+                },
+                GetPercent: function (num, total) {
+                    /// <summary>
+                    /// 求百分比
+                    /// </summary>
+                    /// <param name="num">当前数</param>
+                    /// <param name="total">总数</param>
+                    num = parseFloat(num);
+                    total = parseFloat(total);
+                    if (isNaN(num) || isNaN(total)) {
+                        return "-";
+                    }
+                    return total <= 0 ? 0 : Math.round(num / total * 10000) / 100;
+                },
+                GetCurrentTime: function () {
+                    var date = new Date();
+                    var year = date.getFullYear();    //  返回的是年份
+                    var month = date.getMonth() + 1;  //  返回的月份上个月的月份，记得+1才是当月
+                    var dates = date.getDate();       //  返回的是几号
+                    var day = date.getDay();          //  周一返回的是1，周六是6，但是周日是0
+                    var hour = date.getHours();
+                    var minute = date.getMinutes();
+                    var second = date.getSeconds();
+
+                    var arr = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六",];
+                    this.currentTime=( year + "年" + month + "月" + dates + "日  "
+                        + this.addZero(hour) + ":" + this.addZero(minute) + ":" + this.addZero(second)
+                        + " " + arr[day]);
+
+                },
+                addZero: function (s) {
+                    return s < 10 ? ('0' + s) : s;
+                },
+                func: function () {
+                    this.IsOpenNext = !this.IsOpenNext;
+                    this.$refs.mycolor.style.setProperty("--background-image",
+                        this.IsOpenNext ? "url('/res/images/小灯/circle4.png')" :
+                            "url('/res/images/小灯/circle5.png')");
+                }
+
+            },
+            computed: {
+                //设置计算属性
+
+            }
+        });
+    </script>
+</body>
+</html>

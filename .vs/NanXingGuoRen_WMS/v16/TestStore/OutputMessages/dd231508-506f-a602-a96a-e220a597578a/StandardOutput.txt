@@ -1,0 +1,116 @@
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Utils.AGVUtils.AGVOrderUtils.SendOrder(AGVMissionInfo mission) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Utils\AGVUtils\AGVOrderUtils.cs:行号 66
+   在 UnitTest_NanXing.UnitTest1.TestMethod1() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\UnitTest_NanXing\UnitTest1.cs:行号 47
+
+
+调试跟踪:
+30
+0
+127.0.0.1
+已于 2022/4/13 10:23:59 +08:00
+ 打开了连接
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.AGVAlarmLog','dbo.AGVMissionInfo','dbo.AGVMissionInfo_Floor','dbo.TiShengJiRunRecord','dbo.__MigrationHistory','dbo.Configs','dbo.CRMFiles','dbo.CRMPlanHead','dbo.CRMPlanList','dbo.ProductOrderlists','dbo.Production','dbo.ProductOrderheaders','dbo.DEPARTMENT','dbo.STAFF','dbo.Depts','dbo.Users','dbo.Onlines','dbo.Roles','dbo.Powers','dbo.Menus','dbo.Titles','dbo.WareLocation','dbo.TrayState','dbo.TrayPro','dbo.WareArea','dbo.WareAreaClass','dbo.WareHouse','dbo.DeviceStatesInfo','dbo.FaHuoPlan','dbo.ItemInfo','dbo.Log','dbo.pbcatedt','dbo.pbcatfmt','dbo.pbcatvld','dbo.pchao','dbo.PrdMissionSL','dbo.ProcessClasses','dbo.WorkShopProcesses','dbo.Productiondt','dbo.SensorData','dbo.SERIALNO','dbo.StockPlan','dbo.SYSPARM','dbo.TelenClients','dbo.TiShengJiInfo','dbo.TiShengJiState','dbo.TouLiaoRecord','dbo.TrayWeightRecord','dbo.UpdateApp','dbo.UpdateFiles','dbo.WeiXinSetting','dbo.RolePowers','dbo.RoleUsers','dbo.TitleUsers')
+    OR t.TABLE_NAME = 'EdmMetadata'
+
+
+-- 正在 2022/4/13 10:23:59 +08:00
+ 执行
+-- 已在 4 毫秒内完成，结果为: 54
+
+
+
+已于 2022/4/13 10:23:59 +08:00
+ 关闭了连接
+已于 2022/4/13 10:24:00 +08:00
+ 打开了连接
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+
+
+-- p__linq__0: 'NanXingData_WMS.Migrations.Configuration' (Type = String, Size = 4000)
+
+-- 正在 2022/4/13 10:24:01 +08:00
+ 执行
+-- 已在 36 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2022/4/13 10:24:01 +08:00
+ 关闭了连接
+已于 2022/4/13 10:24:01 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+
+
+-- p__linq__0: 'NanXingData_WMS.Migrations.Configuration' (Type = String, Size = 4000)
+
+-- 正在 2022/4/13 10:24:02 +08:00
+ 执行
+-- 已在 0 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2022/4/13 10:24:02 +08:00
+ 关闭了连接
+已于 2022/4/13 10:24:02 +08:00
+ 打开了连接
+SELECT TOP (2) 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[MissionNo] AS [MissionNo], 
+    [Extent1].[OrderTime] AS [OrderTime], 
+    [Extent1].[TrayNo] AS [TrayNo], 
+    [Extent1].[Mark] AS [Mark], 
+    [Extent1].[StartLocation] AS [StartLocation], 
+    [Extent1].[StartPosition] AS [StartPosition], 
+    [Extent1].[EndLocation] AS [EndLocation], 
+    [Extent1].[EndPosition] AS [EndPosition], 
+    [Extent1].[SendState] AS [SendState], 
+    [Extent1].[SendMsg] AS [SendMsg], 
+    [Extent1].[StateMsg] AS [StateMsg], 
+    [Extent1].[RunState] AS [RunState], 
+    [Extent1].[StateTime] AS [StateTime], 
+    [Extent1].[StockPlan_ID] AS [StockPlan_ID], 
+    [Extent1].[OrderGroupId] AS [OrderGroupId], 
+    [Extent1].[ModelProcessCode] AS [ModelProcessCode], 
+    [Extent1].[AGVCarId] AS [AGVCarId], 
+    [Extent1].[userId] AS [userId], 
+    [Extent1].[MissionFloor_ID] AS [MissionFloor_ID], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[IsFloor] AS [IsFloor], 
+    [Extent1].[WHName] AS [WHName]
+    FROM [dbo].[AGVMissionInfo] AS [Extent1]
+    WHERE [Extent1].[ID] = @p0
+
+
+-- p0: '2059' (Type = Int32)
+
+-- 正在 2022/4/13 10:24:02 +08:00
+ 执行
+-- 已在 0 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2022/4/13 10:24:02 +08:00
+ 关闭了连接
+耗时：11051

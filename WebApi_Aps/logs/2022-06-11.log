@@ -1,0 +1,848 @@
+2022-06-11 09:18:07.9115                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:18:08.2187                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:26:25.4587                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:26:33.5092                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:35:02.0433                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 596
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:35:05.1537                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:35:05.1856                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:38:15.1322                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:38:24.5789                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:41:40.9843                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:41:54.9354                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 09:42:14.2023                
+ [ERROR] AGVApi: : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingData_WMS.DaoUtils.DbBase.CloseTransaction() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 312
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 885
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 596
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:21:18.1326                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 10:21:27.2787                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:30:00.7687                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 596
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:30:45.2785                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:30:45.3124                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:32:26.8387                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 596
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:42:36.2549                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:42:45.9766                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:47:04.8337                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:47:12.8273                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:53:05.9975                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:53:13.3008                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:53:15.1748                
+ [INFO]  : 2022061000038:返回2G-15-4                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:59:27.9371                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:59:37.5115                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:59:39.9660                
+ [INFO]  : 2022061000038:返回2G-15-6                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:59:45.6530                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 12:59:45.6689                
+ [INFO]  : 2022061000038:返回22000091                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:00:12.8114                
+ [INFO]  : 2022061000039:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:00:28.4161                
+ [INFO]  : 2022061000037:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:00:28.4500                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:00:28.4889                
+ [INFO]  : 2022061000037:返回2G-15-4                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:02:11.5655                
+ [INFO]  : 2022061000037:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:02:11.6154                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:02:53.5322                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt)
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:09:16.2726                
+ [INFO]  : 2022061000037:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:09:16.3075                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:09:16.3514                
+ [INFO]  : 2022061000037:返回2G-15-6                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:10:22.3301                
+ [INFO]  : 2022061000037:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:10:22.3381                
+ [INFO]  : 2022061000037:返回22000091                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:10:29.2137                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:10:29.2386                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:10:51.6413                
+ [INFO]  : 2022061000038:返回2G-15-4                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:21:50.2885                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:21:59.5812                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:24:06.7486                
+ [INFO]  : 2022052400021:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:24:15.5481                
+ [INFO]  : 请求列号:2G-6-;返回类型:{end}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:24:37.1218                
+ [INFO]  : 2022052400021:返回2G-6-4                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:26:44.7459                
+ [INFO]  : 2022052400020:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:26:52.0832                
+ [INFO]  : 请求列号:2G-6-;返回类型:{end}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:27:41.7575                
+ [INFO]  : 2022052400020:返回2G-6-1                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:29:14.6267                
+ [INFO]  : 2022061000038:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:29:27.5845                
+ [INFO]  : 请求列号:2G-15-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:30:00.9707                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 602
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:30:07.4035                
+ [INFO]  : 2022061000036:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:30:15.0798                
+ [INFO]  : 请求列号:2G-19-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:40:48.0226                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 602
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:56:06.8753                
+ [INFO]  : 2022061000036:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:56:15.6089                
+ [INFO]  : 请求列号:2G-19-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:56:56.8607                
+ [ERROR] AGVApi: : System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.SqlClient.SqlConnection.GetOpenConnection()
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 602
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:57:20.5001                
+ [INFO]  : 2022061000036:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:57:20.6667                
+ [INFO]  : 请求列号:2G-19-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:57:26.7278                
+ [ERROR] AGVApi: : System.InvalidOperationException: 无效操作。连接被关闭。
+   在 System.Data.SqlClient.SqlConnection.GetOpenConnection()
+   在 System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   在 System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 886
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt)
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:59:15.0827                
+ [INFO]  : 2022061000036:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 13:59:22.9497                
+ [INFO]  : 请求列号:2G-19-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 14:01:20.9575                
+ [ERROR] AGVApi: : System.AggregateException: 发生一个或多个错误。 ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 EntityFramework.Extensions.BatchExtensions.Update[TEntity](IQueryable`1 source, Expression`1 updateExpression)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.UpdateByPlus(Expression`1 whereLambda, Expression`1 updateExpression) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 888
+   在 NanXingService_WMS.Managers.AGVApiManager.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\AGVApiManager.cs:行号 602
+   在 WCSApi.Controllers.AGVController.GetMissionTarget(MissionTarget mt) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WCSApi\Controllers\AGVController.cs:行号 78
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+---> (内部异常 #0) System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteReader 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.WareLocation_ADD2FDD47850483651441773F5BA00E6C3A8319EDC9D4823EF229D7D96A7CB4E.get_TrayState()
+   在 lambda_method(Closure )
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 EntityFramework.Batch.SqlServerBatchRunner.<InternalUpdate>d__15`1.MoveNext()<---
+                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-06-11 14:06:02.8345                
+ [INFO]  : 2022061000036:请求位置                
+  AGVController.GetMissionTarget => AGVApiManager.GetMissionTarget => Logger.Process               
+ ------------------------------------------------
+2022-06-11 14:06:12.8677                
+ [INFO]  : 请求列号:2G-19-;返回类型:{start}                
+  AGVApiManager.GetMissionTarget => AGVApiManager.GetWareLocationInLie => Logger.Process               
+ ------------------------------------------------
+2022-06-11 19:01:54.7639                
+ [ERROR]  : 生产明细单上报数量失败：
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Services.ProductOrderManager.UpdateOrderAddProCount(Int32 prolist_ID, Int32 addCount) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ProductOrderManager.cs:行号 468                
+  WXProductController.AddOrderCount => ProductOrderManager.UpdateOrderAddProCount => Logger.Process               
+ ------------------------------------------------

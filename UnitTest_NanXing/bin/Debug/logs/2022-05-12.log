@@ -1,0 +1,8 @@
+2022-05-12 17:15:10.1137                
+ [INFO]  : 分配提升机：                
+  UnitTest1.TestMethod1 => GroupMissionThread.ParseFloor => Logger.Process               
+ ------------------------------------------------
+2022-05-12 17:15:14.4415                
+ [INFO]  : 分配提升机：                
+  UnitTest1.TestMethod1 => GroupMissionThread.ParseFloor => Logger.Process               
+ ------------------------------------------------

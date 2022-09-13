@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CRMApi\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2022-01-06T07:44:06.7241391Z;True|2022-01-06T14:51:50.7104053+08:00;True|2022-01-06T14:45:42.4399100+08:00;True|2022-01-05T17:56:57.4687435+08:00;True|2022-01-05T15:42:16.3441029+08:00;True|2022-01-05T14:14:34.1484162+08:00;</History>
+  </PropertyGroup>
+</Project>

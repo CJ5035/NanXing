@@ -1,0 +1,12 @@
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\bin\Release\CommonTools.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\bin\Release\CommonTools.pdb
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\bin\Release\AutoMapper.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\bin\Release\System.ValueTuple.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\bin\Release\AutoMapper.pdb
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\bin\Release\AutoMapper.xml
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\bin\Release\System.ValueTuple.xml
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\obj\Release\CommonTools.csproj.AssemblyReference.cache
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\obj\Release\CommonTools.csproj.CoreCompileInputs.cache
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\obj\Release\CommonTools.csproj.CopyComplete
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\obj\Release\CommonTools.dll
+D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\CommonTools\obj\Release\CommonTools.pdb

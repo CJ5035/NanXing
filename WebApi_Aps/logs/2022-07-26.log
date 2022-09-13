@@ -1,0 +1,274 @@
+2022-07-26 18:08:09.0148                
+ [ERROR] AGVApi: : System.Data.SqlClient.SqlException (0x80131904): 找不到对象 "dbo.WareLocation"，因为它不存在或者您没有所需的权限。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteSql(MigrationStatement migrationStatement, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinTransaction(IEnumerable`1 migrationStatements, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinNewTransaction(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection)
+   在 System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClass32.<ExecuteStatements>b__30()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements, DbTransaction existingTransaction)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements)
+   在 System.Data.Entity.Migrations.DbMigrator.ExecuteOperations(String migrationId, VersionedModel targetModel, IEnumerable`1 operations, IEnumerable`1 systemOperations, Boolean downgrading, Boolean auto)
+   在 System.Data.Entity.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration)
+   在 System.Data.Entity.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId)
+   在 System.Data.Entity.Migrations.DbMigrator.UpdateInternal(String targetMigration)
+   在 System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClasse.<Update>b__d()
+   在 System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   在 System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   在 System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   在 System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   在 System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   在 System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.FirstOrDefaultAsync(Expression`1 whereLambda, Boolean isNoTracking, DbMainSlave dms) 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 944
+   在 WebApi_Aps.Controllers.CRMController.<WarmUp>d__2.MoveNext() 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WebApi_Aps\Controllers\CRMController.cs:行号 110
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:25d75e88-c4ae-42b0-86e9-946701048379
+Error Number:4902,State:1,Class:16                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:11:21.7644                
+ [ERROR] AGVApi: : System.InvalidOperationException: 支持“Model_Data”上下文的模型已在数据库创建后发生更改。请考虑使用 Code First 迁移更新数据库(http://go.microsoft.com/fwlink/?LinkId=238269)。
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   在 System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.FirstOrDefaultAsync(Expression`1 whereLambda, Boolean isNoTracking, DbMainSlave dms) 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 944
+   在 WebApi_Aps.Controllers.CRMController.<WarmUp>d__2.MoveNext() 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\WebApi_Aps\Controllers\CRMController.cs:行号 110
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()                
+  ExceptionFilterAttribute.OnExceptionAsync => ExceptionFilter.OnException => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:12:44.9970                
+ [INFO]  : 转换用时：0.1909439                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:12:45.4438                
+ [INFO]  : 线程ID:9                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:12:45.6347                
+ [INFO]  : header_ID:462                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:12:45.7822                
+ [INFO]  : 事务用时：0.3372052                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:12:45.7822                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:14:03.3357                
+ [INFO]  : 转换用时：0.0149646                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:14:03.7750                
+ [INFO]  : 线程ID:24                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:14:38.4108                
+ [INFO]  : header_ID:462                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:14:38.7054                
+ [INFO]  : 事务用时：34.9283915                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:14:38.7054                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:14:51.9237                
+ [INFO]  : 转换用时：0.0095256                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:14:52.3604                
+ [INFO]  : 线程ID:9                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:00.4030                
+ [INFO]  : header_ID:462                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:00.4083                
+ [INFO]  : 事务用时：8.0464637                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:00.4083                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:05.7795                
+ [INFO]  : 转换用时：0.0111422                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:06.1992                
+ [INFO]  : 线程ID:63                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:21.3640                
+ [INFO]  : header_ID:462                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:21.5445                
+ [INFO]  : 事务用时：15.3443169                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 18:15:21.5774                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:03:08.1855                
+ [INFO]  : 转换用时：0.1738353                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:03:08.3361                
+ [INFO]  : 线程ID:10                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:03:08.3917                
+ [ERROR]  : System.InvalidOperationException: 附加类型“NanXingData_WMS.Dao.CRMPlanHead”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   在 NanXingData_WMS.DaoUtils.DbBase`1.InsertOrUpdate(T entity) 位置 D:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 1175
+   在 NanXingService_WMS.Managers.CRMPlanManager.<AddOrUpdateCRMApply>d__12.MoveNext()                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:03:08.3927                
+ [INFO]  : 接收CRM订单数据：C220726051;失败用时：0.0556543                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:04:17.9574                
+ [ERROR]  : ConnMultiplexer_ConnectionFailed: StackExchange.Redis.RedisConnectionException: SocketFailure (ReadSocketError/TimedOut, last-recv: 5) on 114.115.152.192:6379/Interactive, Idle/Faulted, last: INFO, origin: ReadFromPipe, outstanding: 1, last-read: 79s ago, last-write: 19s ago, unanswered-write: 19s ago, keep-alive: 60s, state: ConnectedEstablished, mgr: 9 of 10 available, in: 0, in-pipe: 0, out-pipe: 0, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago, v: 2.5.43.42402 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 Pipelines.Sockets.Unofficial.SocketAwaitableEventArgs.GetResult()
+   在 Pipelines.Sockets.Unofficial.SocketConnection.<DoReceiveAsync>d__73.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   在 System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   在 System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   在 System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   在 StackExchange.Redis.PhysicalConnection.<ReadFromPipe>d__115.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---                
+  ConnectionMultiplexer.TryCompleteHandler => RedisHelper.ConnMultiplexer_ConnectionFailed => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:04:18.0477                
+ [INFO]  : ConnMultiplexer_ConnectionRestored:                 
+  ConnectionMultiplexer.TryCompleteHandler => RedisHelper.ConnMultiplexer_ConnectionRestored => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:04:18.0487                
+ [INFO]  : 配置更改:ConnMultiplexer_ConfigurationChanged: 114.115.152.192:6379                
+  ConnectionMultiplexer.TryCompleteHandler => RedisHelper.ConnMultiplexer_ConfigurationChanged => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:29.0546                
+ [INFO]  : 转换用时：0.0191144                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:29.2089                
+ [INFO]  : 线程ID:136                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:29.3449                
+ [INFO]  : header_ID:462;CRMApplyNo:C220726051                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:29.4288                
+ [INFO]  : 接收CRM订单数据：C220726051;事务用时：0.2187578                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:29.4288                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:47.3942                
+ [INFO]  : 转换用时：0.0167502                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:47.5276                
+ [INFO]  : 线程ID:134                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:47.5592                
+ [INFO]  : header_ID:462;CRMApplyNo:C220726051                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:47.5710                
+ [INFO]  : 接收CRM订单数据：C220726051;事务用时：0.0434508                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-07-26 19:18:47.5720                
+ [INFO]  : 成功：                
+  MoveNextRunner.InvokeMoveNext => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------

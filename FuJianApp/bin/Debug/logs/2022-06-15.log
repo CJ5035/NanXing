@@ -1,0 +1,36 @@
+2022-06-15 09:52:41.4277                
+ [INFO]  : 打印成功                
+  <>c__DisplayClass5_0.<StartPrint>b__0 => PrintThread.PrintControl => Logger.Process               
+ ------------------------------------------------
+2022-06-15 09:54:33.2999                
+ [ERROR]  : System.Runtime.InteropServices.COMException (0x80040200): 在具名数据源列表中找不到具名数据源 Department。
+   在 ZigBeePrint.Utils.BarTenderUtils.Print(String Printer, PrintItem printItem, Int32 index) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 72
+   在 ZigBeePrint.Utils.BarTenderUtils.PrintLabel(PrintItem printItem) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 30
+   在 NanXingCangKu.Threads.PrintThread.PrintControl() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Threads\PrintThread.cs:行号 63                
+  <>c__DisplayClass5_0.<StartPrint>b__0 => PrintThread.PrintControl => Logger.Process               
+ ------------------------------------------------
+2022-06-15 09:54:48.6609                
+ [ERROR]  : System.Runtime.InteropServices.COMException (0x80040200): 在具名数据源列表中找不到具名数据源 Department。
+   在 ZigBeePrint.Utils.BarTenderUtils.Print(String Printer, PrintItem printItem, Int32 index) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 72
+   在 ZigBeePrint.Utils.BarTenderUtils.PrintLabel(PrintItem printItem) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 30
+   在 NanXingCangKu.Threads.PrintThread.PrintControl() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Threads\PrintThread.cs:行号 63                
+  <>c__DisplayClass5_0.<StartPrint>b__0 => PrintThread.PrintControl => Logger.Process               
+ ------------------------------------------------
+2022-06-15 10:07:30.4980                
+ [ERROR]  : System.Runtime.InteropServices.COMException (0x80040200): 在具名数据源列表中找不到具名数据源 Department。
+   在 ZigBeePrint.Utils.BarTenderUtils.Print(String Printer, PrintItem printItem, Int32 index) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 72
+   在 ZigBeePrint.Utils.BarTenderUtils.PrintLabel(PrintItem printItem) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 30
+   在 NanXingCangKu.Threads.PrintThread.PrintControl() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Threads\PrintThread.cs:行号 63                
+  <>c__DisplayClass5_0.<StartPrint>b__0 => PrintThread.PrintControl => Logger.Process               
+ ------------------------------------------------
+2022-06-15 11:33:56.6135                
+ [ERROR]  : System.Runtime.InteropServices.COMException (0x80040200): 在具名数据源列表中找不到具名数据源 Department。
+   在 ZigBeePrint.Utils.BarTenderUtils.Print(String Printer, PrintItem printItem, Int32 index) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 72
+   在 ZigBeePrint.Utils.BarTenderUtils.PrintLabel(PrintItem printItem) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Utils\BarTenderUtils.cs:行号 30
+   在 NanXingCangKu.Threads.PrintThread.PrintControl() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\FuJianApp\Threads\PrintThread.cs:行号 63                
+  <>c__DisplayClass5_0.<StartPrint>b__0 => PrintThread.PrintControl => Logger.Process               
+ ------------------------------------------------
+2022-06-15 11:36:53.6512                
+ [INFO]  : 打印成功                
+  <>c__DisplayClass5_0.<StartPrint>b__0 => PrintThread.PrintControl => Logger.Process               
+ ------------------------------------------------

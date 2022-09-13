@@ -1,0 +1,32 @@
+2022-06-25 16:27:43.5495                
+ [ERROR]  : 生产明细单ID：12上报数量失败：
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 NanXingService_WMS.Entity.CRMEntity.CRMProTask.CreateByProlists(ProductOrderlists productOrderlists, String userName) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Entity\CRMEntity\CRMProTask.cs:行号 33
+   在 NanXingService_WMS.Services.ProductOrderManager.UpdateOrderListProCount(String orderNo, String userID, ProductOrderlists orderlist) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ProductOrderManager.cs:行号 656
+   在 NanXingService_WMS.Services.ProductOrderManager.UpdateOrderAddProCount(Int32 prolist_ID, Int32 addCount, String uploadUser) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\ProductOrderManager.cs:行号 548                
+  WXProductController.AddOrderCount => ProductOrderManager.UpdateOrderAddProCount => Logger.Process               
+ ------------------------------------------------
+2022-06-25 16:44:06.4453                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-25 16:48:57.8022                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-25 16:50:47.3058                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-25 16:52:08.2317                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-25 17:36:20.4075                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------
+2022-06-25 17:53:28.5141                
+ [INFO]  :  --成功发送到broker服务器CRMProTask--                 
+  ModelBase.HandleBasicAck => <>c__DisplayClass8_0.<CreateWorkQueue>b__1 => Logger.Process               
+ ------------------------------------------------

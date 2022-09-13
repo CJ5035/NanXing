@@ -1,0 +1,20 @@
+2022-03-29 14:17:05.0595                
+ [INFO]  : ItemThread:获取物料信息。。。                
+  ItemInfoThread.MainControl => ItemService.StartUpdate => Logger.Process               
+ ------------------------------------------------
+2022-03-29 14:40:38.9846                
+ [INFO]  : ItemThread:获取物料信息。。。                
+  ItemInfoThread.MainControl => ItemService.StartUpdate => Logger.Process               
+ ------------------------------------------------
+2022-03-29 14:50:11.6524                
+ [INFO]  : ItemThread:获取物料信息。。。                
+  ItemInfoThread.MainControl => ItemService.StartUpdate => Logger.Process               
+ ------------------------------------------------
+2022-03-29 15:04:48.8851                
+ [INFO]  : ItemThread:获取物料信息。。。                
+  ItemInfoThread.MainControl => ItemService.StartUpdate => Logger.Process               
+ ------------------------------------------------
+2022-03-29 15:26:12.0311                
+ [INFO]  : ItemThread:获取物料信息。。。                
+  ItemInfoThread.MainControl => ItemService.StartUpdate => Logger.Process               
+ ------------------------------------------------

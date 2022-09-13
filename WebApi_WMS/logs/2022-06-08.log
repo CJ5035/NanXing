@@ -1,0 +1,1069 @@
+2022-06-08 10:14:37.6558                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:89fb1b69-7377-4f3b-bdc4-eaf0fdb9c678
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 286                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:44.8804                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:40e317b7-a76d-4aa5-b73f-d1e9422db708
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 286                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:45.1696                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 658
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 282
+ClientConnectionId:89fb1b69-7377-4f3b-bdc4-eaf0fdb9c678
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:50.8782                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:7c0fef2f-0322-4bd4-9be6-53c126b1703a
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 286                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:51.3828                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 658
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 282
+ClientConnectionId:d1cfebfb-3b7c-4e0e-a5ab-969b03f04cd1
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:51.3858                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 658
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 282
+ClientConnectionId:6e374ca7-71db-4bab-9f60-29254b6bd80b
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:51.3828                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 658
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 282
+ClientConnectionId:bd91a8e7-e0f2-4a0a-975c-67a28ae9e179
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:52.0052                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 658
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 282
+ClientConnectionId:cfa79550-0d41-4b30-be06-0def3db8c417
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:52.4520                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 658
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 282
+ClientConnectionId:ee07faf0-74d9-4b06-8595-404ddb4d9e07
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:14:52.8549                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:addcf687-cf0a-4347-9211-f21e34c03c09
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 286                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:16:09.0590                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:addcf687-cf0a-4347-9211-f21e34c03c09
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 286                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:16:10.5426                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:addcf687-cf0a-4347-9211-f21e34c03c09
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NaXingService_WMS\Managers\CRMPlanManager.cs:行号 286                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:17:27.6929                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:addcf687-cf0a-4347-9211-f21e34c03c09
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:17:38.1322                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:40e317b7-a76d-4aa5-b73f-d1e9422db708
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:20:22.7128                
+ [ERROR]  : System.Exception: System.Data.SqlClient.SqlException (0x80131904): UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+UPDATE 语句与 FOREIGN KEY 约束"FK_dbo.CRMPlanList_dbo.CRMPlanHead_CRMPlanHead_Id"冲突。该冲突发生于数据库"NanXingGuoRen_CangKu_New"，表"dbo.CRMPlanHead", column 'ID'。
+语句已终止。
+语句已终止。
+语句已终止。
+语句已终止。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataSet dataSet, String srcTable)
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 641
+ClientConnectionId:40e317b7-a76d-4aa5-b73f-d1e9422db708
+Error Number:547,State:0,Class:16
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:22:10.5104                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:22:11.3065                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:22:11.8470                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:22:16.6459                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:22:17.1306                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingData_WMS\DaoUtils\DbBase.cs:行号 658
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:40e317b7-a76d-4aa5-b73f-d1e9422db708
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:28:07.8138                
+ [ERROR]  : System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:33:57.2510                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:a2228d0b-fbb0-4d17-83b4-697c1f586ae1
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:33:57.2569                
+ [ERROR]  : System.Data.Entity.Core.EntityException: 可能由于暂时性失败引发了异常。如果您在连接到 SQL Azure 数据库，请考虑使用 SqlAzureExecutionStrategy。 ---> System.Data.Entity.Core.UpdateException: 更新条目时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 事务(进程 ID 51)与另一个进程被死锁在 锁 资源上，并且已被选作死锁牺牲品。请重新运行该事务。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.SaveChanges()
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:34:02.4615                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:a3e2d4bf-15aa-4d5a-b269-84f9720a5db1
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:34:03.4678                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:24f5e9d1-091e-4452-96ce-d8bfffcbd721
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:34:03.4678                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:ceb79c66-88b5-402d-8cdf-ba2acd980211
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:34:03.5047                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:39a1d35c-8e05-4cba-b537-2012fe1613ea
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:34:03.9885                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:6f926f7e-47b4-4489-a2b8-f8556fadde7c
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:34:04.7015                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:fc302bf3-5968-4146-9b40-c47661aabe38
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:42.6572                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:f096f6b4-a9fb-470f-b55c-277cd41669c1
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:50.4531                
+ [ERROR]  : System.Data.Entity.Core.EntityCommandExecutionException: 从存储区提供程序的数据读取器中进行读取时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 事务(进程 ID 67)与另一个进程被死锁在 锁 资源上，并且已被选作死锁牺牲品。请重新运行该事务。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.StoreRead()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.HandleReaderException(Exception e)
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.StoreRead()
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.CRMPlanHead_C69FCD1DE77D8297442363A44C8666350A471F21EB2420DE5F2E267D41F61A1B.get_CRMPlanList()
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:51.5053                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:7a7eacf1-d15b-46c7-accd-e6b1789881b5
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:51.5043                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:f096f6b4-a9fb-470f-b55c-277cd41669c1
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:57.8045                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:24f5e9d1-091e-4452-96ce-d8bfffcbd721
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:58.4059                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:ceb79c66-88b5-402d-8cdf-ba2acd980211
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:58.4059                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:6ee355dd-7339-4c65-9aaa-a6aa00aab8bf
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:59.2057                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:6f926f7e-47b4-4489-a2b8-f8556fadde7c
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:36:59.2047                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:39a1d35c-8e05-4cba-b537-2012fe1613ea
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:38:32.8565                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:0bd50496-5d96-49bc-a224-a3a18cd711b8
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:38:38.1031                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:24f5e9d1-091e-4452-96ce-d8bfffcbd721
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:38:38.1031                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:a2228d0b-fbb0-4d17-83b4-697c1f586ae1
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:38:38.5030                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:7a7eacf1-d15b-46c7-accd-e6b1789881b5
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:40:20.8367                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:7a7eacf1-d15b-46c7-accd-e6b1789881b5
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:40:22.0445                
+ [ERROR]  : System.Data.Entity.Core.EntityCommandExecutionException: 从存储区提供程序的数据读取器中进行读取时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 事务(进程 ID 71)与另一个进程被死锁在 锁 资源上，并且已被选作死锁牺牲品。请重新运行该事务。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.StoreRead()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.HandleReaderException(Exception e)
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.StoreRead()
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.CRMPlanHead_C69FCD1DE77D8297442363A44C8666350A471F21EB2420DE5F2E267D41F61A1B.get_CRMPlanList()
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:40:22.3677                
+ [ERROR]  : System.Data.Entity.Core.EntityException: 可能由于暂时性失败引发了异常。如果您在连接到 SQL Azure 数据库，请考虑使用 SqlAzureExecutionStrategy。 ---> System.Data.Entity.Core.UpdateException: 更新条目时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 事务(进程 ID 63)与另一个进程被死锁在 锁 资源上，并且已被选作死锁牺牲品。请重新运行该事务。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 NanXingData_WMS.DaoUtils.DbBase`1.SaveChanges()
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:40:24.6248                
+ [ERROR]  : System.Data.Entity.Core.EntityCommandExecutionException: 从存储区提供程序的数据读取器中进行读取时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 事务(进程 ID 68)与另一个进程被死锁在 锁 资源上，并且已被选作死锁牺牲品。请重新运行该事务。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.StoreRead()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.HandleReaderException(Exception e)
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.StoreRead()
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Merge[TEntity](IEnumerable`1 collection, MergeOption mergeOption, Boolean setIsLoaded)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.CRMPlanHead_C69FCD1DE77D8297442363A44C8666350A471F21EB2420DE5F2E267D41F61A1B.get_CRMPlanList()
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:40:27.7346                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:7a7eacf1-d15b-46c7-accd-e6b1789881b5
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:40:28.2024                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:0bd50496-5d96-49bc-a224-a3a18cd711b8
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:40:29.2107                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:fc302bf3-5968-4146-9b40-c47661aabe38
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:42:02.0360                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:a2228d0b-fbb0-4d17-83b4-697c1f586ae1
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:42:07.6970                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:24f5e9d1-091e-4452-96ce-d8bfffcbd721
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:42:07.6980                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:ceb79c66-88b5-402d-8cdf-ba2acd980211
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 10:47:08.8715                
+ [ERROR]  : System.Data.SqlClient.SqlException (0x80131904): ROLLBACK TRANSACTION 请求没有对应的 BEGIN TRANSACTION。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   在 System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 NanXingData_WMS.DaoUtils.DbBase.BatchInsertOrUpdate(DataTable addDataTable, DataTable updateDataTable, String tableName, String& exp, Int32 BatchSize)
+   在 NanXingService_WMS.Managers.CRMPlanManager.AddOrUpdateCRMApply(CRMPlanWriter temp, String& result)
+ClientConnectionId:ceb79c66-88b5-402d-8cdf-ba2acd980211
+Error Number:3903,State:2,Class:16                
+  CRMController.AddCRMPlanApply => CRMPlanManager.AddOrUpdateCRMApply => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:17:40.7657                
+ [INFO]  : 转换用时：0.7948739                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:17:40.8435                
+ [INFO]  : 线程ID:8                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:17:41.4414                
+ [INFO]  : header_ID:95                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:17:41.8987                
+ [INFO]  : 事务用时：1.0522296                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:17:41.9017                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:19:07.6364                
+ [INFO]  : 转换用时：0.0329163                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:19:07.6514                
+ [INFO]  : 线程ID:8                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:19:07.7082                
+ [INFO]  : header_ID:95                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:19:08.0214                
+ [INFO]  : 事务用时：0.3660214                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:19:08.0244                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:20:57.9475                
+ [INFO]  : 转换用时：0.0069814                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:20:57.9644                
+ [INFO]  : 线程ID:46                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:20:57.9784                
+ [INFO]  : header_ID:96                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:20:58.0303                
+ [INFO]  : 事务用时：0.0628331                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:20:58.0332                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:25:36.1796                
+ [INFO]  : 转换用时：0.0209463                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:25:36.1945                
+ [INFO]  : 线程ID:75                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:25:36.2155                
+ [INFO]  : header_ID:96                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:25:36.2284                
+ [INFO]  : 事务用时：0.0309181                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:25:36.2314                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:21.1993                
+ [INFO]  : 转换用时：0.0080141                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:21.2102                
+ [INFO]  : 线程ID:98                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:21.2232                
+ [INFO]  : header_ID:97                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:21.2711                
+ [INFO]  : 事务用时：0.0578437                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:21.2740                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:24.2052                
+ [INFO]  : 转换用时：0.0229331                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:24.2411                
+ [INFO]  : 线程ID:76                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:24.2601                
+ [INFO]  : header_ID:97                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:24.2730                
+ [INFO]  : 事务用时：0.0289205                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:26:24.2760                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:13.7316                
+ [INFO]  : 转换用时：0.0059843                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:13.7435                
+ [INFO]  : 线程ID:76                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:13.7555                
+ [INFO]  : header_ID:98                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:13.8134                
+ [INFO]  : 事务用时：0.0668229                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:13.8173                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:38.7715                
+ [INFO]  : 转换用时：0.0159572                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:38.7874                
+ [INFO]  : 线程ID:76                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:38.8024                
+ [INFO]  : header_ID:98                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:50.5111                
+ [INFO]  : 事务用时：11.7196674                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:27:50.5719                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:28:00.8666                
+ [INFO]  : 转换用时：0.0069816                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:28:00.8955                
+ [INFO]  : 线程ID:97                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:28:00.9125                
+ [INFO]  : header_ID:98                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:28:00.9254                
+ [INFO]  : 事务用时：0.0259292                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:28:00.9294                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:29:03.0171                
+ [INFO]  : 转换用时：0.0069756                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:29:03.0360                
+ [INFO]  : 线程ID:76                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:29:03.0510                
+ [INFO]  : header_ID:98                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:29:03.0759                
+ [INFO]  : 事务用时：0.0359043                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------
+2022-06-08 14:29:03.0799                
+ [INFO]  : 成功：                
+  ExecutionContext.RunInternal => <AddOrUpdateCRMApply>d__12.MoveNext => Logger.Process               
+ ------------------------------------------------

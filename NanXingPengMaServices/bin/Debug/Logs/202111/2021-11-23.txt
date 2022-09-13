@@ -1,0 +1,40 @@
+         
+时间： 2021-11-23 16:19:45.5052         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Error         
+信息： System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.3.180:8001
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 NanXingPengMaServices.Utils.HttpUtils.HttpApi(String url, String jsonstr, String type) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\HttpUtils.cs:行号 42
+   在 NanXingPengMaServices.Utils.AGVInfUtils.SendMissionOrder(MissionOrder mission) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\AGVInfUtils.cs:行号 23
+   在 NanXingPengMaServices.Utils.InOutThread.SendOrderTest(String orderId, String path, String lineOrder) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 273
+   在 NanXingPengMaServices.Utils.InOutThread.SendAGVOrder(String trayNo, String startPo, String endPo, String mark, StockPlan sp, String lineOrder) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 249
+   在 NanXingPengMaServices.Utils.InOutThread.SendLieOrder(Dictionary`2 lieDic, List`1 wlList, StockPlan sp) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 205
+   在 NanXingPengMaServices.Utils.InOutThread.OutStock(StockPlan sp) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 118
+   在 NanXingPengMaServices.Utils.InOutThread.Init() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 36         
+堆栈：  ThreadHelper.ThreadStart_Context => InOutThread.Init => Logger.Process         
+
+-----------------------------------------------------------
+         
+时间： 2021-11-23 16:20:28.8001         
+来源： NanXingPengMaServices.Logger.Process         
+等级： Error         
+信息： System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.3.180:8001
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 NanXingPengMaServices.Utils.HttpUtils.HttpApi(String url, String jsonstr, String type) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\HttpUtils.cs:行号 42
+   在 NanXingPengMaServices.Utils.AGVInfUtils.SendMissionOrder(MissionOrder mission) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\AGVInfUtils.cs:行号 23
+   在 NanXingPengMaServices.Utils.InOutThread.SendOrderTest(String orderId, String path, String lineOrder) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 273
+   在 NanXingPengMaServices.Utils.InOutThread.SendAGVOrder(String trayNo, String startPo, String endPo, String mark, StockPlan sp, String lineOrder) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 249
+   在 NanXingPengMaServices.Utils.InOutThread.SendLieOrder(Dictionary`2 lieDic, List`1 wlList, StockPlan sp) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 205
+   在 NanXingPengMaServices.Utils.InOutThread.OutStock(StockPlan sp) 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 118
+   在 NanXingPengMaServices.Utils.InOutThread.Init() 位置 F:\项目\南兴果仁\南兴果仁WMS智能仓储管理系统\NanXingPengMaServices\Utils\InOutThread.cs:行号 36         
+堆栈：  ThreadHelper.ThreadStart_Context => InOutThread.Init => Logger.Process         
+
+-----------------------------------------------------------

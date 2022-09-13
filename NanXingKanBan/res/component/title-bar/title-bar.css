@@ -1,0 +1,36 @@
+﻿body {
+}
+
+.bar {
+    /*height: 7.5%;*/
+    margin-top: 0.4rem;
+    height: 1rem;
+    color: #06FFFF;
+   display:inline-block;
+}
+
+.pic {
+    margin-left: 0.3rem;
+    position: relative;
+    top: 0.4rem;
+    float: left;
+    width: 2.5rem;
+    height: 1rem;
+    background: url(../../images/箭头.png) no-repeat;
+    background-size: auto 100%;
+    transform: translateY(-42%);
+}
+
+.title {
+    margin-top: 0rem;
+    float: left;
+    padding-left: 0.5rem;
+    width: 11rem;
+    height: 1rem;
+    /* background: red; */
+    line-height: 1rem;
+    /* text-align: center; */
+    font-size: 1.2rem;
+    color: #06FFFF;
+    /* background: #000; */
+}

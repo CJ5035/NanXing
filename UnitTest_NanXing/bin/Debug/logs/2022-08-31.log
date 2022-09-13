@@ -1,0 +1,23 @@
+2022-08-31 10:00:47.1742                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/corpAccessToken/get/V2
+body:{"appId":"FSAID_131a6f5","appSecret":"cd3775a3122c4c70b4507afea46de5bf","permanentCode":"2787203B641C1BC8B83738007DD1DAA7"}                
+  CRMApiHelper.GetToken => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-31 10:00:47.8938                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/query
+body:{"corpAccessToken":"78DB3B1A280D1793BF39980680F64DA8","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","data":{"dataObjectApiName":"object_S1KIF__c","search_query_info":{"offset":0,"limit":200,"filters":[{"field_name":"_id","field_values":"62f4e17e1f52230001f6acfa","operator":"EQ"}]}}}                
+  CRMApiHelper.GetCRMDetailFromApi => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------
+2022-08-31 10:05:31.1149                
+ [WARN]  : TCP server 192.168.10.215:8001 has disconnected.                
+  AsyncTcpClient.RaiseServerDisconnected => SensorDataService.MsgDisconnected => Logger.Process               
+ ------------------------------------------------
+2022-08-31 10:05:31.1149                
+ [WARN]  : TCP server 192.168.10.210:8001 has disconnected.                
+  AsyncTcpClient.RaiseServerDisconnected => SensorDataService.MsgDisconnected => Logger.Process               
+ ------------------------------------------------
+2022-08-31 10:05:31.6233                
+ [INFO]  : 开始发送接口请求:url:https://open.fxiaoke.com/cgi/crm/custom/v2/data/query
+body:{"corpAccessToken":"78DB3B1A280D1793BF39980680F64DA8","corpId":"FSCID_4DCCF802A354050DB3394E4B5AFC2403","currentOpenUserId":"FSUID_9D013E3437E2C860E6E5B27BE5D52B6A","data":{"dataObjectApiName":"object_S1KIF__c","search_query_info":{"offset":0,"limit":200,"filters":[{"field_name":"_id","field_values":"62f4e17e1f52230001f6acfa","operator":"EQ"}]}}}                
+  CRMApiHelper.GetCRMDetailFromApi => HttpUtils.HttpPost => Logger.Process               
+ ------------------------------------------------

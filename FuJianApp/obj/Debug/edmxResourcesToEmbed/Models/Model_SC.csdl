@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NanXingGuoRen_SCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Production">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prosn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prodate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="proname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="itemno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductOrderlistsID" Type="Int32" Nullable="false" />
+    <Property Name="class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="batchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ingredients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remark1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductOrderlists" Relationship="Self.FK_ProductOrderlistsProduction" FromRole="Production" ToRole="ProductOrderlists" />
+  </EntityType>
+  <EntityType Name="ProductOrderheaders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prosn" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="optdate" Type="DateTime" Precision="3" />
+    <Property Name="positionClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="orderNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="mergeCells" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="mergeCellsValue" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProductOrderlists" Relationship="Self.FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID" FromRole="ProductOrderheaders" ToRole="ProductOrderlists" />
+  </EntityType>
+  <EntityType Name="ProductOrderlists">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="itemno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="inName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="priceOut" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="count" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="mark" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="optdate" Type="DateTime" Precision="3" />
+    <Property Name="jingbanren" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="remark1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="providername" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="clientname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductOrderheader_ID" Type="Int32" />
+    <Property Name="length" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="width" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="high" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="batchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boxName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ingredients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chejianclass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Production" Relationship="Self.FK_ProductOrderlistsProduction" FromRole="ProductOrderlists" ToRole="Production" />
+    <NavigationProperty Name="ProductOrderheaders" Relationship="Self.FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID" FromRole="ProductOrderlists" ToRole="ProductOrderheaders" />
+  </EntityType>
+  <EntityType Name="TrayPro">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="optdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TrayStateID" Type="Int32" Nullable="false" />
+    <Property Name="prosn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TrayState" Relationship="Self.FK_TrayStateTrayPro" FromRole="TrayPro" ToRole="TrayState" />
+  </EntityType>
+  <EntityType Name="TrayState">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrayNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="optdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="OnlineCount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TrayPro" Relationship="Self.FK_TrayStateTrayPro" FromRole="TrayState" ToRole="TrayPro" />
+  </EntityType>
+  <Association Name="FK_ProductOrderlistsProduction">
+    <End Role="ProductOrderlists" Type="Self.ProductOrderlists" Multiplicity="1" />
+    <End Role="Production" Type="Self.Production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductOrderlists">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Production">
+        <PropertyRef Name="ProductOrderlistsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID">
+    <End Role="ProductOrderheaders" Type="Self.ProductOrderheaders" Multiplicity="0..1" />
+    <End Role="ProductOrderlists" Type="Self.ProductOrderlists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductOrderheaders">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductOrderlists">
+        <PropertyRef Name="ProductOrderheader_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrayStateTrayPro">
+    <End Role="TrayState" Type="Self.TrayState" Multiplicity="1" />
+    <End Role="TrayPro" Type="Self.TrayPro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrayState">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TrayPro">
+        <PropertyRef Name="TrayStateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NanXingGuoRen_SCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Production" EntityType="Self.Production" />
+    <EntitySet Name="ProductOrderheaders" EntityType="Self.ProductOrderheaders" />
+    <EntitySet Name="ProductOrderlists" EntityType="Self.ProductOrderlists" />
+    <EntitySet Name="TrayPro" EntityType="Self.TrayPro" />
+    <EntitySet Name="TrayState" EntityType="Self.TrayState" />
+    <AssociationSet Name="FK_ProductOrderlistsProduction" Association="Self.FK_ProductOrderlistsProduction">
+      <End Role="ProductOrderlists" EntitySet="ProductOrderlists" />
+      <End Role="Production" EntitySet="Production" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID" Association="Self.FK_dbo_ProductOrderlists_dbo_ProductOrderheaders_ProductOrderheader_ID">
+      <End Role="ProductOrderheaders" EntitySet="ProductOrderheaders" />
+      <End Role="ProductOrderlists" EntitySet="ProductOrderlists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrayStateTrayPro" Association="Self.FK_TrayStateTrayPro">
+      <End Role="TrayState" EntitySet="TrayState" />
+      <End Role="TrayPro" EntitySet="TrayPro" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
